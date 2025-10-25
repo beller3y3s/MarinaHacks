@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './activities.css';
 
 function Activities() {
+  const navigate = useNavigate();
   const [selectedPeople, setSelectedPeople] = useState('');
   const [isPeopleOpen, setIsPeopleOpen] = useState(false);
   const [selectedActivity, setSelectedActivity] = useState('');
@@ -439,7 +441,12 @@ function Activities() {
 
   return (
     <div className="activities-container">
-      <h1 className="activities-title">Activities</h1>
+      <button className="back-button" onClick={() => navigate('/')}>
+        ← Back to Home
+      </button>
+      <div className="activities-header">
+        <h1 className="activities-title">Activities</h1>
+      </div>
       <div className="dropdowns-wrapper">
         <div className="dropdown-wrapper">
           <div className="dropdown">
