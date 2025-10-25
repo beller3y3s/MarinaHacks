@@ -43,8 +43,10 @@ const PastelButtons = () => {
   };
 
   return (
-    <div className="pastel-buttons-container">
-      <h2>🎲 What to do? 🎲</h2>
+    <div className="main-page-container">
+      <h1 className="main-title">Hop & Play</h1>
+      <div className="pastel-buttons-container">
+        <h2>🎲 What to do? 🎲</h2>
       
       <div className="button-group">
         <div className="button-row">
@@ -52,19 +54,19 @@ const PastelButtons = () => {
             className="pastel-btn pastel-pink" 
             onClick={() => handleButtonClick('Activities')}
           >
-            🎨 Activities 🎨
+            🌷 Activities 🌷
           </button>
           <button 
             className="pastel-btn pastel-lavender" 
             onClick={() => handleButtonClick('Events')}
           >
-            🎉 Events 🎉
+            🌷 Events 🌷
           </button>
           <button 
             className="pastel-btn pastel-mint" 
             onClick={() => handleButtonClick('About')}
           >
-            ℹ️ About ℹ️
+            🌷 About 🌷
           </button>
         </div>
       </div>
@@ -91,6 +93,7 @@ const PastelButtons = () => {
           💖
         </div>
       ))}
+      </div>
     </div>
   );
 };
