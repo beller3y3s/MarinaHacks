@@ -444,6 +444,10 @@ html, body {
 
 .action-buttons {
   margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .new-search-button {
@@ -461,6 +465,34 @@ html, body {
 
 .new-search-button:hover {
   background-color: #ff4d7a;
+}
+
+.refresh-button {
+  background-color: #e9d5ff;
+  color: #6b21a8;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Short Stack', cursive;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.refresh-button:hover {
+  background-color: #d8b4fe;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.refresh-button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
 }
 
 .location-options {
