@@ -10,6 +10,7 @@ function Activities() {
   const [isActivityOpen, setIsActivityOpen] = useState(false);
   const [isGenerated, setIsGenerated] = useState(false);
   const [reloadCount, setReloadCount] = useState(0);
+  const [hearts, setHearts] = useState([]);
 
   const peopleOptions = [
     'How many people?',
@@ -57,6 +58,25 @@ function Activities() {
 
   const handleReload = () => {
     setReloadCount(prev => prev + 1);
+  };
+
+  const handleBackClick = () => {
+    // Create multiple hearts
+    const newHearts = Array.from({ length: 5 }, (_, i) => ({
+      id: Date.now() + i,
+      x: Math.random() * 100 - 50, // Random horizontal position
+      y: Math.random() * 50 - 25,  // Random vertical position
+    }));
+    
+    setHearts(prev => [...prev, ...newHearts]);
+    
+    // Remove hearts after animation
+    setTimeout(() => {
+      setHearts(prev => prev.filter(heart => !newHearts.includes(heart)));
+    }, 2000);
+    
+    // Navigate back
+    navigate('/');
   };
 
   // AI-generated activity suggestions based on selections
@@ -441,9 +461,23 @@ function Activities() {
 
   return (
     <div className="activities-container">
-      <button className="back-button" onClick={() => navigate('/')}>
+      <button className="back-button" onClick={handleBackClick}>
         ← Back to Home
       </button>
+      
+      {/* Floating hearts */}
+      {hearts.map(heart => (
+        <div
+          key={heart.id}
+          className="floating-heart"
+          style={{
+            left: `calc(100px + ${heart.x}px)`,
+            top: `calc(20px + ${heart.y}px)`,
+          }}
+        >
+          💖
+        </div>
+      ))}
       <div className="activities-header">
         <h1 className="activities-title">Activities</h1>
       </div>
