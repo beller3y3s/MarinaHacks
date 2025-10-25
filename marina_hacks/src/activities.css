@@ -195,7 +195,7 @@ body, html {
 .fixed-output-box {
   margin-top: 10px;
   width: 600px;
-  height: 300px;
+  height: 400px;
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -223,13 +223,45 @@ body, html {
   flex-direction: column;
 }
 
+.suggestions-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
 .suggestions-header {
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   font-weight: 600;
   color: #333;
-  margin-bottom: 15px;
-  text-align: center;
+  margin: 0;
   font-family: 'Hachi Maru Pop', cursive;
+}
+
+.reload-button {
+  background-color: #8b5a6b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(139, 90, 107, 0.3);
+}
+
+.reload-button:hover {
+  background-color: #7a4d5a;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(139, 90, 107, 0.4);
+}
+
+.reload-button:active {
+  transform: rotate(180deg) scale(0.95);
 }
 
 .suggestions-text {
@@ -237,18 +269,21 @@ body, html {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 25px;
+  justify-content: space-evenly;
+  padding: 20px 0;
 }
 
 .compact-suggestion {
-  padding: 8px 12px;
+  padding: 15px 18px;
   background-color: #f8f9fa;
   border-radius: 6px;
   border-left: 3px solid #646cff;
   font-family: 'Itim', cursive;
-  font-size: 12px;
+  font-size: 17px;
   line-height: 1.4;
   color: #333;
+  margin: 5px 0;
 }
 
 .placeholder-content {
@@ -372,7 +407,7 @@ body, html {
   .fixed-output-box {
     width: 100%;
     max-width: 400px;
-    height: 250px;
+    height: 350px;
     margin-top: 20px;
   }
   
@@ -381,13 +416,20 @@ body, html {
   }
   
   .suggestions-header {
-    font-size: 1rem;
+    font-size: 1.8rem;
     margin-bottom: 10px;
   }
   
   .compact-suggestion {
-    padding: 6px 10px;
-    font-size: 11px;
+    padding: 12px 15px;
+    font-size: 19px;
+    margin: 3px 0;
+  }
+  
+  .reload-button {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
   }
   
   .placeholder-content {
@@ -398,6 +440,12 @@ body, html {
     padding: 12px 30px;
     font-size: 16px;
     min-width: 100px;
+  }
+  
+  .reload-button {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
   }
   
   .activity-output-box {
