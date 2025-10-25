@@ -230,3 +230,73 @@ body {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
 }
+
+/* Bottom right corner image styling */
+.bottom-right-image {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  z-index: 1000;
+  animation: gentle-bounce 2s ease-in-out infinite;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.bottom-right-image:hover {
+  transform: scale(1.1);
+  animation-play-state: paused;
+}
+
+@keyframes gentle-bounce {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+/* Bunny instant hop animation */
+@keyframes bunny-hop {
+  0% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-15px) scale(1.05); }
+  100% { transform: translateY(0px) scale(1); }
+}
+
+.bunny-hop {
+  animation: bunny-hop 0.3s ease-out;
+}
+
+/* Floating hearts animation */
+@keyframes heart-float {
+  0% { 
+    transform: translateY(0px) scale(0.5) rotate(0deg);
+    opacity: 1;
+  }
+  50% { 
+    transform: translateY(-30px) scale(1) rotate(180deg);
+    opacity: 0.8;
+  }
+  100% { 
+    transform: translateY(-60px) scale(0.3) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.floating-heart {
+  position: fixed;
+  font-size: 1.2rem;
+  pointer-events: none;
+  z-index: 1001;
+  animation: heart-float 2s ease-out forwards;
+  filter: drop-shadow(0 2px 4px rgba(255, 105, 180, 0.3));
+}
+
+/* Responsive adjustments for the image */
+@media (max-width: 768px) {
+  .bottom-right-image {
+    width: 60px;
+    height: 60px;
+    bottom: 15px;
+    right: 15px;
+  }
+}

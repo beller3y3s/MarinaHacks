@@ -462,3 +462,28 @@ body, html {
     font-size: 13px;
   }
 }
+
+/* Floating hearts animation */
+@keyframes heart-float {
+  0% { 
+    transform: translateY(0px) scale(0.5) rotate(0deg);
+    opacity: 1;
+  }
+  50% { 
+    transform: translateY(-30px) scale(1) rotate(180deg);
+    opacity: 0.8;
+  }
+  100% { 
+    transform: translateY(-60px) scale(0.3) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.floating-heart {
+  position: fixed;
+  font-size: 1.2rem;
+  pointer-events: none;
+  z-index: 1001;
+  animation: heart-float 2s ease-out forwards;
+  filter: drop-shadow(0 2px 4px rgba(255, 105, 180, 0.3));
+}
