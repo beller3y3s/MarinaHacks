@@ -10,6 +10,8 @@ const PastelButtons = () => {
     
     if (buttonName === 'Activities') {
       navigate('/activities');
+    } else if (buttonName === 'About') {
+      navigate('/about');
     }
     // You can add more navigation logic here for other buttons
   };

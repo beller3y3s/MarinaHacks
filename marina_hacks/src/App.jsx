@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PastelButtons from './PastelButtons';
 import Activities from './activities';
+import AboutPage from './AboutPage';
 import './App.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<PastelButtons />} />
           <Route path="/activities" element={<Activities />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </div>
     </Router>
