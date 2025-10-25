@@ -1,11 +1,11 @@
 /* Import Hachi Maru Pop font */
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
 
-/* Ensure entire page is pink and override conflicting styles */
+/* Ensure entire page has the same gradient background as other pages */
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #fff0f5; /* Very light pink background */
+  background: linear-gradient(135deg, #f8f4ff 0%, #fff0f5 50%, #f0f8ff 100%);
   min-height: 100vh;
   display: block; /* Override flex from index.css */
 }
@@ -19,13 +19,38 @@ html, body {
 
 .events-page {
   min-height: 100vh;
-  background-color: #fff0f5; /* Very light pink background */
+  background: linear-gradient(135deg, #f8f4ff 0%, #fff0f5 50%, #f0f8ff 100%);
   display: flex;
   flex-direction: column; /* stacks elements vertically */
   align-items: center; /* centers horizontally */
   justify-content: center; /* centers vertically */
   margin: 0;
   padding: 0;
+  position: relative;
+}
+
+.back-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #e9d5ff 0%, #d8b4fe 100%);
+  color: #000000;
+  border: none;
+  border-radius: 0 0 15px 0;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Short Stack', cursive;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.back-button:hover {
+  background: linear-gradient(135deg, #d8b4fe 0%, #c084fc 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .events-title {
@@ -88,18 +113,27 @@ html, body {
 }
 
 .manual-location-section {
-  margin-top: 2rem;
-  padding: 1.5rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 12px;
   border: 2px solid #ffd1dc;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .location-input-group {
   display: flex;
-  gap: 1rem;
-  margin: 1rem 0;
-  align-items: flex-start;
+  gap: 0.75rem;
+  margin: 0.75rem 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .input-with-suggestions {
@@ -109,10 +143,10 @@ html, body {
 
 .location-input {
   flex: 1;
-  padding: 12px 16px;
+  padding: 6px 10px;
   border: 2px solid #ffd1dc;
-  border-radius: 25px;
-  font-size: 1rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
   outline: none;
   transition: border-color 0.3s ease;
   background-color: white;
@@ -469,10 +503,10 @@ html, body {
 
 .location-input {
   width: 100%;
-  padding: 0.75rem;
+  padding: 4px 8px;
   border: 2px solid #ddd;
-  border-radius: 8px;
-  font-size: 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
   background-color: white;
   color: #000;
   transition: border-color 0.3s ease;

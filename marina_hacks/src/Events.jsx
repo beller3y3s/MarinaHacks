@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Events.css";
 
 function Events() {
+  const navigate = useNavigate();
   const [location, setLocation] = useState(null);
   const [locationError, setLocationError] = useState(null);
   const [isRequestingLocation, setIsRequestingLocation] = useState(false);
@@ -171,34 +173,34 @@ function Events() {
     
     const mockEvents = {
       'Community/Social': [
-        { title: `${cityName} Community Cleanup`, date: 'March 15, 2024', location: `${cityName} City Park`, description: 'Join neighbors for a community cleanup event' },
-        { title: `${cityName} Student Social Mixer`, date: 'March 20, 2024', location: `${cityName} Community Center`, description: 'Meet fellow students and build connections' },
-        { title: `${cityName} Networking Event`, date: 'March 25, 2024', location: `${cityName} Downtown`, description: 'Professional networking for local businesses' }
+        { title: `${cityName} Community Cleanup`, date: 'January 20, 2025', location: `${cityName} City Park`, description: 'Join neighbors for a community cleanup event' },
+        { title: `${cityName} Student Social Mixer`, date: 'January 25, 2025', location: `${cityName} Community Center`, description: 'Meet fellow students and build connections' },
+        { title: `${cityName} Networking Event`, date: 'February 1, 2025', location: `${cityName} Downtown`, description: 'Professional networking for local businesses' }
       ],
       'Arts/Culture/Entertainment': [
-        { title: `${cityName} Art Walk`, date: 'March 16, 2024', location: `${cityName} Arts District`, description: 'Explore local galleries and meet artists' },
-        { title: `${cityName} Theatre Production`, date: 'March 22, 2024', location: `${cityName} Theatre`, description: 'Local theatre performance' },
-        { title: `${cityName} Music Festival`, date: 'March 30, 2024', location: `${cityName} City Park`, description: 'Live music from local bands' }
+        { title: `${cityName} Art Walk`, date: 'January 22, 2025', location: `${cityName} Arts District`, description: 'Explore local galleries and meet artists' },
+        { title: `${cityName} Theatre Production`, date: 'January 28, 2025', location: `${cityName} Theatre`, description: 'Local theatre performance' },
+        { title: `${cityName} Music Festival`, date: 'February 8, 2025', location: `${cityName} City Park`, description: 'Live music from local bands' }
       ],
       'Service/Charity': [
-        { title: `${cityName} Volunteer Day`, date: 'March 17, 2024', location: `${cityName} Community Center`, description: 'Help with local community service projects' },
-        { title: `${cityName} Food Bank Volunteer Event`, date: 'March 23, 2024', location: `${cityName} Food Bank`, description: 'Sort and package food donations' },
-        { title: `${cityName} Animal Shelter Adoption Fair`, date: 'March 28, 2024', location: `${cityName} Animal Shelter`, description: 'Help find homes for rescue animals' }
+        { title: `${cityName} Volunteer Day`, date: 'January 19, 2025', location: `${cityName} Community Center`, description: 'Help with local community service projects' },
+        { title: `${cityName} Food Bank Volunteer Event`, date: 'January 26, 2025', location: `${cityName} Food Bank`, description: 'Sort and package food donations' },
+        { title: `${cityName} Animal Shelter Adoption Fair`, date: 'February 2, 2025', location: `${cityName} Animal Shelter`, description: 'Help find homes for rescue animals' }
       ],
       'Food/Markets': [
-        { title: `${cityName} Farmers Market`, date: 'March 18, 2024', location: `${cityName} Downtown Plaza`, description: 'Fresh local produce and artisan goods' },
-        { title: `${cityName} Food Truck Festival`, date: 'March 24, 2024', location: `${cityName} City Center`, description: 'Diverse cuisine from local food trucks' },
-        { title: `${cityName} Food Fair`, date: 'March 29, 2024', location: `${cityName} Community Center`, description: 'Local food vendors and activities' }
+        { title: `${cityName} Farmers Market`, date: 'January 18, 2025', location: `${cityName} Downtown Plaza`, description: 'Fresh local produce and artisan goods' },
+        { title: `${cityName} Food Truck Festival`, date: 'January 24, 2025', location: `${cityName} City Center`, description: 'Diverse cuisine from local food trucks' },
+        { title: `${cityName} Food Fair`, date: 'January 31, 2025', location: `${cityName} Community Center`, description: 'Local food vendors and activities' }
       ],
       'Sports/Wellness': [
-        { title: `${cityName} Sports Tournament`, date: 'March 19, 2024', location: `${cityName} Recreation Center`, description: 'Competitive sports for all skill levels' },
-        { title: `${cityName} Fitness Challenge`, date: 'March 26, 2024', location: `${cityName} Gym`, description: 'Community fitness and wellness event' },
-        { title: `${cityName} Marathon Training`, date: 'March 31, 2024', location: `${cityName} City Park`, description: 'Group training run for marathon participants' }
+        { title: `${cityName} Sports Tournament`, date: 'January 21, 2025', location: `${cityName} Recreation Center`, description: 'Competitive sports for all skill levels' },
+        { title: `${cityName} Fitness Challenge`, date: 'January 27, 2025', location: `${cityName} Gym`, description: 'Community fitness and wellness event' },
+        { title: `${cityName} Marathon Training`, date: 'February 3, 2025', location: `${cityName} City Park`, description: 'Group training run for marathon participants' }
       ],
       'Educational': [
-        { title: `${cityName} Tech Talk Series`, date: 'March 21, 2024', location: `${cityName} Library`, description: 'Weekly technology and innovation discussions' },
-        { title: `${cityName} Public Library Workshop`, date: 'March 27, 2024', location: `${cityName} Public Library`, description: 'Digital literacy and coding basics workshop' },
-        { title: `${cityName} Hackathon`, date: 'March 15-17, 2024', location: `${cityName} Community Center`, description: '48-hour coding competition and innovation event' }
+        { title: `${cityName} Tech Talk Series`, date: 'January 23, 2025', location: `${cityName} Library`, description: 'Weekly technology and innovation discussions' },
+        { title: `${cityName} Public Library Workshop`, date: 'January 29, 2025', location: `${cityName} Public Library`, description: 'Digital literacy and coding basics workshop' },
+        { title: `${cityName} Hackathon`, date: 'February 7-9, 2025', location: `${cityName} Community Center`, description: '48-hour coding competition and innovation event' }
       ]
     };
 
@@ -308,6 +310,9 @@ function Events() {
 
   return (
     <div className="events-page">
+      <button className="back-button" onClick={() => navigate('/')}>
+        ← Back to Home
+      </button>
       <h1 className="events-title">Events</h1>
       
       <div className="location-section">
