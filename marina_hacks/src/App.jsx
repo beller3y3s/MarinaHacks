@@ -1,10 +1,8 @@
-import Activities from './activities'
 import './App.css'
+import Events from './Events'
 
 function App() {
-  return (
-    <Activities />
-  )
+  return <Events />
 }
 
 export default App
