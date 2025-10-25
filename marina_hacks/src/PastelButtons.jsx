@@ -1,10 +1,19 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './PastelButtons.css';
 
 const PastelButtons = () => {
+  const navigate = useNavigate();
+
   const handleButtonClick = (buttonName) => {
     console.log(`${buttonName} clicked!`);
-    // You can add your custom logic here
+    
+    if (buttonName === 'Activities') {
+      navigate('/activities');
+    } else if (buttonName === 'About') {
+      navigate('/about');
+    }
+    // You can add more navigation logic here for other buttons
   };
 
   return (
