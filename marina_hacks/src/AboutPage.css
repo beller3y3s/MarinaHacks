@@ -1,5 +1,5 @@
-/* Import Hachi Maru Pop font */
-@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+/* Import Short Stack font */
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
 
 /* Ensure entire page has the same gradient background as other pages */
 html, body {
@@ -30,13 +30,13 @@ html, body {
 }
 
 .back-button {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
   background: linear-gradient(135deg, #e9d5ff 0%, #d8b4fe 100%);
   color: #000000;
   border: none;
-  border-radius: 15px;
+  border-radius: 0 0 15px 0;
   padding: 12px 20px;
   font-size: 1rem;
   font-weight: 600;
@@ -44,7 +44,7 @@ html, body {
   transition: all 0.3s ease;
   font-family: 'Short Stack', cursive;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  z-index: 10;
+  z-index: 1000;
 }
 
 .back-button:hover {
@@ -54,7 +54,7 @@ html, body {
 }
 
 .about-title {
-  font-family: 'Hachi Maru Pop', cursive;
+  font-family: 'Short Stack', cursive;
   font-size: 3rem;
   font-weight: 700; /* Explicit bold weight */
   color: #333;
@@ -64,7 +64,7 @@ html, body {
 }
 
 .about-subtitle {
-  font-family: 'Hachi Maru Pop', cursive;
+  font-family: 'Short Stack', cursive;
   font-size: 1.5rem;
   font-weight: 700; /* Explicit bold weight */
   color: #333;
@@ -83,4 +83,5 @@ html, body {
   color: #333;
   text-align: center; /* Changed from left to center */
   white-space: pre-line; /* Preserves line breaks */
+  font-family: 'Short Stack', cursive;
 }
