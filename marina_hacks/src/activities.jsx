@@ -6,9 +6,8 @@ function Activities() {
   const [isPeopleOpen, setIsPeopleOpen] = useState(false);
   const [selectedActivity, setSelectedActivity] = useState('');
   const [isActivityOpen, setIsActivityOpen] = useState(false);
-  const [selectedBudget, setSelectedBudget] = useState('');
-  const [isBudgetOpen, setIsBudgetOpen] = useState(false);
   const [isGenerated, setIsGenerated] = useState(false);
+  const [reloadCount, setReloadCount] = useState(0);
 
   const peopleOptions = [
     'How many people?',
@@ -27,13 +26,6 @@ function Activities() {
     'Social'
   ];
 
-  const budgetOptions = [
-    'Budget',
-    'Free',
-    '<$50',
-    '<$100',
-    '$100+'
-  ];
 
   const handlePeopleSelect = (people) => {
     if (people === 'How many people?') {
@@ -55,18 +47,14 @@ function Activities() {
     setIsGenerated(false);
   };
 
-  const handleBudgetSelect = (budget) => {
-    if (budget === 'Budget') {
-      setSelectedBudget('');
-    } else {
-      setSelectedBudget(budget);
-    }
-    setIsBudgetOpen(false);
-    setIsGenerated(false);
-  };
 
   const handleGenerate = () => {
     setIsGenerated(true);
+    setReloadCount(0);
+  };
+
+  const handleReload = () => {
+    setReloadCount(prev => prev + 1);
   };
 
   // AI-generated activity suggestions based on selections
@@ -75,231 +63,378 @@ function Activities() {
       return [];
     }
 
-    // Filter activities based on budget selection
-    const filterByBudget = (activities) => {
-      if (!selectedBudget || selectedBudget === 'Budget') {
-        return activities;
-      }
-      
-      if (selectedBudget === 'Free') {
-        return activities.filter(activity => 
-          activity.toLowerCase().includes('free') || 
-          activity.includes('$0') ||
-          activity.includes('no cost')
-        );
-      }
-      
-      if (selectedBudget === '<$50') {
-        return activities.filter(activity => {
-          const costMatch = activity.match(/\$(\d+)-?\$?(\d+)?/);
-          if (costMatch) {
-            const maxCost = parseInt(costMatch[2] || costMatch[1]);
-            return maxCost < 50;
-          }
-          return false;
-        });
-      }
-      
-      if (selectedBudget === '<$100') {
-        return activities.filter(activity => {
-          const costMatch = activity.match(/\$(\d+)-?\$?(\d+)?/);
-          if (costMatch) {
-            const maxCost = parseInt(costMatch[2] || costMatch[1]);
-            return maxCost < 100;
-          }
-          return false;
-        });
-      }
-      
-      if (selectedBudget === '$100+') {
-        return activities.filter(activity => {
-          const costMatch = activity.match(/\$(\d+)-?\$?(\d+)?/);
-          if (costMatch) {
-            const maxCost = parseInt(costMatch[2] || costMatch[1]);
-            return maxCost >= 100;
-          }
-          return false;
-        });
-      }
-      
-      return activities;
-    };
-
     const suggestions = {
       'Creative': {
         '1 person': [
-          '1. Free Solo Art Session - Personal creative expression with basic materials. Average cost: $0 (use existing supplies)',
-          '2. Individual Crafting - DIY projects with recycled materials. Average cost: $0 (use household items)',
-          '3. Personal Photography - Creative photo exploration with phone camera. Average cost: $0 (use smartphone)',
-          '4. Solo Art Session - Personal creative expression and painting. Average cost: $30-60 per session',
-          '5. Individual Crafting - DIY projects and handmade creations. Average cost: $20-40 per session',
-          '6. Personal Photography - Creative photo exploration and techniques. Average cost: $15-30 per session'
+          'Drawing - Sketching and doodling with basic materials. Use existing supplies.',
+          'Painting - Watercolor or acrylic painting at home. Use household items.',
+          'Collage Making - Creating art from magazines and paper. Use recycled materials.',
+          'Digital Art - Creating artwork using free software and apps.',
+          'Photography - Taking creative photos with smartphone.',
+          'Creative Writing - Journaling and storytelling.',
+          'Basic Art Supplies - Sketching pencils and paper.',
+          'Watercolor Set - Beginner watercolor paints and brushes.',
+          'Acrylic Paint Kit - Basic acrylic paints and canvas.',
+          'Pottery Class - Working with clay at a local studio.',
+          'Art Supply Shopping - Buying quality art materials.',
+          'Digital Art Software - Professional art software subscription.',
+          'Art Workshop - Guided art instruction.',
+          'Pottery Studio - Premium clay and glazing.',
+          'Art Gallery Visit - Museum and gallery admission.',
+          'Professional Art Supplies - High-end materials and tools.',
+          'Private Art Lessons - One-on-one instruction.',
+          'Art Retreat - Weekend creative workshop.'
         ],
         '2 people': [
-          '1. Free Art Workshop - Painting and drawing with basic supplies. Average cost: $0 (use existing materials)',
-          '2. Free Crafting Session - DIY projects with recycled materials. Average cost: $0 (use household items)',
-          '3. Free Photography Walk - Creative photo exploration with phones. Average cost: $0 (use smartphones)',
-          '4. Art Workshop - Painting, drawing, and creative expression. Average cost: $40-80 per session',
-          '5. Crafting Session - DIY projects and handmade creations. Average cost: $30-60 per session',
-          '6. Photography Walk - Creative photo exploration and techniques. Average cost: $25-50 per session'
+          'Drawing Together - Collaborative sketching and art creation. Use existing materials.',
+          'Painting Session - Partner painting with shared supplies. Use household items.',
+          'Photography - Taking creative photos together. Use smartphones.',
+          'Digital Art - Creating artwork using free software together.',
+          'Crafting - DIY projects with household materials.',
+          'Basic Art Supplies - Sketching pencils and paper for two.',
+          'Watercolor Set - Beginner watercolor paints and brushes for two.',
+          'Acrylic Paint Kit - Basic acrylic paints and canvas for two.',
+          'Art Supply Shopping - Buying quality art materials together.',
+          'Pottery Class - Working with clay at a local studio.',
+          'Art Workshop - Guided art instruction for two.',
+          'Digital Art Software - Professional art software subscription.',
+          'Art Gallery Visit - Museum and gallery admission for two.',
+          'Pottery Studio - Premium clay and glazing for two.',
+          'Professional Art Supplies - High-end materials and tools.',
+          'Private Art Lessons - One-on-one instruction for two.',
+          'Art Retreat - Weekend creative workshop for two.'
         ],
         '3 people': [
-          '1. Free Creative Studio Session - Group art with basic supplies. Average cost: $0 (use existing materials)',
-          '2. Free Music Jam Session - Collaborative musical creativity. Average cost: $0 (use existing instruments)',
-          '3. Free Art Gallery Tour - Virtual gallery tours and discussion. Average cost: $0 (online resources)',
-          '4. Creative Studio Session - Group art and design projects. Average cost: $60-120 total',
-          '5. Pottery Workshop - Clay sculpting and ceramic creation. Average cost: $80-160 total',
-          '6. Music Jam Session - Collaborative musical creativity. Average cost: $50-100 total'
+          'Group Drawing - Collaborative sketching and art creation. Use existing materials.',
+          'Music Making - Playing instruments and singing together. Use existing instruments.',
+          'Art Creation - Group painting and crafting activities. Use household supplies.',
+          'Digital Art - Creating artwork using free software as a group.',
+          'Group Photography - Taking creative photos together. Use smartphones.',
+          'Art Supply Shopping - Buying quality art materials for group.',
+          'Pottery Class - Working with clay at a local studio.',
+          'Art Workshop - Guided art instruction for group.',
+          'Digital Art Software - Professional art software subscription.',
+          'Art Gallery Visit - Museum and gallery admission for group.',
+          'Pottery Studio - Premium clay and glazing for group.',
+          'Professional Art Supplies - High-end materials and tools.',
+          'Private Art Lessons - One-on-one instruction for group.',
+          'Art Retreat - Weekend creative workshop for group.'
         ],
         '4+ people': [
-          '1. Free Art Gallery Tour - Virtual gallery tours and discussion. Average cost: $0 (online resources)',
-          '2. Free Creative Writing Workshop - Storytelling and literary expression. Average cost: $0 (use existing materials)',
-          '3. Free Design Thinking Session - Creative problem-solving methods. Average cost: $0 (use existing supplies)',
-          '4. Art Gallery Tour - Creative inspiration and discussion. Average cost: $100-200 total',
-          '5. Creative Writing Workshop - Storytelling and literary expression. Average cost: $150-300 total',
-          '6. Design Thinking Session - Creative problem-solving methods. Average cost: $120-250 total'
+          'Group Art Creation - Large-scale collaborative artwork. Use existing materials.',
+          'Music Ensemble - Playing instruments together as a group. Use existing instruments.',
+          'Mural Painting - Creating large artwork on walls or canvas. Use household supplies.',
+          'Group Digital Art - Creating artwork using free software as a large group.',
+          'Group Photography - Taking creative photos as a large group. Use smartphones.',
+          'Art Supply Shopping - Buying quality art materials for large group.',
+          'Pottery Class - Working with clay at a local studio.',
+          'Art Workshop - Guided art instruction for large group.',
+          'Digital Art Software - Professional art software subscription.',
+          'Art Gallery Visit - Museum and gallery admission for large group.',
+          'Pottery Studio - Premium clay and glazing for large group.',
+          'Professional Art Supplies - High-end materials and tools.',
+          'Private Art Lessons - One-on-one instruction for large group.',
+          'Art Retreat - Weekend creative workshop for large group.'
         ]
       },
       'Active': {
         '1 person': [
-          '1. Free Solo Fitness - Personal workout using bodyweight exercises. Average cost: $0 (no equipment needed)',
-          '2. Free Individual Hiking - Outdoor exploration and physical activity. Average cost: $0 (use local trails)',
-          '3. Free Personal Sports - Individual athletic practice. Average cost: $0 (use public courts/fields)',
-          '4. Solo Fitness Training - Personal workout and exercise guidance. Average cost: $30-60 per session',
-          '5. Individual Hiking - Outdoor exploration and physical activity. Average cost: $15-30 per session',
-          '6. Personal Sports Coaching - Individual athletic skill development. Average cost: $25-50 per session'
+          'Running - Jogging and running for fitness. No equipment needed.',
+          'Cycling - Biking for exercise and exploration. Use existing bike.',
+          'Swimming - Water exercise and fitness. Use public pools.',
+          'Yoga - Flexibility and mindfulness exercise at home.',
+          'Hiking - Nature walks and trail exploration.',
+          'Bodyweight Training - Push-ups, squats, and calisthenics.',
+          'Basic Workout Equipment - Resistance bands and weights.',
+          'Tennis Court Rental - Playing tennis at local courts.',
+          'Swimming Pool Pass - Access to community pools.',
+          'Yoga Class - Guided yoga instruction.',
+          'Gym Membership - Monthly fitness center access.',
+          'Personal Training - One-on-one fitness coaching.',
+          'Rock Climbing Gym - Indoor climbing sessions.',
+          'Martial Arts Class - Self-defense and fitness training.',
+          'Pilates Studio - Core strength and flexibility training.',
+          'CrossFit Membership - High-intensity group training.'
         ],
         '2 people': [
-          '1. Free Fitness Training - Partner workout using bodyweight exercises. Average cost: $0 (no equipment needed)',
-          '2. Free Hiking Adventure - Outdoor exploration and physical activity. Average cost: $0 (use local trails)',
-          '3. Free Sports Practice - Athletic skill development. Average cost: $0 (use public courts/fields)',
-          '4. Fitness Training - Personal workout and exercise guidance. Average cost: $50-100 per session',
-          '5. Hiking Adventure - Outdoor exploration and physical activity. Average cost: $30-60 per session',
-          '6. Sports Coaching - Individual athletic skill development. Average cost: $40-80 per session'
+          'Partner Running - Jogging together for motivation. No equipment needed.',
+          'Cycling Together - Biking as a pair for exercise. Use existing bikes.',
+          'Tennis Playing - Playing tennis for fitness. Use public courts.',
+          'Partner Yoga - Practicing yoga together at home.',
+          'Hiking Together - Nature walks and trail exploration.',
+          'Partner Workouts - Bodyweight exercises together.',
+          'Gym Membership - Monthly fitness center access for two.',
+          'Tennis Court Rental - Playing tennis at local courts.',
+          'Swimming Pool Pass - Access to community pools for two.',
+          'Yoga Class - Guided yoga instruction for two.',
+          'Personal Training - One-on-one fitness coaching for two.',
+          'Rock Climbing Gym - Indoor climbing sessions for two.',
+          'Martial Arts Class - Self-defense and fitness training for two.',
+          'Pilates Studio - Core strength and flexibility training for two.',
+          'CrossFit Membership - High-intensity group training for two.'
         ],
         '3 people': [
-          '1. Free Group Fitness - Team workout using bodyweight exercises. Average cost: $0 (no equipment needed)',
-          '2. Free Team Sports - Basketball, soccer, or volleyball games. Average cost: $0 (use public courts/fields)',
-          '3. Free Outdoor Adventure - Group hiking and exploration. Average cost: $0 (use local trails)',
-          '4. Group Fitness Class - Team workout and exercise session. Average cost: $60-120 total',
-          '5. Adventure Sports - Rock climbing, kayaking, or outdoor activities. Average cost: $80-160 total',
-          '6. Team Sports - Basketball, soccer, or volleyball games. Average cost: $50-100 total'
+          'Group Running - Jogging together as a team. No equipment needed.',
+          'Basketball Playing - Playing basketball for fitness. Use public courts.',
+          'Group Cycling - Biking together for exercise. Use existing bikes.',
+          'Group Yoga - Practicing yoga together at home.',
+          'Group Hiking - Nature walks and trail exploration.',
+          'Group Workouts - Bodyweight exercises together.',
+          'Gym Membership - Monthly fitness center access for group.',
+          'Tennis Court Rental - Playing tennis at local courts for group.',
+          'Swimming Pool Pass - Access to community pools for group.',
+          'Yoga Class - Guided yoga instruction for group.',
+          'Personal Training - One-on-one fitness coaching for group.',
+          'Rock Climbing Gym - Indoor climbing sessions for group.',
+          'Martial Arts Class - Self-defense and fitness training for group.',
+          'Pilates Studio - Core strength and flexibility training for group.',
+          'CrossFit Membership - High-intensity group training for group.'
         ],
         '4+ people': [
-          '1. Free Fitness Bootcamp - Intensive group training using bodyweight. Average cost: $0 (no equipment needed)',
-          '2. Free Outdoor Adventure - Group hiking, camping, or exploration. Average cost: $0 (use local trails)',
-          '3. Free Sports Tournament - Competitive athletic competition. Average cost: $0 (use public courts/fields)',
-          '4. Fitness Bootcamp - Intensive group training program. Average cost: $120-250 total',
-          '5. Outdoor Adventure - Group hiking, camping, or exploration. Average cost: $150-300 total',
-          '6. Sports Tournament - Competitive athletic competition. Average cost: $100-200 total'
+          'Group Running - Large group jogging and running. No equipment needed.',
+          'Group Cycling - Biking together as a large group. Use existing bikes.',
+          'Group Swimming - Water exercise and fitness together. Use public pools.',
+          'Group Yoga - Practicing yoga together as a large group.',
+          'Group Hiking - Nature walks and trail exploration as a large group.',
+          'Group Workouts - Bodyweight exercises as a large group.',
+          'Gym Membership - Monthly fitness center access for large group.',
+          'Tennis Court Rental - Playing tennis at local courts for large group.',
+          'Swimming Pool Pass - Access to community pools for large group.',
+          'Yoga Class - Guided yoga instruction for large group.',
+          'Personal Training - One-on-one fitness coaching for large group.',
+          'Rock Climbing Gym - Indoor climbing sessions for large group.',
+          'Martial Arts Class - Self-defense and fitness training for large group.',
+          'Pilates Studio - Core strength and flexibility training for large group.',
+          'CrossFit Membership - High-intensity group training for large group.'
         ]
       },
       'Educational': {
         '1 person': [
-          '1. Free Personal Tutoring - Self-study using online resources. Average cost: $0 (use free online courses)',
-          '2. Free Individual Language Learning - Foreign language practice using apps. Average cost: $0 (use free language apps)',
-          '3. Free Solo Skill Workshop - Professional development using online resources. Average cost: $0 (use free online tutorials)',
-          '4. Personal Tutoring - One-on-one learning and skill development. Average cost: $25-50 per session',
-          '5. Individual Language Learning - Foreign language practice and study. Average cost: $20-40 per session',
-          '6. Solo Skill Workshop - Professional development and training. Average cost: $30-60 per session'
+          'Reading - Self-directed learning through books and articles. Use library resources.',
+          'Language Practice - Speaking and listening practice using apps. Use free language apps.',
+          'Online Learning - Taking courses and tutorials online. Use free online resources.',
+          'Podcast Learning - Educational podcasts and audio content.',
+          'Documentaries - Educational films and documentaries online.',
+          'Skill Practice - Learning new skills through free tutorials.',
+          'Book Purchase - Buying educational books and materials.15-30).',
+          'Online Course - Structured learning through paid platforms.20-50).',
+          'Language App Subscription - Premium language learning apps.15-25).',
+          'Educational Workshop - Local learning workshops.25-40).',
+          'Private Tutoring - One-on-one learning and skill development.40-60).',
+          'Language Classes - Structured foreign language learning.50-80).',
+          'Professional Certification - Industry-specific training.60-100).',
+          'University Course - Continuing education classes.80-120).',
+          'Educational Retreat - Intensive learning weekend.150-300).'
         ],
         '2 people': [
-          '1. Free Tutoring Session - Self-study using online resources. Average cost: $0 (use free online courses)',
-          '2. Free Language Learning - Foreign language practice using apps. Average cost: $0 (use free language apps)',
-          '3. Free Skill Workshop - Professional development using online resources. Average cost: $0 (use free online tutorials)',
-          '4. Tutoring Session - One-on-one learning and skill development. Average cost: $40-80 per session',
-          '5. Language Learning - Foreign language practice and study. Average cost: $30-60 per session',
-          '6. Skill Workshop - Professional development and training. Average cost: $50-100 per session'
+          'Study Together - Collaborative learning and reading. Use library resources.',
+          'Language Practice - Speaking and listening practice together. Use free language apps.',
+          'Online Learning - Taking courses and tutorials together. Use free online resources.',
+          'Study Group - Collaborative learning and discussion.',
+          'Language Exchange - Practicing foreign languages together.',
+          'Skill Sharing - Learning from each other.',
+          'Book Purchase - Buying educational books and materials for two.25-50).',
+          'Online Course - Structured learning through paid platforms for two.35-80).',
+          'Language App Subscription - Premium language learning apps for two.25-40).',
+          'Educational Workshop - Local learning workshops for two.40-70).',
+          'Partner Tutoring - Learning and skill development together.60-100).',
+          'Language Classes - Structured foreign language learning for two.80-120).',
+          'Professional Certification - Industry-specific training for two.100-150).',
+          'University Course - Continuing education classes for two.120-200).',
+          'Educational Retreat - Intensive learning weekend for two.250-500).'
         ],
         '3 people': [
-          '1. Free Study Group - Collaborative learning using online resources. Average cost: $0 (use free online materials)',
-          '2. Free Workshop Series - Multi-session educational program. Average cost: $0 (use free online courses)',
-          '3. Free Book Club - Literary discussion and learning. Average cost: $0 (use library books)',
-          '4. Study Group - Collaborative learning and knowledge sharing. Average cost: $60-120 total',
-          '5. Workshop Series - Multi-session educational program. Average cost: $80-160 total',
-          '6. Book Club - Literary discussion and learning. Average cost: $50-100 total'
+          'Group Study - Collaborative learning and reading together. Use library resources.',
+          'Language Practice - Speaking and listening practice as a group. Use free language apps.',
+          'Online Learning - Taking courses and tutorials together. Use free online resources.',
+          'Group Discussion - Collaborative learning and discussion.',
+          'Language Exchange - Practicing foreign languages as a group.',
+          'Skill Sharing - Learning from each other as a group.',
+          'Book Purchase - Buying educational books and materials for group.35-70).',
+          'Online Course - Structured learning through paid platforms for group.50-100).',
+          'Language App Subscription - Premium language learning apps for group.35-60).',
+          'Educational Workshop - Local learning workshops for group.60-100).',
+          'Group Tutoring - Learning and skill development as a team.80-120).',
+          'Language Classes - Structured foreign language learning as a group.100-150).',
+          'Professional Certification - Industry-specific training for group.150-250).',
+          'University Course - Continuing education classes for group.150-300).',
+          'Educational Retreat - Intensive learning weekend for group.300-600).'
         ],
         '4+ people': [
-          '1. Free Educational Seminar - Group learning using online resources. Average cost: $0 (use free online materials)',
-          '2. Free Training Program - Professional skill development. Average cost: $0 (use free online courses)',
-          '3. Free Conference Workshop - Intensive learning session. Average cost: $0 (use free online tutorials)',
-          '4. Educational Seminar - Group learning and discussion. Average cost: $120-250 total',
-          '5. Training Program - Professional skill development. Average cost: $150-300 total',
-          '6. Conference Workshop - Intensive learning session. Average cost: $100-200 total'
+          'Group Study - Large group collaborative learning and reading. Use library resources.',
+          'Language Practice - Speaking and listening practice as a large group. Use free language apps.',
+          'Online Learning - Taking courses and tutorials as a large group. Use free online resources.',
+          'Group Discussion - Collaborative learning and discussion as a large group.',
+          'Language Exchange - Practicing foreign languages as a large group.',
+          'Skill Sharing - Learning from each other as a large group.',
+          'Book Purchase - Buying educational books and materials for large group.50-100).',
+          'Online Course - Structured learning through paid platforms for large group.70-120).',
+          'Language App Subscription - Premium language learning apps for large group.50-80).',
+          'Educational Workshop - Local learning workshops for large group.80-120).',
+          'Group Tutoring - Learning and skill development as a large team.100-150).',
+          'Language Classes - Structured foreign language learning as a large group.120-200).',
+          'Professional Certification - Industry-specific training for large group.200-350).',
+          'University Course - Continuing education classes for large group.200-400).',
+          'Educational Retreat - Intensive learning weekend for large group.400-800).'
         ]
       },
       'Relaxation': {
         '1 person': [
-          '1. Free Personal Spa Session - Home relaxation and wellness treatment. Average cost: $0 (use household items)',
-          '2. Free Individual Meditation - Mindfulness and stress relief practice. Average cost: $0 (use free meditation apps)',
-          '3. Free Solo Yoga Session - Physical and mental relaxation exercise. Average cost: $0 (use free online videos)',
-          '4. Personal Spa Session - Massage, relaxation, and wellness treatment. Average cost: $60-120 per session',
-          '5. Individual Meditation - Mindfulness and stress relief practice. Average cost: $20-40 per session',
-          '6. Solo Yoga Session - Physical and mental relaxation exercise. Average cost: $25-50 per session'
+          'Meditation - Mindfulness and stress relief practice. Use free meditation apps.',
+          'Yoga - Physical and mental relaxation exercise. Use free online videos.',
+          'Reading - Relaxing with books and articles. Use library resources.',
+          'Nature Walk - Peaceful outdoor relaxation and mindfulness.',
+          'Music Listening - Calming music and ambient sounds.',
+          'Journaling - Reflective writing and self-care.',
+          'Aromatherapy - Essential oils and relaxation scents.15-25).',
+          'Meditation App - Premium mindfulness and meditation apps.10-20).',
+          'Yoga Class - Guided yoga instruction.15-30).',
+          'Massage Therapy - Professional relaxation treatment.40-60).',
+          'Spa Day - Full relaxation and wellness treatment.60-100).',
+          'Retreat Weekend - Intensive relaxation and mindfulness.100-200).',
+          'Luxury Spa - Premium wellness and relaxation experience.150-300).'
         ],
         '2 people': [
-          '1. Free Spa Session - Home relaxation and wellness treatment. Average cost: $0 (use household items)',
-          '2. Free Meditation Class - Mindfulness and stress relief practice. Average cost: $0 (use free meditation apps)',
-          '3. Free Yoga Session - Physical and mental relaxation exercise. Average cost: $0 (use free online videos)',
-          '4. Spa Session - Massage, relaxation, and wellness treatment. Average cost: $80-160 per session',
-          '5. Meditation Class - Mindfulness and stress relief practice. Average cost: $30-60 per session',
-          '6. Yoga Session - Physical and mental relaxation exercise. Average cost: $40-80 per session'
+          'Meditation Together - Mindfulness and stress relief practice as a pair. Use free meditation apps.',
+          'Yoga Together - Physical and mental relaxation exercise as a pair. Use free online videos.',
+          'Reading Together - Relaxing with books and articles as a pair. Use library resources.',
+          'Nature Walk - Peaceful outdoor relaxation and mindfulness together.',
+          'Music Listening - Calming music and ambient sounds together.',
+          'Journaling - Reflective writing and self-care together.',
+          'Aromatherapy - Essential oils and relaxation scents for two.25-40).',
+          'Meditation App - Premium mindfulness and meditation apps for two.15-30).',
+          'Yoga Class - Guided yoga instruction for two.25-50).',
+          'Massage Therapy - Professional relaxation treatment for two.60-100).',
+          'Spa Day - Full relaxation and wellness treatment for two.100-150).',
+          'Retreat Weekend - Intensive relaxation and mindfulness for two.150-300).',
+          'Luxury Spa - Premium wellness and relaxation experience for two.250-500).'
         ],
         '3 people': [
-          '1. Free Group Meditation - Collaborative mindfulness and relaxation. Average cost: $0 (use free meditation apps)',
-          '2. Free Wellness Retreat - Day-long relaxation and rejuvenation. Average cost: $0 (use home and local resources)',
-          '3. Free Spa Day - Group wellness and pampering experience. Average cost: $0 (use household items)',
-          '4. Group Meditation - Collaborative mindfulness and relaxation. Average cost: $60-120 total',
-          '5. Wellness Retreat - Day-long relaxation and rejuvenation. Average cost: $80-160 total',
-          '6. Spa Day - Group wellness and pampering experience. Average cost: $120-250 total'
+          'Group Meditation - Mindfulness and stress relief practice as a group. Use free meditation apps.',
+          'Group Yoga - Physical and mental relaxation exercise as a group. Use free online videos.',
+          'Group Reading - Relaxing with books and articles as a group. Use library resources.',
+          'Nature Walk - Peaceful outdoor relaxation and mindfulness as a group.',
+          'Music Listening - Calming music and ambient sounds as a group.',
+          'Group Journaling - Reflective writing and self-care as a group.',
+          'Aromatherapy - Essential oils and relaxation scents for group.35-60).',
+          'Meditation App - Premium mindfulness and meditation apps for group.20-40).',
+          'Yoga Class - Guided yoga instruction for group.40-80).',
+          'Massage Therapy - Professional relaxation treatment for group.80-120).',
+          'Spa Day - Full relaxation and wellness treatment for group.120-200).',
+          'Retreat Weekend - Intensive relaxation and mindfulness for group.200-400).',
+          'Luxury Spa - Premium wellness and relaxation experience for group.350-700).'
         ],
         '4+ people': [
-          '1. Free Wellness Workshop - Group relaxation and stress management. Average cost: $0 (use free online resources)',
-          '2. Free Yoga Retreat - Intensive relaxation and mindfulness program. Average cost: $0 (use free online videos)',
-          '3. Free Spa Package - Group wellness and relaxation treatment. Average cost: $0 (use household items)',
-          '4. Wellness Workshop - Group relaxation and stress management. Average cost: $120-250 total',
-          '5. Yoga Retreat - Intensive relaxation and mindfulness program. Average cost: $150-300 total',
-          '6. Spa Package - Group wellness and relaxation treatment. Average cost: $200-400 total'
+          'Group Meditation - Mindfulness and stress relief practice as a large group. Use free meditation apps.',
+          'Group Yoga - Physical and mental relaxation exercise as a large group. Use free online videos.',
+          'Group Reading - Relaxing with books and articles as a large group. Use library resources.',
+          'Nature Walk - Peaceful outdoor relaxation and mindfulness as a large group.',
+          'Music Listening - Calming music and ambient sounds as a large group.',
+          'Group Journaling - Reflective writing and self-care as a large group.',
+          'Aromatherapy - Essential oils and relaxation scents for large group.50-80).',
+          'Meditation App - Premium mindfulness and meditation apps for large group.30-50).',
+          'Yoga Class - Guided yoga instruction for large group.60-100).',
+          'Massage Therapy - Professional relaxation treatment for large group.100-150).',
+          'Spa Day - Full relaxation and wellness treatment for large group.150-250).',
+          'Retreat Weekend - Intensive relaxation and mindfulness for large group.250-500).',
+          'Luxury Spa - Premium wellness and relaxation experience for large group.400-800).'
         ]
       },
       'Social': {
         '1 person': [
-          '1. Free Solo Coffee Meetup - Personal social connection at home. Average cost: $0 (use home coffee)',
-          '2. Free Individual Social Activity - Personal social engagement. Average cost: $0 (use free online platforms)',
-          '3. Free Personal Entertainment - Solo social and entertainment activities. Average cost: $0 (use free online resources)',
-          '4. Solo Coffee Meetup - Personal social connection and conversation. Average cost: $10-20 per meeting',
-          '5. Individual Social Activity - Personal social engagement. Average cost: $15-30 per session',
-          '6. Personal Entertainment - Solo social and entertainment activities. Average cost: $10-25 per session'
+          'Online Chatting - Connecting with friends and family online. Use free online platforms.',
+          'Reading - Enjoying books and articles for entertainment. Use library resources.',
+          'Music Listening - Enjoying music and podcasts. Use free online resources.',
+          'Social Media - Connecting and sharing with online communities.',
+          'Video Calls - Face-to-face conversations with friends and family.',
+          'Community Events - Attending local free social gatherings.',
+          'Coffee Shop Visit - Social connection and conversation at cafes.5-15).',
+          'Movie Theater - Enjoying films and entertainment.10-20).',
+          'Board Game Cafe - Playing games and socializing.15-25).',
+          'Restaurant Dining - Social dining and relationship building.20-40).',
+          'Concert or Show - Live entertainment and social experience.30-60).',
+          'Social Club Membership - Organized social activities and events.50-100).',
+          'VIP Event - Premium social experiences and exclusive gatherings.100-200).'
         ],
         '2 people': [
-          '1. Free Coffee Meetup - Casual conversation at home. Average cost: $0 (use home coffee)',
-          '2. Free Dinner Date - Social dining at home. Average cost: $0 (cook at home)',
-          '3. Free Game Night - Fun social interaction and entertainment. Average cost: $0 (use free games)',
-          '4. Coffee Meetup - Casual conversation and social connection. Average cost: $20-40 per meeting',
-          '5. Dinner Date - Social dining and relationship building. Average cost: $40-80 per meeting',
-          '6. Game Night - Fun social interaction and entertainment. Average cost: $15-30 per session'
+          'Coffee Chatting - Casual conversation at home. Use home coffee.',
+          'Cooking Together - Preparing meals and dining at home. Cook at home.',
+          'Gaming - Playing video games and board games together. Use free games.',
+          'Video Calls - Face-to-face conversations with friends and family.',
+          'Community Events - Attending local free social gatherings together.',
+          'Social Media - Connecting and sharing with online communities together.',
+          'Coffee Shop Visit - Casual conversation and social connection at cafes.10-25).',
+          'Movie Theater - Enjoying films and entertainment together.15-35).',
+          'Board Game Cafe - Playing games and socializing together.25-45).',
+          'Restaurant Dining - Social dining and relationship building.30-60).',
+          'Concert or Show - Live entertainment and social experience for two.50-100).',
+          'Social Club Membership - Organized social activities and events for two.80-150).',
+          'VIP Event - Premium social experiences and exclusive gatherings for two.150-350).'
         ],
         '3 people': [
-          '1. Free Group Dinner - Social dining at home. Average cost: $0 (cook at home)',
-          '2. Free Game Night - Group entertainment and social interaction. Average cost: $0 (use free games)',
-          '3. Free Social Mixer - Casual networking and socializing. Average cost: $0 (use free online platforms)',
-          '4. Group Dinner - Social dining and conversation. Average cost: $60-120 total',
-          '5. Game Night - Group entertainment and social interaction. Average cost: $40-80 total',
-          '6. Social Mixer - Casual networking and socializing. Average cost: $80-160 total'
+          'Group Cooking - Preparing meals and dining together at home. Cook at home.',
+          'Group Gaming - Playing video games and board games together. Use free games.',
+          'Group Chatting - Casual conversation and socializing together. Use free online platforms.',
+          'Video Calls - Face-to-face conversations with friends and family as a group.',
+          'Community Events - Attending local free social gatherings as a group.',
+          'Social Media - Connecting and sharing with online communities as a group.',
+          'Coffee Shop Visit - Casual conversation and social connection at cafes for group.15-35).',
+          'Movie Theater - Enjoying films and entertainment as a group.20-50).',
+          'Board Game Cafe - Playing games and socializing as a group.35-65).',
+          'Restaurant Dining - Social dining and conversation at restaurants.50-90).',
+          'Concert or Show - Live entertainment and social experience as a group.80-150).',
+          'Social Club Membership - Organized social activities and events for group.120-200).',
+          'VIP Event - Premium social experiences and exclusive gatherings for group.200-450).'
         ],
         '4+ people': [
-          '1. Free Social Event - Group entertainment and interaction. Average cost: $0 (use free online platforms)',
-          '2. Free Party Planning - Social celebration and gathering. Average cost: $0 (use home and free resources)',
-          '3. Free Community Event - Local social engagement and connection. Average cost: $0 (use free community resources)',
-          '4. Social Event - Group entertainment and interaction. Average cost: $120-250 total',
-          '5. Party Planning - Social celebration and gathering. Average cost: $150-300 total',
-          '6. Community Event - Local social engagement and connection. Average cost: $100-200 total'
+          'Group Cooking - Large group meal preparation and dining. Cook at home.',
+          'Group Gaming - Playing video games and board games as a large group. Use free games.',
+          'Group Chatting - Casual conversation and socializing as a large group. Use free online platforms.',
+          'Video Calls - Face-to-face conversations with friends and family as a large group.',
+          'Community Events - Attending local free social gatherings as a large group.',
+          'Social Media - Connecting and sharing with online communities as a large group.',
+          'Coffee Shop Visit - Casual conversation and social connection at cafes for large group.20-50).',
+          'Movie Theater - Enjoying films and entertainment as a large group.30-70).',
+          'Board Game Cafe - Playing games and socializing as a large group.50-90).',
+          'Restaurant Dining - Social dining and conversation at restaurants as a large group.80-120).',
+          'Concert or Show - Live entertainment and social experience as a large group.120-200).',
+          'Social Club Membership - Organized social activities and events for large group.150-300).',
+          'VIP Event - Premium social experiences and exclusive gatherings for large group.300-600).'
         ]
       }
     };
 
     const baseSuggestions = suggestions[selectedActivity]?.[selectedPeople] || [];
-    return filterByBudget(baseSuggestions);
+    
+    // AI-like suggestion generation with variety based on reload count
+    const shuffledSuggestions = [...baseSuggestions];
+    
+    // Shuffle the array based on reloadCount for more variety
+    for (let i = shuffledSuggestions.length - 1; i > 0; i--) {
+      const j = (reloadCount + i * 3) % shuffledSuggestions.length;
+      [shuffledSuggestions[i], shuffledSuggestions[j]] = [shuffledSuggestions[j], shuffledSuggestions[i]];
+    }
+    
+    // Start from different positions based on reloadCount
+    const startIndex = (reloadCount * 2) % shuffledSuggestions.length;
+    const rotatedSuggestions = [
+      ...shuffledSuggestions.slice(startIndex),
+      ...shuffledSuggestions.slice(0, startIndex)
+    ];
+    
+    // Remove duplicates and return unique suggestions
+    const uniqueSuggestions = [];
+    const seen = new Set();
+    
+    for (const suggestion of rotatedSuggestions) {
+      const key = suggestion.split(' - ')[0]; // Use the activity name as key
+      if (!seen.has(key)) {
+        seen.add(key);
+        uniqueSuggestions.push(suggestion);
+      }
+    }
+    
+    return uniqueSuggestions;
   };
 
   return (
@@ -360,33 +495,6 @@ function Activities() {
           </div>
         </div>
 
-        {/* Budget Dropdown */}
-        <div className="dropdown-wrapper">
-          <div className="dropdown">
-            <button 
-              className="dropdown-button"
-              onClick={() => setIsBudgetOpen(!isBudgetOpen)}
-              onBlur={() => setTimeout(() => setIsBudgetOpen(false), 200)}
-            >
-              <span className="dropdown-text">{selectedBudget || 'Budget'}</span>
-              <span className={`dropdown-arrow ${isBudgetOpen ? 'open' : ''}`}>▼</span>
-            </button>
-            
-            {isBudgetOpen && (
-              <div className="dropdown-menu">
-                {budgetOptions.map((option, index) => (
-                  <div
-                    key={index}
-                    className="dropdown-item"
-                    onClick={() => handleBudgetSelect(option)}
-                  >
-                    {option}
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
       </div>
       
       {/* Generate Button */}
@@ -394,7 +502,7 @@ function Activities() {
         <button 
           className="generate-button"
           onClick={handleGenerate}
-          disabled={!selectedPeople || !selectedActivity || !selectedBudget}
+          disabled={!selectedPeople || !selectedActivity}
         >
           Generate
         </button>
@@ -403,20 +511,29 @@ function Activities() {
       {/* Fixed Size Output Box */}
       <div className="fixed-output-box">
         <div className="output-content">
-          {isGenerated && selectedPeople && selectedActivity && selectedBudget ? (
+          {isGenerated && selectedPeople && selectedActivity ? (
             <div className="suggestions-content">
-              <h3 className="suggestions-header">Activity Suggestions</h3>
+              <div className="suggestions-header-container">
+                <h3 className="suggestions-header">Activity Suggestions</h3>
+                <button 
+                  className="reload-button"
+                  onClick={handleReload}
+                  title="Generate new activity ideas"
+                >
+                  ↻
+                </button>
+              </div>
               <div className="suggestions-text">
                 {generateActivitySuggestions().slice(0, 3).map((suggestion, index) => (
                   <div key={index} className="compact-suggestion">
-                    {suggestion}
+                    • {suggestion}
                   </div>
                 ))}
               </div>
             </div>
           ) : (
             <div className="placeholder-content">
-              <p>Select all options and click "Generate" to see personalized activity suggestions with descriptions and cost estimates.</p>
+              <p>Select your group size and activity type, then click "Generate" to see personalized activity suggestions.</p>
             </div>
           )}
         </div>
