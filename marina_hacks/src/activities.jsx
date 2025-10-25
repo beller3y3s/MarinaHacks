@@ -306,10 +306,10 @@ function Activities() {
 
   return (
     <div className="activities-container">
+      <button className="back-button" onClick={() => navigate('/')}>
+        ← Back to Home
+      </button>
       <div className="activities-header">
-        <button className="back-button" onClick={() => navigate('/')}>
-          ← Back to Home
-        </button>
         <h1 className="activities-title">Activities</h1>
       </div>
       <div className="dropdowns-wrapper">

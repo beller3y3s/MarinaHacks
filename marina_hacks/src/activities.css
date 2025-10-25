@@ -31,8 +31,10 @@ body, html {
 }
 
 .back-button {
-  position: absolute;
-  left: -50px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
   background: linear-gradient(135deg, #e9d5ff 0%, #d8b4fe 100%);
   color: #6b21a8;
   border: none;
