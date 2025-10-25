@@ -1,0 +1,232 @@
+/* Pastel Buttons CSS - Cute and Soft Styling */
+
+/* Full page background */
+body {
+  background: linear-gradient(135deg, #f8f4ff 0%, #fff0f5 50%, #f0f8ff 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.pastel-buttons-container {
+  padding: 3rem 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pastel-buttons-container h2 {
+  text-align: center;
+  color: #6b5b95;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Hachi Maru Pop', cursive;
+}
+
+.pastel-buttons-container h2::before,
+.pastel-buttons-container h2::after {
+  font-size: 1.5rem;
+}
+
+.button-group {
+  margin-bottom: 0;
+}
+
+.button-group h3 {
+  color: #8b7ba7;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+
+/* Base Pastel Button Styles */
+.pastel-btn {
+  border: none;
+  border-radius: 15px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-family: 'Mali', cursive;
+  width: 200px;
+  min-width: 200px;
+}
+
+.pastel-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.pastel-btn:active {
+  transform: translateY(-1px);
+  transition: all 0.1s ease;
+}
+
+/* Individual Pastel Colors */
+.pastel-pink {
+  background: linear-gradient(135deg, #ffd1e8 0%, #ffb3d9 100%);
+  color: #8b2252;
+}
+
+.pastel-pink:hover {
+  background: linear-gradient(135deg, #ffb3d9 0%, #ff9ec7 100%);
+}
+
+.pastel-lavender {
+  background: linear-gradient(135deg, #e9d5ff 0%, #d8b4fe 100%);
+  color: #6b21a8;
+}
+
+.pastel-lavender:hover {
+  background: linear-gradient(135deg, #d8b4fe 0%, #c084fc 100%);
+}
+
+.pastel-mint {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  color: #1e40af;
+}
+
+.pastel-mint:hover {
+  background: linear-gradient(135deg, #bfdbfe 0%, #93c5fd 100%);
+}
+
+.pastel-peach {
+  background: linear-gradient(135deg, #fed7aa 0%, #fdba74 100%);
+  color: #9a3412;
+}
+
+.pastel-peach:hover {
+  background: linear-gradient(135deg, #fdba74 0%, #fb923c 100%);
+}
+
+.pastel-sky {
+  background: linear-gradient(135deg, #bfdbfe 0%, #93c5fd 100%);
+  color: #1e40af;
+}
+
+.pastel-sky:hover {
+  background: linear-gradient(135deg, #93c5fd 0%, #60a5fa 100%);
+}
+
+.pastel-lilac {
+  background: linear-gradient(135deg, #e9d5ff 0%, #ddd6fe 100%);
+  color: #7c3aed;
+}
+
+.pastel-lilac:hover {
+  background: linear-gradient(135deg, #ddd6fe 0%, #c4b5fd 100%);
+}
+
+/* Special Effect Buttons */
+.pastel-gradient {
+  background: linear-gradient(135deg, #ffb3d9 0%, #d8b4fe 25%, #a7f3d0 50%, #bfdbfe 75%, #fed7aa 100%);
+  color: #4c1d95;
+  animation: rainbow-shift 3s ease-in-out infinite;
+}
+
+@keyframes rainbow-shift {
+  0%, 100% { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(20deg); }
+}
+
+.pastel-glow {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  color: #92400e;
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+  animation: glow-pulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow-pulse {
+  from { box-shadow: 0 0 20px rgba(251, 191, 36, 0.5); }
+  to { box-shadow: 0 0 30px rgba(251, 191, 36, 0.8); }
+}
+
+.pastel-soft {
+  background: linear-gradient(135deg, #f3e8ff 0%, #e0e7ff 100%);
+  color: #5b21b6;
+  border: 2px solid rgba(139, 92, 246, 0.2);
+}
+
+.pastel-soft:hover {
+  background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+/* Size Variations */
+.pastel-small {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  border-radius: 12px;
+}
+
+.pastel-medium {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 15px;
+}
+
+.pastel-large {
+  padding: 16px 32px;
+  font-size: 1.125rem;
+  border-radius: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pastel-btn {
+    width: 250px;
+  }
+  
+  .pastel-buttons-container h2 {
+    font-size: 1.8rem;
+  }
+  
+  .pastel-buttons-container {
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+  }
+}
+
+/* Add some cute floating elements */
+.pastel-buttons-container::before {
+  content: '✨';
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 1.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.pastel-buttons-container::after {
+  content: '✨';
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-size: 1.5rem;
+  animation: float 3s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
