@@ -1,11 +1,11 @@
 /* Import Hachi Maru Pop font */
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
 
-/* Ensure entire page is pink and override conflicting styles */
+/* Ensure entire page has the same gradient background as other pages */
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #ffd1dc; /* Lighter pink background */
+  background: linear-gradient(135deg, #f8f4ff 0%, #fff0f5 50%, #f0f8ff 100%);
   min-height: 100vh;
   display: block; /* Override flex from index.css */
 }
@@ -19,13 +19,38 @@ html, body {
 
 .about-page {
   min-height: 100vh;
-  background-color: #ffd1dc; /* Lighter pink background */
+  background: linear-gradient(135deg, #f8f4ff 0%, #fff0f5 50%, #f0f8ff 100%);
   display: flex;
   flex-direction: column; /* stacks elements vertically */
   align-items: center; /* centers horizontally */
   justify-content: center; /* centers vertically */
   margin: 0;
   padding: 0;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(135deg, #e9d5ff 0%, #d8b4fe 100%);
+  color: #000000;
+  border: none;
+  border-radius: 15px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Short Stack', cursive;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.back-button:hover {
+  background: linear-gradient(135deg, #d8b4fe 0%, #c084fc 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .about-title {

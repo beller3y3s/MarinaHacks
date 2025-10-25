@@ -1,9 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./AboutPage.css";
 
 function AboutPage() {
+  const navigate = useNavigate();
+
   return (
     <div className="about-page">
+      <button className="back-button" onClick={() => navigate('/')}>
+        ← Back to Home
+      </button>
       <h1 className="about-title">About</h1>
       <h2 className="about-subtitle">Origin / Introduction</h2>
       <p className="about-text">
