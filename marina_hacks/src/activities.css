@@ -20,6 +20,38 @@ body, html {
   padding-top: 60px;
 }
 
+.activities-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  left: 0;
+  background: linear-gradient(135deg, #e9d5ff 0%, #d8b4fe 100%);
+  color: #6b21a8;
+  border: none;
+  border-radius: 15px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Short Stack', cursive;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+  background: linear-gradient(135deg, #d8b4fe 0%, #c084fc 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
 .activities-title {
   font-size: 2.5rem;
   font-weight: 700;
@@ -75,6 +107,7 @@ body, html {
   text-overflow: ellipsis;
   min-width: 400px;
   max-width: 400px;
+  color: #000000;
 }
 
 .dropdown-button:hover {
@@ -141,6 +174,7 @@ body, html {
   box-sizing: border-box;
   width: 100%;
   margin: 0;
+  color: #000000;
 }
 
 .dropdown-item:last-child {
