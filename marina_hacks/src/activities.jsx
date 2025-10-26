@@ -68,12 +68,14 @@ function Activities() {
 
 
   const handleGenerate = () => {
-    setIsGenerated(true);
-    setReloadCount(0);
-  };
-
-  const handleReload = () => {
-    setReloadCount(prev => prev + 1);
+    if (isGenerated) {
+      // If already generated, increment reload count for new suggestions
+      setReloadCount(prev => prev + 1);
+    } else {
+      // First time generation
+      setIsGenerated(true);
+      setReloadCount(0);
+    }
   };
 
   const handleBackClick = () => {
@@ -261,7 +263,7 @@ function Activities() {
             'Regular sessions.',
             'Weekend getaway.',
             'Individual sessions.',
-            'Health focused.'
+            'Take a nap'
           ],
           '2 people': [
             'Take a walk around the neighborhood',
@@ -369,12 +371,6 @@ function Activities() {
           return !activityText.includes('wine') && 
                  !activityText.includes('bar') && 
                  !activityText.includes('club') &&
-                 !activityText.includes('martial arts') &&
-                 !activityText.includes('boxing') &&
-                 !activityText.includes('parkour') &&
-                 !activityText.includes('skateboarding') &&
-                 !activityText.includes('surfing') &&
-                 !activityText.includes('rock climbing') &&
                  !activityText.includes('night out') &&
                  !activityText.includes('dating') &&
                  !activityText.includes('$100+') &&
@@ -386,8 +382,7 @@ function Activities() {
         case '18-29':
           // Include social activities, nightlife, and budget-friendly options
           // Avoid activities specifically for older audiences
-          return !activityText.includes('golf') &&
-                 !activityText.includes('retirement') &&
+          return !activityText.includes('retirement') &&
                  !activityText.includes('senior') &&
                  !activityText.includes('mature');
         
@@ -671,7 +666,7 @@ function Activities() {
           onClick={handleGenerate}
           disabled={!selectedAge || !selectedPeople || !selectedActivity}
         >
-          Generate
+          {isGenerated ? 'Generate Ideas' : 'Generate'}
         </button>
       </div>
       
@@ -682,13 +677,6 @@ function Activities() {
             <div className="suggestions-content">
               <div className="suggestions-header-container">
               <h3 className="suggestions-header">Activity Suggestions</h3>
-                <button 
-                  className="reload-button"
-                  onClick={handleReload}
-                  title="Generate new activity ideas"
-                >
-                  ↻
-                </button>
               </div>
               <div className="suggestions-text">
                 {generateActivitySuggestions().slice(0, 3).map((suggestion, index) => (
