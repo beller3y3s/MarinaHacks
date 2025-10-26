@@ -602,7 +602,7 @@ function Activities() {
         </div>
       ))}
       <div className="activities-header">
-        <h1 className="activities-title">Activities</h1>
+      <h1 className="activities-title">Activities</h1>
       </div>
       <div className="dropdowns-wrapper">
         <div className="dropdown-wrapper">
@@ -678,7 +678,7 @@ function Activities() {
           {isGenerated && selectedPeople && selectedActivity ? (
             <div className="suggestions-content">
               <div className="suggestions-header-container">
-                <h3 className="suggestions-header">Activity Suggestions</h3>
+              <h3 className="suggestions-header">Activity Suggestions</h3>
                 <button 
                   className="reload-button"
                   onClick={handleReload}
