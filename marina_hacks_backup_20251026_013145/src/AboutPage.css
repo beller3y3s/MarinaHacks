@@ -1,0 +1,153 @@
+/* Import Short Stack font */
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+/* Ensure entire page has the same gradient background as other pages */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f8f4ff 0%, #fff0f5 50%, #f0f8ff 100%);
+  min-height: 100vh;
+  display: block; /* Override flex from index.css */
+}
+
+#root {
+  max-width: none; /* Override max-width from App.css */
+  margin: 0;
+  padding: 0;
+  text-align: left; /* Override text-align from App.css */
+}
+
+.about-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f4ff 0%, #fff0f5 50%, #f0f8ff 100%);
+  display: flex;
+  flex-direction: column; /* stacks elements vertically */
+  align-items: center; /* centers horizontally */
+  justify-content: center; /* centers vertically */
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.back-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #e9d5ff 0%, #d8b4fe 100%);
+  color: #000000;
+  border: none;
+  border-radius: 0 0 15px 0;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Short Stack', cursive;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.back-button:hover {
+  background: linear-gradient(135deg, #d8b4fe 0%, #c084fc 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-title {
+  font-family: 'Short Stack', cursive;
+  font-size: 3rem;
+  font-weight: 700; /* Explicit bold weight */
+  color: #333;
+  text-align: center;
+  margin: 0;
+  margin-top: -15rem; /* Move title up but keep it visible */
+}
+
+.about-subtitle {
+  font-family: 'Short Stack', cursive;
+  font-size: 1.5rem;
+  font-weight: 700; /* Explicit bold weight */
+  color: #333;
+  text-align: center;
+  margin: 1rem auto 0;
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.about-text {
+  max-width: 800px;
+  margin: 2rem auto 0;
+  padding: 0 2rem;
+  font-size: 1.2rem; /* Increased from 1rem */
+  line-height: 1.6;
+  color: #333;
+  text-align: center; /* Changed from left to center */
+  white-space: pre-line; /* Preserves line breaks */
+  font-family: 'Short Stack', cursive;
+}
+
+/* Floating hearts animation */
+@keyframes heart-float {
+  0% { 
+    transform: translateY(0px) scale(0.5) rotate(0deg);
+    opacity: 1;
+  }
+  50% { 
+    transform: translateY(-30px) scale(1) rotate(180deg);
+    opacity: 0.8;
+  }
+  100% { 
+    transform: translateY(-60px) scale(0.3) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.floating-heart {
+  position: fixed;
+  font-size: 1.8rem;
+  pointer-events: none;
+  z-index: 1001;
+  animation: heart-float 2s ease-out forwards;
+  filter: drop-shadow(0 2px 4px rgba(255, 105, 180, 0.3));
+}
+
+/* Text selection highlight - light pink */
+::selection {
+  background-color: #ffb6c1;
+  color: #333;
+}
+
+::-moz-selection {
+  background-color: #ffb6c1;
+  color: #333;
+}
+
+/* Cute bunny images in bottom corners */
+.about-bunny-image {
+  position: fixed;
+  bottom: 20px;
+  width: 250px;
+  height: auto;
+  z-index: 1;
+  cursor: pointer;
+  animation: bounce 3s ease-in-out infinite;
+  transition: transform 0.2s ease;
+}
+
+
+.about-bunny-right {
+  right: 20px;
+}
+
+.about-bunny-left {
+  left: 20px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

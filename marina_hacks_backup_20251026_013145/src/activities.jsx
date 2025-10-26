@@ -123,7 +123,7 @@ function Activities() {
             'Craft Competition - Challenge each other to create the best art project.',
             'School Mural - Collaborate on a mural for your school or community.',
             'Art Supply Sharing - Share art materials and try new techniques together.',
-            'Craft Kit - Work on craft kits together ($10-25).',
+            'Craft Kit Duo - Work on craft kits together ($10-25).',
             'Pottery Together - Try clay wheel or hand-building together ($20-35).',
             'Origami Challenge - See who can fold the most creative designs.',
             'Photo Shoot - Take artistic portraits of each other.',
@@ -164,12 +164,13 @@ function Activities() {
             'Swimming Lessons - Improve swimming skills at local pool ($10-20).',
             'Yoga Practice - Follow beginner yoga videos online.',
             'Dance Party - Learn new dance moves and routines.',
+            'Kickball - Practice kicking and catching skills.',
             'Frisbee Throwing - Improve aim and distance throwing.',
             'Mini Golf - Practice putting and chipping ($8-15).'
           ],
           '2 people': [
             'Bike Race - Friendly bike racing with friends.',
-            'Jump Rope - Learn partner jump rope routines.',
+            'Jump Rope Duo - Learn partner jump rope routines.',
             'Hula Hoop Battle - Compete in hula hoop tricks.',
             'Scooter Tag - Play tag on scooters at skate park.',
             'Swimming Buddy - Practice swimming together ($15-30).',
@@ -184,9 +185,11 @@ function Activities() {
             'Jump Rope Team - Learn group jump rope routines.',
             'Hula Hoop Circle - Create group hula hoop performances.',
             'Scooter Gang - Practice scooter tricks as a group.',
+            'Swimming Team - Join local swimming team ($25-50).',
             'Yoga Circle - Group yoga practice together.',
             'Ultimate Frisbee - Play three-way frisbee games.',
             'Basketball 3v3 - Play mini basketball games.',
+            'Kickball Game - Organize kickball matches.',
             'Obstacle Course - Create backyard obstacle courses.'
           ],
           '4+ people': [
@@ -194,6 +197,7 @@ function Activities() {
             'Jump Rope Squad - Perform jump rope routines together.',
             'Hula Hoop Troupe - Create group hula hoop shows.',
             'Scooter Crew - Organize scooter competitions.',
+            'Swimming Club - Join competitive swimming team ($40-80).',
             'Yoga Class - Group yoga sessions ($30-60).',
             'Ultimate Frisbee Team - Join or start a frisbee club.',
             'Basketball League - Join youth basketball league ($50-100).',
@@ -258,7 +262,7 @@ function Activities() {
             'Study Cafe - Study with friends at cafes ($5-10).',
             'Volunteer Work - Volunteer for local organizations.',
             'Youth Group - Join a local youth group.',
-            'Community Center - Participate in public events and activities.',
+            'Community Center - Participate in community activities.',
             'Library Events - Attend library programs and activities.',
             'Park Hangout - Meet friends at local parks.',
             'Mall Meetup - Socialize at shopping centers.',
@@ -304,6 +308,7 @@ function Activities() {
         'Relaxation': {
           '1 person': [
             'Reading - Read books for pleasure.',
+            'Meditation - Try calming meditation apps.',
             'Yoga - Practice gentle yoga at home.',
             'Music Listening - Listen to calming music.',
             'Coloring - Use coloring books to relax.',
@@ -407,7 +412,7 @@ function Activities() {
           ],
           '2 people': [
             'Gym Buddy Sessions - Partner workout routines.',
-            'Running Partners -  Run outdoors together.',
+            'Running Partners - Joint outdoor running.',
             'Beach Volleyball Match - Friendly doubles games.',
             'Rock Climbing Partners - Indoor climbing together ($30-50).',
             'Partner Dance Lessons - Learn together ($35-65).'
@@ -415,8 +420,9 @@ function Activities() {
           '3 people': [
             'Gym Squad - Group workout sessions.',
             'Running Group - Group outdoor running.',
-            'Rock Climbing - Group climbing sessions ($50-75).',
-            'Group Dance Class - Group dance lessons ($60-100).'
+            'Beach Volleyball Tournament - Trio competitive play.',
+            'Rock Climbing Trio - Group climbing sessions ($50-75).',
+            'Group Dance Class - Trio dance lessons ($60-100).'
           ],
           '4+ people': [
             'Fitness Club - Organized group fitness activities.',
@@ -443,7 +449,7 @@ function Activities() {
           ],
           '3 people': [
             'Study Group - Collaborative learning sessions.',
-            'Concert - Attend live music together ($60-120).',
+            'Concert Trio - Attend live music together ($60-120).',
             'Party Planning - Organize social gatherings.',
             'Group Night Out - Socialize at bars and clubs ($80-150).',
             'Comedy Night - Attend shows together ($50-100).'
@@ -465,11 +471,11 @@ function Activities() {
             'Webinars - Free online educational seminars.'
           ],
           '2 people': [
-            'Study Partners - Study together in a focused environment.',
+            'Study Partners - Joint learning sessions.',
             'Language Exchange - Practice together.',
             'Podcast Discussion - Listen and discuss episodes.',
             'Skill Teaching - Learn from each other.',
-            'Join Webinars - Attend together.'
+            'Webinar Duo - Attend together.'
           ],
           '3 people': [
             'Study Group - Regular sessions.',
@@ -488,13 +494,14 @@ function Activities() {
         },
         'Relaxation': {
           '1 person': [
+            'Meditation - Free apps and YouTube.',
             'Yoga - Home practice with videos.',
             'Reading - Library books.',
             'Nature Walks - Local parks.',
             'Music Therapy - Calming playlists.'
           ],
           '2 people': [
-            'Meditation Together - Find inner peace and relaxation.',
+            'Meditation Together - Joint practice.',
             'Partner Yoga - Couple sessions.',
             'Reading Date - Shared books.',
             'Nature Walk - Together.',
@@ -526,7 +533,7 @@ function Activities() {
             'Craft Market Visit - Explore local artisan markets ($15-30).'
           ],
           '2 people': [
-            'Cooking Class - Learn gourmet cooking together ($40-80).',
+            'Couple Cooking Class - Learn gourmet cooking together ($40-80).',
             'Art Gallery Date - Visit exhibitions together.',
             'Wine Tasting - Sample wines and discuss flavors ($50-100).',
             'Dance Lessons - Learn ballroom or salsa together ($60-120).',
@@ -557,15 +564,15 @@ function Activities() {
           ],
           '2 people': [
             'Running Partners - Morning or evening runs together.',
-            'Yoga - Partner yoga sessions.',
+            'Couple Yoga - Partner yoga sessions.',
             'Tennis Match - Friendly doubles games.',
-            'Hiking - Explore local trails together.',
-            'Personal Training - Grow stronger together and improve your health ($100-180).'
+            'Hiking Duo - Explore local trails together.',
+            'Personal Training Couple - Joint fitness coaching ($100-180).'
           ],
           '3 people': [
             'Running Group - Regular group runs.',
             'Yoga Class - Group yoga sessions.',
-            'Tennis - Court play sessions.',
+            'Tennis Trio - Court play sessions.',
             'Hiking Group - Weekend trail adventures.',
             'Group Fitness Classes - CrossFit or HIIT together ($150-250).'
           ],
@@ -588,7 +595,7 @@ function Activities() {
           '2 people': [
             'Date Nights - Romantic dinners and activities.',
             'Brewery Tasting - Sample craft beers together ($40-80).',
-            'Comedy Night - Attend shows and laugh together.',
+            'Comedy Night - Attend shows as a couple.',
             'Theater Date - Watch plays together ($50-100).',
             'Double Date Events - Socialize with other couples.'
           ],
@@ -616,9 +623,10 @@ function Activities() {
             'Continuing Education - University courses.'
           ],
           '2 people': [
-            'Skill Training - Learn new skills together ($60-120).',
-            'Business Networking - Connect with others in your field of interest.',
-            'Attend Workshops - Attend together ($100-180).',
+            'Joint Certification - Professional together ($80-150).',
+            'Couple Skill Training - Learn together ($60-120).',
+            'Business Networking - Joint events.',
+            'Workshop Duo - Attend together ($100-180).',
             'Educational Classes - Shared enrollment.'
           ],
           '3 people': [
@@ -645,13 +653,15 @@ function Activities() {
             'Wellness Program - Health focused ($100-180).'
           ],
           '2 people': [
-            'Partner Yoga - Partner yogasessions ($80-150).',
+            'Couple Spa Day - Joint treatments ($100-180).',
+            'Partner Yoga - Couple sessions ($80-150).',
             'Retreat Together - Weekend getaway ($250-400).',
+            'Couple Massage - Joint therapy ($120-200).',
             'Wellness Couple - Health focused ($180-300).'
           ],
           '3 people': [
             'Group Spa Day - Team treatments ($150-250).',
-            'Yoga - Group sessions ($120-200).',
+            'Yoga Trio - Group sessions ($120-200).',
             'Group Retreat - Weekend getaway ($300-500).',
             'Group Massage - Team therapy ($180-300).',
             'Wellness Group - Health focused ($250-450).'
@@ -675,7 +685,7 @@ function Activities() {
             'Art Museum Membership - Regular gallery visits ($30-60).'
           ],
           '2 people': [
-            'Cooking Classes - Learn gourmet techniques together ($60-120).',
+            'Couple Cooking Classes - Learn gourmet techniques together ($60-120).',
             'Garden Design Project - Create landscape together.',
             'Home Renovation - DIY home improvement projects.',
             'Paint and Sip - Artistic social activity ($50-100).',
@@ -699,7 +709,7 @@ function Activities() {
         'Active': {
           '1 person': [
             'Golfing - Solo rounds at local courses ($30-50).',
-            'Swimming - Swimming at community pools.',
+            'Swimming - Lap swimming at community pools.',
             'Walking - Daily walks for fitness.',
             'Tennis - Practice sessions ($20-40).',
             'Personal Training - Professional coaching ($80-120).'
@@ -709,11 +719,11 @@ function Activities() {
             'Golfing Together - Play rounds as a couple ($50-100).',
             'Walking Partners - Daily exercise walks.',
             'Swimming Buddies - Lap swimming together.',
-            'Fitness Classes - Get in good shape together.'
+            'Couple Fitness Classes - Joint workouts.'
           ],
           '3 people': [
             'Golf Outing - Group rounds ($80-120).',
-            'Tennis - Court play sessions.',
+            'Tennis Doubles - Court play sessions.',
             'Walking Group - Regular group walks.',
             'Swimming Group - Lap sessions together.',
             'Group Fitness Classes - HIIT or Pilates ($150-250).'
@@ -736,7 +746,7 @@ function Activities() {
           ],
           '2 people': [
             'Date Nights - Regular romantic evenings.',
-            'Wine Tasting - Educational tastings ($60-120).',
+            'Wine Tasting Couples - Educational tastings ($60-120).',
             'Theater Dates - Watch plays together ($100-150).',
             'Museum Tours - Cultural visits together ($50-100).',
             'Fine Dining - Explore restaurants together ($80-150).'
@@ -765,10 +775,11 @@ function Activities() {
             'Museum Memberships - Regular visits ($40-80).'
           ],
           '2 people': [
+            'Couple Learning - Joint courses ($60-120).',
             'Professional Development - Together ($80-150).',
-            'Book Club Couple - Reading together.',
+            'Book Club Couple - Joint reading.',
             'Lecture Series - Attend together ($50-100).',
-            'Museum Membership - Explore the exhibits together ($60-140).'
+            'Museum Membership - Couple ($60-140).'
           ],
           '3 people': [
             'Learning Circle - Group courses ($100-180).',
@@ -794,10 +805,11 @@ function Activities() {
             'Weekend Getaway - Solo retreat ($150-300).'
           ],
           '2 people': [
+            'Couple Spa Day - Joint treatments ($120-200).',
             'Gentle Yoga - Partner practice.',
-            'Meditation Together - Find inner peace and relaxation.',
-            'Travel Together - Travel to a new destination.',
-            'Weekend Retreat - Spend the time with friends ($250-500).'
+            'Meditation Together - Joint sessions.',
+            'Couple Massage - Regular appointments ($120-200).',
+            'Weekend Retreat - Together ($250-500).'
           ],
           '3 people': [
             'Group Spa - Treatments together ($150-250).',
@@ -825,11 +837,11 @@ function Activities() {
             'Art Classes - Senior-friendly instruction ($35-60).'
           ],
           '2 people': [
-            'Art Projects - Collaborative creative work.',
-            'Book Club - Find a new book to read together.',
-            'Photography - Capture moments together.',
+            'Couple Art Projects - Collaborative creative work.',
+            'Book Club Couple - Joint reading activities.',
+            'Photography Duo - Capture moments together.',
             'Garden Planning - Design projects together.',
-            'Art Studio Classes - Exercise your creativity ($60-120).'
+            'Art Studio Classes - Joint instruction ($60-120).'
           ],
           '3 people': [
             'Art Circle - Group creative sessions.',
@@ -850,28 +862,28 @@ function Activities() {
           '1 person': [
             'Gentle Yoga - Individual practice sessions.',
             'Walking - Individual daily walks.',
-            'Swimming - Exercise your mobility and flexibility.',
+            'Swimming - Lap swimming ($25-40).',
             'Golfing - Solo rounds at local courses ($30-50).',
             'Tai Chi - Gentle movement practice.'
           ],
           '2 people': [
             'Walking Partners - Daily exercise together.',
-            'Yoga - Relax and unwind together.',
+            'Yoga Couple - Joint gentle practice.',
             'Swimming Buddies - Lap sessions together.',
             'Golf Partners - Play rounds together ($50-100).',
-            'Tai Chi - Move your body and mind together.'
+            'Tai Chi Duo - Practice together.'
           ],
           '3 people': [
             'Walking Group - Group daily walks.',
             'Yoga Class - Group gentle sessions.',
             'Swimming Group - Lap sessions together.',
-            'Golf Outing - Play multiplerounds ($80-120).',
+            'Golf Outing - Trio rounds ($80-120).',
             'Tai Chi Circle - Group practice.'
           ],
           '4+ people': [
             'Walking Club - Organized group walks.',
             'Yoga Retreat - Weekend wellness ($200-400).',
-            'Swimming Club - Swim at your local pool.',
+            'Swimming Club - Regular group sessions.',
             'Golf League - Organized competitive play ($250-500).',
             'Tai Chi Society - Community organization.'
           ]
@@ -889,7 +901,7 @@ function Activities() {
             'Museum Tours - Visit exhibitions together ($60-120).',
             'Lecture Series - Attend educational talks.',
             'Historical Tours - Explore together ($50-100).',
-            'Fine Dining - Quality restaurants ($100-180).'
+            'Fine Dining Couple - Quality restaurants ($100-180).'
           ],
           '3 people': [
             'Cultural Group Events - Regular activities.',
@@ -915,9 +927,10 @@ function Activities() {
             'Lifelong Learning - University programs ($40-80).'
           ],
           '2 people': [
+            'Couple Learning - Joint courses ($50-100).',
             'Historical Research - Together.',
             'Genealogy Pair - Family research.',
-            'Cultural Appreciation - Learning new cultures and languages.',
+            'Cultural Appreciation - Couple activities.',
             'Lifelong Learning - Shared programs ($60-140).'
           ],
           '3 people': [
@@ -945,7 +958,8 @@ function Activities() {
           ],
           '2 people': [
             'Gentle Yoga - Partner practice.',
-            'Meditation Together - Find inner peace and relaxation.',
+            'Couple Spa - Joint treatments ($100-180).',
+            'Meditation Together - Joint sessions.',
             'Couple Massage - Regular appointments ($100-180).',
             'Retreat Together - Weekend getaway ($200-400).'
           ],
@@ -975,11 +989,11 @@ function Activities() {
             'Art Therapy Session - Guided art therapy for relaxation ($20-40).'
           ],
           '2 people': [
-            'Painting - Paint together in a relaxed setting.',
+            'Couple Painting - Paint together in a relaxed setting.',
             'Knitting Partners - Work on knitting projects together.',
-            'Garden Art - Create garden art installations together.',
+            'Garden Art Duo - Create garden art installations together.',
             'Art Appreciation - Visit art galleries and discuss artwork.',
-            'Art Therapy - Learn to express yourself through art ($30-60).'
+            'Art Therapy Couple - Joint art therapy sessions ($30-60).'
           ],
           '3 people': [
             'Senior Art Group - Join senior art classes.',
@@ -1000,28 +1014,29 @@ function Activities() {
           '1 person': [
             'Gentle Walking - Daily walks in neighborhood or park.',
             'Tai Chi - Practice gentle tai chi movements.',
-            'Swimming - Swimming at your local pool.',
+            'Swimming - Low-impact swimming at local pool.',
             'Gardening - Light gardening and plant care.',
             'Senior Fitness Class - Gentle exercise class ($15-25).'
           ],
           '2 people': [
             'Walking Partners - Regular walking with friends.',
-            'Tai Chi - Practice tai chi together.',
+            'Tai Chi Duo - Practice tai chi together.',
             'Swimming Buddies - Gentle swimming together.',
             'Garden Partners - Share gardening activities.',
-            'Senior Fitness - Exercise your mobility and flexibility ($25-45).'
+            'Senior Fitness Couple - Joint fitness classes ($25-45).'
           ],
           '3 people': [
             'Walking Group - Group walks in local parks.',
             'Tai Chi Circle - Group tai chi practice.',
-            'Swimming Group - Swim with others in a public pool.',
+            'Swimming Group - Senior swimming group.',
             'Garden Club - Community gardening group.',
             'Senior Fitness Group - Group exercise classes ($35-65).'
           ],
           '4+ people': [
             'Senior Walking Club - Organized walking group.',
-            'Senior Swimming Club - Regain mobility and improve your health.',
-            'Community Garden - Plant and care for a garden together.',
+            'Tai Chi Society - Community tai chi organization.',
+            'Senior Swimming Club - Competitive senior swimming.',
+            'Community Garden - Large community gardening project.',
             'Senior Fitness Center - Comprehensive senior fitness program ($50-100).'
           ]
         },
@@ -1034,10 +1049,10 @@ function Activities() {
             'Garden Tours - Visit beautiful gardens ($20-40).'
           ],
           '2 people': [
-            'Senior Couples Events - Participate in activities together.',
+            'Senior Couples Events - Joint activities.',
             'Cultural Date Night - Theater and concerts.',
             'Historical Tours - Explore together ($40-80).',
-            'Book Club - Discuss a new book together.',
+            'Book Club Couple - Joint literary discussions.',
             'Garden Tour - Visit gardens together ($40-80).'
           ],
           '3 people': [
@@ -1064,9 +1079,10 @@ function Activities() {
             'Gentle Learning - Low-impact courses ($25-50).'
           ],
           '2 people': [
+            'Couple Learning - Joint courses ($30-60).',
             'Genealogy Together - Family research.',
-            'Cultural Appreciation - Learning new cultures and languages.',
-            'Memory Activities - Play memory games together.',
+            'Cultural Appreciation - Couple activities.',
+            'Memory Activities - Joint exercises.',
             'Gentle Learning - Together ($40-80).'
           ],
           '3 people': [
@@ -1094,8 +1110,9 @@ function Activities() {
           ],
           '2 people': [
             'Gentle Yoga - Partner practice.',
-            'Facials - Get a facial together.',
-            'Meditation Together - Find inner peace and relaxation.',
+            'Couple Spa - Joint treatments ($80-160).',
+            'Meditation Together - Joint calm sessions.',
+            'Couple Massage - Regular appointments ($80-160).',
             'Retreat Together - Weekend getaway ($150-300).'
           ],
           '3 people': [
@@ -1215,88 +1232,204 @@ function Activities() {
     const suggestions = {
       'Creative': {
         '1 person': [
+          'Abstract Sculpture Making - Creating 3D art from found objects. Use household items.',
           'Calligraphy Practice - Beautiful handwriting and lettering art. Use existing pens.',
           'Macrame Crafting - Knotting decorative wall hangings. Use old fabric strips.',
           'Digital Collage Design - Creating mixed media art on computer. Use free software.',
-          'Create Your Own Piercing - Create your own piercing using paper clips.',
+          'Shadow Puppetry - Making and performing with paper puppets. Use recycled materials.',
+          'Sound Art Creation - Recording and mixing ambient sounds. Use smartphone.',
+          'Encaustic Painting - Wax-based painting technique. Use household candles.',
+          'Linocut Printmaking - Carving and printing designs. Use soft linoleum.',
+          'Wire Sculpture - Creating 3D forms with wire. Use household wire.',
           'Digital Animation - Creating moving artwork. Use free software.',
           'Paper Quilling - Rolling paper into decorative shapes. Use colored paper.',
-          'Tie Dye - Create custom dye shirts together. Use household dyes.',
+          'Fabric Dyeing - Creating custom colored fabrics. Use household dyes.',
           'Calligraphy Pen Set - Professional writing tools ($12-20).',
           'Macrame Cord Kit - Decorative knotting supplies ($15-25).',
+          'Digital Drawing Pad - Professional art tablet ($30-50).',
           'Sculpture Clay Class - Individual pottery workshop ($25-40).',
+          'Encaustic Kit - Wax painting supplies ($35-55).',
+          'Linocut Tools - Printmaking equipment ($40-65).',
+          'Wire Sculpture Kit - Metalworking supplies ($25-45).',
           'Animation Software - Professional motion graphics ($50-80).',
           'Paper Quilling Kit - Decorative paper supplies ($20-35).',
           'Fabric Dyeing Kit - Textile coloring supplies ($30-50).',
           'Calligraphy Workshop - Hand lettering instruction ($35-55).',
           'Macrame Studio - Advanced knotting techniques ($45-70).',
-        ],
-        '2 people': [
-          'Mural Painting - Create a wall art together. Use household supplies.',
-          'Pottery Wheel - Shared ceramic throwing. Use community studio.',
-          'Jewelry Making - Creating wearable art together. Use basic tools.',
-          'Partner Wood Carving - Sculpture your own wood from your imagination. Use hand tools.',
-          'Textile Design - Creating fabric patterns together. Use simple materials.',
-          'Wax Painting - Create wax art together. Use household candles.',
-          'Wire Sculpture - Creating metal art together. Use household wire.',
-          'Tie Dye - Create custom dye shirts together. Use household dyes.',
           'Digital Art Software - Professional design tools ($50-80).',
           'Sculpture Studio - Advanced clay techniques ($60-90).',
           'Encaustic Masterclass - Expert wax techniques ($70-110).',
+          'Linocut Workshop - Professional printmaking ($80-120).',
           'Wire Art Studio - Advanced metalwork ($60-100).',
           'Animation Academy - Professional motion graphics ($100-150).',
           'Paper Art Retreat - Weekend quilling workshop ($120-180).',
+          'Textile Design Course - Professional fabric techniques ($150-250).',
+          'Calligraphy Masterclass - Expert lettering instruction ($80-120).',
+          'Macrame Retreat - Weekend knotting workshop ($120-180).',
+          'Digital Art Conference - Professional design summit ($150-250).',
+          'Sculpture Exhibition - Art gallery showcase ($200-350).',
+          'Encaustic Gallery Show - Wax art exhibition ($180-300).',
+          'Printmaking Symposium - Professional print summit ($200-400).'
+        ],
+        '2 people': [
+          'Tandem Mural Painting - Couple wall art creation. Use household supplies.',
+          'Partner Glass Blowing - Joint glass art creation. Use local studio.',
+          'Couple Pottery Wheel - Shared ceramic throwing. Use community studio.',
+          'Duo Jewelry Making - Creating wearable art together. Use basic tools.',
+          'Partner Wood Carving - Joint sculpture from wood. Use hand tools.',
+          'Couple Textile Design - Creating fabric patterns together. Use simple materials.',
+          'Tandem Encaustic Painting - Couple wax art creation. Use household candles.',
+          'Partner Linocut Printing - Joint printmaking project. Use soft linoleum.',
+          'Couple Wire Sculpture - Creating metal art together. Use household wire.',
+          'Duo Digital Animation - Collaborative moving artwork. Use free software.',
+          'Partner Paper Quilling - Joint decorative paper art. Use colored paper.',
+          'Couple Fabric Dyeing - Creating custom textiles together. Use household dyes.',
+          'Glass Blowing Kit - Basic glass art supplies ($20-35).',
+          'Pottery Wheel Rental - Shared ceramic equipment ($30-50).',
+          'Jewelry Making Tools - Basic metalworking supplies ($25-40).',
+          'Wood Carving Set - Hand carving tools ($35-55).',
+          'Textile Design Kit - Fabric printing supplies ($40-65).',
+          'Encaustic Couple Kit - Joint wax painting supplies ($45-75).',
+          'Linocut Partner Tools - Shared printmaking equipment ($50-80).',
+          'Wire Sculpture Duo Kit - Couple metalworking supplies ($40-70).',
+          'Animation Software Bundle - Joint motion graphics ($60-100).',
+          'Paper Quilling Couple Kit - Shared decorative supplies ($35-60).',
+          'Fabric Dyeing Duo Kit - Joint textile coloring ($50-85).',
+          'Glass Studio Class - Professional glass techniques ($50-80).',
+          'Pottery Masterclass - Advanced ceramic skills ($60-90).',
+          'Jewelry Design Course - Professional metalwork ($70-110).',
+          'Wood Sculpture Workshop - Advanced carving techniques ($80-120).',
+          'Textile Art Studio - Professional fabric design ($90-130).',
+          'Encaustic Couple Workshop - Joint wax techniques ($80-130).',
+          'Linocut Partner Course - Shared printmaking skills ($100-150).',
+          'Wire Art Couple Studio - Joint metalwork techniques ($90-140).',
+          'Animation Couple Academy - Shared motion graphics ($120-180).',
+          'Paper Art Couple Retreat - Joint quilling workshop ($150-250).',
+          'Textile Couple Design Course - Shared fabric techniques ($180-300).',
+          'Glass Art Retreat - Weekend glass workshop ($150-250).',
+          'Pottery Exhibition - Ceramic art showcase ($200-400).',
+          'Jewelry Gallery Show - Metalwork exhibition ($180-350).',
+          'Wood Art Symposium - Carving summit ($200-450).',
+          'Textile Design Conference - Fabric art summit ($250-500).'
         ],
         '3 people': [
-          'Mosaic Creation - Group tile art assembly. Use broken ceramics.',
-          'Metalworking - Collaborative metal sculpture. Use basic tools.',
-          'Printmaking - Learn art printing techniques. Use simple materials.',
-          'Ceramic Glazing - Collaborative pottery finishing. Use community kiln.',
-          'Weaving Project - Textile creation. Use basic looms.',
-          'Encaustic Workshop - Group wax art creation. Use household candles.',
-          'Wire Sculpture - Group metal art creation. Use household wire.',
-          'Digital Animation - Collaborative moving artwork. Use free software.',
-          'Paper Quilling - Group decorative paper art. Use colored paper.',
+          'Trio Mosaic Creation - Group tile art assembly. Use broken ceramics.',
+          'Group Metalworking - Collaborative metal sculpture. Use basic tools.',
+          'Trio Printmaking - Group art printing techniques. Use simple materials.',
+          'Group Ceramic Glazing - Collaborative pottery finishing. Use community kiln.',
+          'Trio Weaving Project - Group textile creation. Use basic looms.',
+          'Group Stained Glass - Collaborative glass art. Use colored glass.',
+          'Trio Encaustic Workshop - Group wax art creation. Use household candles.',
+          'Group Linocut Printing - Collaborative printmaking. Use soft linoleum.',
+          'Trio Wire Sculpture - Group metal art creation. Use household wire.',
+          'Group Digital Animation - Collaborative moving artwork. Use free software.',
+          'Trio Paper Quilling - Group decorative paper art. Use colored paper.',
           'Group Fabric Dyeing - Collaborative textile creation. Use household dyes.',
+          'Mosaic Tile Kit - Group tile art supplies ($30-50).',
           'Metalworking Tools - Basic metal sculpture supplies ($40-70).',
           'Printmaking Kit - Group printing materials ($35-60).',
           'Ceramic Glazing Set - Pottery finishing supplies ($45-75).',
           'Weaving Loom Rental - Group textile equipment ($50-85).',
           'Stained Glass Kit - Glass art materials ($60-100).',
+          'Encaustic Trio Kit - Group wax painting supplies ($60-100).',
+          'Linocut Group Tools - Shared printmaking equipment ($70-110).',
+          'Wire Sculpture Trio Kit - Group metalworking supplies ($55-90).',
+          'Animation Software Suite - Group motion graphics ($80-130).',
+          'Paper Quilling Trio Kit - Group decorative supplies ($50-85).',
+          'Fabric Dyeing Group Kit - Shared textile coloring ($70-120).',
+          'Mosaic Workshop - Professional tile techniques ($70-110).',
+          'Metal Sculpture Class - Advanced metalwork ($80-130).',
+          'Printmaking Studio - Professional printing techniques ($90-140).',
+          'Ceramic Glazing Course - Advanced pottery finishing ($100-150).',
+          'Weaving Retreat - Weekend textile workshop ($150-250).',
+          'Stained Glass Masterclass - Expert glass techniques ($200-350).',
+          'Encaustic Trio Workshop - Group wax techniques ($120-180).',
+          'Linocut Group Course - Shared printmaking skills ($150-220).',
+          'Wire Art Trio Studio - Group metalwork techniques ($130-200).',
+          'Animation Trio Academy - Group motion graphics ($180-280).',
+          'Paper Art Trio Retreat - Group quilling workshop ($200-350).',
+          'Textile Trio Design Course - Group fabric techniques ($250-400).',
+          'Mosaic Symposium - Tile art summit ($200-400).',
+          'Metal Art Conference - Sculpture summit ($250-500).',
+          'Printmaking Festival - Professional print celebration ($300-600).',
+          'Ceramic Art Symposium - Pottery summit ($350-650).'
         ],
         '4+ people': [
-          'Printmaking - Create a print together. Use community press.',
-          'Kiln Firing - Fire a ceramic piece together. Use community kiln.',
-          'Weaving - Create a textile together. Use multiple looms.',
-          'Glass Fusion - Show your creativity with glass art. Use community furnace.',
-          'Wire Sculpture - Create a metal piece together. Use bulk wire.',
-          'Digital Animation - Create a moving artwork together. Use shared software.',
-          'Paper Quilling - Create a decorative paper piece together. Use bulk supplies.',
-          'Fabric Dyeing - Create a textile piece together. Use bulk dyes.',
+          'Community Mosaic Installation - Large-scale tile art project. Use donated materials.',
+          'Group Bronze Casting - Collaborative metal sculpture. Use foundry facilities.',
+          'Community Printmaking - Mass art printing workshop. Use community press.',
+          'Group Kiln Firing - Large-scale ceramic firing. Use community kiln.',
+          'Community Weaving Circle - Large group textile creation. Use multiple looms.',
+          'Group Glass Fusion - Collaborative glass art. Use community furnace.',
+          'Community Encaustic Workshop - Large group wax art creation. Use bulk candles.',
+          'Group Linocut Printing - Mass printmaking project. Use community equipment.',
+          'Community Wire Sculpture - Large group metal art creation. Use bulk wire.',
+          'Group Digital Animation - Mass collaborative moving artwork. Use shared software.',
+          'Community Paper Quilling - Large group decorative paper art. Use bulk supplies.',
+          'Group Fabric Dyeing - Mass collaborative textile creation. Use bulk dyes.',
+          'Community Mosaic Kit - Large-scale tile supplies ($50-90).',
+          'Bronze Casting Tools - Group metalwork equipment ($70-120).',
+          'Community Print Press - Mass printing equipment ($80-130).',
+          'Group Kiln Rental - Large ceramic firing ($90-150).',
+          'Community Weaving Looms - Multiple textile equipment ($100-180).',
+          'Glass Fusion Kit - Group glass art supplies ($120-200).',
+          'Community Encaustic Kit - Large group wax supplies ($100-160).',
+          'Group Linocut Equipment - Mass printmaking tools ($120-200).',
+          'Community Wire Kit - Large group metalwork supplies ($90-150).',
+          'Group Animation Software - Mass motion graphics ($150-250).',
+          'Community Paper Kit - Large group decorative supplies ($100-180).',
+          'Group Fabric Dye Kit - Mass textile coloring ($120-220).',
+          'Community Mosaic Workshop - Large-scale tile techniques ($150-250).',
+          'Bronze Casting Course - Professional metalwork ($200-350).',
+          'Community Printmaking Studio - Mass printing techniques ($250-400).',
+          'Group Kiln Masterclass - Advanced ceramic firing ($300-500).',
+          'Community Weaving Festival - Weekend textile celebration ($400-700).',
+          'Glass Fusion Conference - Professional glass summit ($500-800).',
+          'Community Encaustic Festival - Large group wax celebration ($300-600).',
+          'Group Printmaking Symposium - Mass print summit ($400-800).',
+          'Community Wire Art Festival - Large group metal celebration ($500-900).',
+          'Group Animation Conference - Mass motion graphics summit ($600-1000).',
+          'Community Paper Art Festival - Large group decorative celebration ($400-800).',
+          'Group Textile Design Summit - Mass fabric art conference ($600-1200).',
+          'Community Art Biennial - Large-scale art exhibition ($800-1500).',
+          'Group Creative Symposium - Mass art summit ($1000-2000).'
         ]
       },
       'Active': {
         '1 person': [
-          'Trail Running - Individual mountain trail exploration. Use hiking shoes.',
+          'Solo Trail Running - Individual mountain trail exploration. Use hiking shoes.',
           'Personal Kayaking - Self-guided water paddling. Use rental equipment.',
-          'Archery Practice - Individual target shooting. Use local range.',
+          'Solo Archery Practice - Individual target shooting. Use local range.',
           'Personal Boxing Training - Individual combat fitness. Use home equipment.',
-          'Parkour - Individual urban obstacle navigation. Use public spaces.',
+          'Solo Parkour - Individual urban obstacle navigation. Use public spaces.',
+          'Personal Surfing - Individual wave riding. Use rental board.',
+          'Solo Rock Climbing - Individual indoor climbing. Use climbing gym.',
           'Personal Skiing - Individual snow sports. Use rental equipment.',
-          'Martial Arts - Individual combat training. Use home space.',
-          'Cycling - Individual bike touring. Use personal bike.',
+          'Solo Martial Arts - Individual combat training. Use home space.',
+          'Personal Swimming - Individual water fitness. Use public pools.',
+          'Solo Cycling - Individual bike touring. Use personal bike.',
           'Personal Weightlifting - Individual strength training. Use gym equipment.',
+          'Trail Running Shoes - Professional outdoor footwear ($60-100).',
           'Kayak Rental - Personal watercraft access ($25-40).',
           'Archery Equipment - Personal bow and arrows ($80-120).',
           'Boxing Gloves Set - Personal combat gear ($40-70).',
           'Parkour Training - Professional movement instruction ($50-80).',
           'Surfboard Rental - Personal wave equipment ($30-50).',
+          'Rock Climbing Gear - Personal climbing equipment ($60-100).',
+          'Ski Rental - Personal snow equipment ($40-70).',
+          'Martial Arts Gi - Personal training uniform ($50-80).',
+          'Swimming Gear - Personal water equipment ($30-60).',
           'Cycling Equipment - Personal bike gear ($80-130).',
           'Weightlifting Kit - Personal strength equipment ($100-150).',
           'Trail Running Club - Professional outdoor training ($70-110).',
           'Kayaking Tour - Guided water exploration ($80-130).',
           'Archery Competition - Professional target shooting ($100-150).',
           'Boxing Gym Membership - Professional combat training ($120-180).',
+          'Parkour Academy - Advanced movement techniques ($150-250).',
+          'Surfing Retreat - Weekend wave riding ($200-400).',
+          'Rock Climbing Course - Professional climbing instruction ($120-200).',
+          'Skiing Lessons - Professional snow instruction ($150-250).',
+          'Martial Arts Masterclass - Expert combat training ($180-300).',
           'Swimming Coaching - Professional water training ($100-180).',
           'Cycling Tour - Professional bike expedition ($200-350).',
           'Personal Training - Individual fitness coaching ($150-250).',
@@ -1304,41 +1437,43 @@ function Activities() {
           'Elite Athlete Retreat - Premium training camp ($500-800).'
         ],
         '2 people': [
-          'Rock Climbing - Partner indoor climbing adventure. Use climbing gym.',
+          'Couple Rock Climbing - Partner indoor climbing adventure. Use climbing gym.',
           'Tandem Kayaking - Partner water paddling expedition. Use rental equipment.',
-          'Archery Competition - Partner target shooting contest. Use local range.',
-          'Partner Boxing Training - combat fitness workout. Use gym equipment.',
-          'Parkour Challenge - Partner urban obstacle course. Use public spaces.',
+          'Couple Archery Competition - Partner target shooting contest. Use local range.',
+          'Partner Boxing Training - Couple combat fitness workout. Use gym equipment.',
+          'Couple Parkour Challenge - Partner urban obstacle course. Use public spaces.',
           'Tandem Surfing - Partner wave riding experience. Use rental boards.',
-          'Rock Climbing Gear - climbing equipment ($100-150).',
+          'Rock Climbing Gear - Couple climbing equipment ($100-150).',
           'Tandem Kayak Rental - Partner watercraft access ($40-70).',
-          'Archery Set - Partner bow and arrows ($120-180).',
-          'Partner Boxing Kit - combat gear ($70-110).',
-          'Parkour Training - Partner movement instruction ($80-130).',
+          'Couple Archery Set - Partner bow and arrows ($120-180).',
+          'Partner Boxing Kit - Couple combat gear ($70-110).',
+          'Couple Parkour Training - Partner movement instruction ($80-130).',
           'Tandem Surfboard Rental - Partner wave equipment ($50-90).',
-          'Rock Climbing Class - Partner climbing instruction ($100-150).',
+          'Couple Rock Climbing Class - Partner climbing instruction ($100-150).',
           'Tandem Kayaking Tour - Partner water exploration ($120-180).',
-          'Archery Tournament - Partner target competition ($150-220).',
-          'Partner Boxing Gym - combat training ($140-200).',
+          'Couple Archery Tournament - Partner target competition ($150-220).',
+          'Partner Boxing Gym - Couple combat training ($140-200).',
+          'Couple Parkour Academy - Partner movement techniques ($200-300).',
+          'Tandem Surfing Retreat - Partner wave riding ($300-500).'
         ],
         '3 people': [
-          'Mountain Biking - Group off-road cycling adventure. Use rental bikes.',
+          'Trio Mountain Biking - Group off-road cycling adventure. Use rental bikes.',
           'Group Whitewater Rafting - Team river navigation. Use raft equipment.',
-          'Archery Tournament - Group target shooting competition. Use local range.',
+          'Trio Archery Tournament - Group target shooting competition. Use local range.',
           'Group Boxing Sparring - Team combat training. Use gym equipment.',
-          'Parkour Course - Group urban obstacle navigation. Use public spaces.',
+          'Trio Parkour Course - Group urban obstacle navigation. Use public spaces.',
           'Group Surfing Lesson - Team wave riding instruction. Use rental boards.',
           'Mountain Bike Rental - Group off-road equipment ($90-150).',
           'Whitewater Raft Rental - Team watercraft access ($60-100).',
-          'Archery Kit - Group bow and arrows ($150-220).',
+          'Trio Archery Kit - Group bow and arrows ($150-220).',
           'Group Boxing Equipment - Team combat gear ($100-150).',
-          'Parkour Training - Group movement instruction ($120-180).',
+          'Trio Parkour Training - Group movement instruction ($120-180).',
           'Group Surfboard Rental - Team wave equipment ($80-130).',
-          'Mountain Biking Tour - Group off-road instruction ($150-220).',
+          'Trio Mountain Biking Tour - Group off-road instruction ($150-220).',
           'Group Whitewater Expedition - Team river exploration ($180-280).',
-          'Archery Championship - Group target competition ($200-300).',
+          'Trio Archery Championship - Group target competition ($200-300).',
           'Group Boxing Gym - Team combat training ($180-250).',
-          'Parkour Academy - Group movement techniques ($250-400).',
+          'Trio Parkour Academy - Group movement techniques ($250-400).',
           'Group Surfing Retreat - Team wave riding ($400-650).'
         ],
         '4+ people': [
@@ -1366,10 +1501,13 @@ function Activities() {
         '1 person': [
           'Solo Research Project - Independent study on topics of interest. Use library resources.',
           'Language Immersion - Self-directed foreign language practice using apps. Use free language apps.',
+          'Online Course Marathon - Intensive individual learning through online platforms. Use free resources.',
           'Podcast Deep Dive - Educational podcast series and audio learning.',
           'Documentary Study - Educational film analysis and note-taking.',
           'Skill Building - Learning new technical skills through tutorials.',
           'Personal Library - Building educational book collection ($15-30).',
+          'Premium Online Course - Advanced structured learning platform ($20-50).',
+          'Language App Pro - Advanced language learning subscription ($15-25).',
           'Individual Workshop - Personal learning session ($25-40).',
           'Private Tutor - One-on-one academic instruction ($40-60).',
           'Language Immersion Class - Intensive foreign language course ($50-80).',
@@ -1380,41 +1518,47 @@ function Activities() {
         '2 people': [
           'Study Partnership - Collaborative research and learning. Use library resources.',
           'Language Exchange - Mutual foreign language practice together. Use free language apps.',
+          'Couple Course Taking - Joint online learning through platforms. Use free resources.',
           'Study Buddy Sessions - Regular collaborative learning meetings.',
           'Language Conversation - Practicing foreign languages through dialogue.',
           'Skill Teaching - Learning from each other\'s expertise.',
-          'Library - Joint educational book collection ($25-50).',
+          'Couple Library - Joint educational book collection ($25-50).',
           'Partner Online Course - Shared structured learning platform ($35-80).',
-          'Language Learning- Joint language learning subscription ($25-40).',
-          'Workshop - Joint learning session ($40-70).',
+          'Language App Duo - Joint language learning subscription ($25-40).',
+          'Couple Workshop - Joint learning session ($40-70).',
           'Partner Tutoring - Collaborative academic instruction ($60-100).',
           'Language Exchange Class - Mutual foreign language course ($80-120).',
-          'Certification - Joint professional credential program ($100-150).',
+          'Couple Certification - Joint professional credential program ($100-150).',
           'Partner University Course - Shared continuing education ($120-200).',
-          'Learning Getaway - educational weekend ($250-500).'
+          'Learning Getaway - Couple educational weekend ($250-500).'
         ],
         '3 people': [
           'Study Circle - Group collaborative research and learning. Use library resources.',
           'Language Club - Group foreign language practice sessions. Use free language apps.',
+          'Trio Course Taking - Group online learning through platforms. Use free resources.',
           'Learning Discussion Group - Regular group educational meetings.',
           'Language Roundtable - Group foreign language conversation practice.',
           'Skill Exchange Circle - Group learning from each other\'s expertise.',
           'Group Library - Shared educational book collection ($35-70).',
-          'Online Course - Group structured learning platform ($50-100).',
+          'Trio Online Course - Group structured learning platform ($50-100).',
+          'Language App Group - Group language learning subscription ($35-60).',
           'Group Workshop - Team learning session ($60-100).',
           'Group Tutoring - Collaborative academic instruction ($80-120).',
           'Language Club Class - Group foreign language course ($100-150).',
           'Group Certification - Team professional credential program ($150-250).',
-          'University Course - Group continuing education ($150-300).',
+          'Trio University Course - Group continuing education ($150-300).',
           'Learning Adventure - Group educational weekend ($300-600).'
         ],
         '4+ people': [
           'Learning Community - Large group collaborative research and study. Use library resources.',
           'Language Society - Large group foreign language practice sessions. Use free language apps.',
+          'Community Course Taking - Mass online learning through platforms. Use free resources.',
           'Educational Forum - Large group learning discussion meetings.',
           'Language Convention - Large group foreign language conversation practice.',
           'Skill Exchange Network - Large group learning from each other\'s expertise.',
           'Community Library - Large group educational book collection ($50-100).',
+          'Community Online Course - Mass structured learning platform ($70-120).',
+          'Language App Community - Large group language learning subscription ($50-80).',
           'Community Workshop - Mass learning session ($80-120).',
           'Community Tutoring - Large group academic instruction ($100-150).',
           'Language Society Class - Large group foreign language course ($120-200).',
@@ -1432,6 +1576,7 @@ function Activities() {
           'Personal Music Therapy - Calming music and ambient sound sessions.',
           'Solo Journaling - Personal reflective writing and self-care.',
           'Personal Aromatherapy - Individual essential oils and relaxation scents ($15-25).',
+          'Premium Meditation App - Advanced mindfulness subscription ($10-20).',
           'Private Yoga Session - Individual guided instruction ($15-30).',
           'Personal Massage - Individual relaxation treatment ($40-60).',
           'Solo Spa Day - Personal wellness and relaxation treatment ($60-100).',
@@ -1439,31 +1584,33 @@ function Activities() {
           'Luxury Solo Spa - Premium personal wellness experience ($150-300).'
         ],
         '2 people': [
-          'Meditation - Partner mindfulness and stress relief practice. Use free meditation apps.',
-          'Partner Yoga Flow - flexibility and relaxation exercise. Use free online videos.',
-          'Reading Date - book reading and literary relaxation. Use library resources.',
-          'Romantic Nature Walk - peaceful outdoor mindfulness.',
-          'Music Therapy - Shared calming music and ambient sound sessions.',
-          'Partner Journaling - reflective writing and self-care.',
-          'Aromatherapy - Shared essential oils and relaxation scents ($25-40).',
-          'Yoga Class - Partner guided instruction ($25-50).',
-          'Massage - Joint relaxation treatment ($60-100).',
-          'Romantic Spa Day - wellness and relaxation treatment ($100-150).',
-          'Retreat - Partner mindfulness weekend ($150-300).',
-          'Luxury Spa - Premium partner wellness experience ($250-500).'
+          'Couple Meditation - Partner mindfulness and stress relief practice. Use free meditation apps.',
+          'Partner Yoga Flow - Couple flexibility and relaxation exercise. Use free online videos.',
+          'Reading Date - Couple book reading and literary relaxation. Use library resources.',
+          'Romantic Nature Walk - Couple peaceful outdoor mindfulness.',
+          'Couple Music Therapy - Shared calming music and ambient sound sessions.',
+          'Partner Journaling - Couple reflective writing and self-care.',
+          'Couple Aromatherapy - Shared essential oils and relaxation scents ($25-40).',
+          'Partner Meditation App - Joint mindfulness subscription ($15-30).',
+          'Couple Yoga Class - Partner guided instruction ($25-50).',
+          'Couple Massage - Joint relaxation treatment ($60-100).',
+          'Romantic Spa Day - Couple wellness and relaxation treatment ($100-150).',
+          'Couple Retreat - Partner mindfulness weekend ($150-300).',
+          'Luxury Couple Spa - Premium partner wellness experience ($250-500).'
         ],
         '3 people': [
-          'Meditation - Group mindfulness and stress relief practice. Use free meditation apps.',
-          'Group Yoga Flow - Flexibility and relaxation exercise. Use free online videos.',
+          'Trio Meditation - Group mindfulness and stress relief practice. Use free meditation apps.',
+          'Group Yoga Flow - Trio flexibility and relaxation exercise. Use free online videos.',
           'Reading Circle - Group book reading and literary relaxation. Use library resources.',
           'Friends Nature Walk - Group peaceful outdoor mindfulness.',
           'Group Music Therapy - Shared calming music and ambient sound sessions.',
-          'Journaling - Group reflective writing and self-care.',
+          'Trio Journaling - Group reflective writing and self-care.',
           'Group Aromatherapy - Shared essential oils and relaxation scents ($35-60).',
-          'Group Yoga Class - Guided yoga session ($40-80).',
+          'Trio Meditation App - Group mindfulness subscription ($20-40).',
+          'Group Yoga Class - Trio guided instruction ($40-80).',
           'Group Massage - Joint relaxation treatment ($80-120).',
           'Friends Spa Day - Group wellness and relaxation treatment ($120-200).',
-          'Retreat - Group mindfulness weekend ($200-400).',
+          'Trio Retreat - Group mindfulness weekend ($200-400).',
           'Luxury Group Spa - Premium group wellness experience ($350-700).'
         ],
         '4+ people': [
@@ -1474,6 +1621,7 @@ function Activities() {
           'Community Music Therapy - Large group calming music and ambient sound sessions.',
           'Community Journaling - Large group reflective writing and self-care.',
           'Community Aromatherapy - Large group essential oils and relaxation scents ($50-80).',
+          'Community Meditation App - Large group mindfulness subscription ($30-50).',
           'Community Yoga Class - Large group guided instruction ($60-100).',
           'Community Massage - Large group relaxation treatment ($100-150).',
           'Community Spa Day - Large group wellness and relaxation treatment ($150-250).',
@@ -1483,59 +1631,64 @@ function Activities() {
       },
       'Social': {
         '1 person': [
-          'Social Media - Individual online community engagement. Use free online platforms.',
+          'Solo Social Media - Individual online community engagement. Use free online platforms.',
           'Personal Reading - Individual book enjoyment and entertainment. Use library resources.',
-          'Music Discovery - Individual music and podcast exploration. Use free online resources.',
+          'Solo Music Discovery - Individual music and podcast exploration. Use free online resources.',
           'Online Networking - Individual professional and social connections.',
-          'Video Calls - Call your friends and family.',
-          'Community Events - Individual attendance at local free social gatherings.',
-          'Coffee Shop - Individual social connection and conversation at cafes ($5-15).',
-          'Movie Experience - Individual film enjoyment and entertainment ($10-20).',
-          'Board Game Cafe - Individual gaming and socializing ($15-25).',
-          'Restaurant Dining - Individual social dining and relationship building ($20-40).',
-          'Concert Experience - Individual live entertainment and social experience ($30-60).',
-          'Social Club - Individual organized social activities and events ($50-100).',
+          'Solo Video Calls - Individual face-to-face conversations with friends and family.',
+          'Solo Community Events - Individual attendance at local free social gatherings.',
+          'Solo Coffee Shop - Individual social connection and conversation at cafes ($5-15).',
+          'Solo Movie Experience - Individual film enjoyment and entertainment ($10-20).',
+          'Solo Board Game Cafe - Individual gaming and socializing ($15-25).',
+          'Solo Restaurant Dining - Individual social dining and relationship building ($20-40).',
+          'Solo Concert Experience - Individual live entertainment and social experience ($30-60).',
+          'Solo Social Club - Individual organized social activities and events ($50-100).',
+          'Solo VIP Event - Individual premium social experiences and exclusive gatherings ($100-200).'
         ],
         '2 people': [
-          'Coffee Chat - Partner conversation at home. Use home coffee.',
+          'Couple Coffee Chat - Partner conversation at home. Use home coffee.',
           'Cooking Date - Partner meal preparation and dining at home. Cook at home.',
-          'Gaming - Partner video games and board games together. Use free games.',
-          'Video Calls - Partner face-to-face conversations with friends and family.',
-          'Community Events - Partner attendance at local free social gatherings.',
-          'Coffee Shop - Partner social connection and conversation at cafes ($10-25).',
-          'Movie Date - Partner film enjoyment and entertainment ($15-35).',
-          'Board Game Cafe - Partner gaming and socializing ($25-45).',
-          'Restaurant Dining - Partner social dining and relationship building ($30-60).',
-          'Concert Date - Partner live entertainment and social experience ($50-100).',
-          'Social Club - Partner organized social activities and events ($80-150).',
+          'Couple Gaming - Partner video games and board games together. Use free games.',
+          'Couple Video Calls - Partner face-to-face conversations with friends and family.',
+          'Couple Community Events - Partner attendance at local free social gatherings.',
+          'Couple Social Media - Partner online community engagement.',
+          'Couple Coffee Shop - Partner social connection and conversation at cafes ($10-25).',
+          'Couple Movie Date - Partner film enjoyment and entertainment ($15-35).',
+          'Couple Board Game Cafe - Partner gaming and socializing ($25-45).',
+          'Couple Restaurant Dining - Partner social dining and relationship building ($30-60).',
+          'Couple Concert Date - Partner live entertainment and social experience ($50-100).',
+          'Couple Social Club - Partner organized social activities and events ($80-150).',
+          'Couple VIP Event - Partner premium social experiences and exclusive gatherings ($150-350).'
         ],
         '3 people': [
-          'Cooking Session - Group meal preparation and dining at home. Cook at home.',
-          ' Gaming Night - Group video games and board games together. Use free games.',
-          'Chat Session - Group conversation and socializing together. Use free online platforms.',
-          'Video Calls - Group face-to-face conversations with friends and family.',
-          'Community Events - Group attendance at local free social gatherings.',
-          'Social Media - Group online community engagement.',
-          'Coffee Shop - Group social connection and conversation at cafes ($15-35).',
-          'Movie Night - Group film enjoyment and entertainment ($20-50).',
-          'Board Game Cafe - Group gaming and socializing ($35-65).',
-          'Restaurant Dining - Group social dining and conversation at restaurants ($50-90).',
-          'Concert Experience - Group live entertainment and social experience ($80-150).',
-          'Social Club - Group organized social activities and events ($120-200).',
+          'Trio Cooking Session - Group meal preparation and dining at home. Cook at home.',
+          'Trio Gaming Night - Group video games and board games together. Use free games.',
+          'Trio Chat Session - Group conversation and socializing together. Use free online platforms.',
+          'Trio Video Calls - Group face-to-face conversations with friends and family.',
+          'Trio Community Events - Group attendance at local free social gatherings.',
+          'Trio Social Media - Group online community engagement.',
+          'Trio Coffee Shop - Group social connection and conversation at cafes ($15-35).',
+          'Trio Movie Night - Group film enjoyment and entertainment ($20-50).',
+          'Trio Board Game Cafe - Group gaming and socializing ($35-65).',
+          'Trio Restaurant Dining - Group social dining and conversation at restaurants ($50-90).',
+          'Trio Concert Experience - Group live entertainment and social experience ($80-150).',
+          'Trio Social Club - Group organized social activities and events ($120-200).',
+          'Trio VIP Event - Group premium social experiences and exclusive gatherings ($200-450).'
         ],
         '4+ people': [
-          'Cooking Event - Large group meal preparation and dining. Cook at home.',
-          'Gaming Tournament - Large group video games and board games. Use free games.',
-          'Chat Session - Large group conversation and socializing. Use free online platforms.',
-          'Video Calls - Large group face-to-face conversations with friends and family.',
-          'Events Attendance - Large group attendance at local free social gatherings.',
-          'Social Media - Large group online community engagement.',
-          'Coffee Shop - Large group social connection and conversation at cafes ($20-50).',
-          'Movie Night - Large group film enjoyment and entertainment ($30-70).',
-          'Board Game Cafe - Large group gaming and socializing ($50-90).',
-          'Restaurant Dining - Large group social dining and conversation ($80-120).',
-          'Concert Experience - Large group live entertainment and social experience ($120-200).',
-          'Social Club - Large group organized social activities and events ($150-300).',
+          'Community Cooking Event - Large group meal preparation and dining. Cook at home.',
+          'Community Gaming Tournament - Large group video games and board games. Use free games.',
+          'Community Chat Session - Large group conversation and socializing. Use free online platforms.',
+          'Community Video Calls - Large group face-to-face conversations with friends and family.',
+          'Community Events Attendance - Large group attendance at local free social gatherings.',
+          'Community Social Media - Large group online community engagement.',
+          'Community Coffee Shop - Large group social connection and conversation at cafes ($20-50).',
+          'Community Movie Night - Large group film enjoyment and entertainment ($30-70).',
+          'Community Board Game Cafe - Large group gaming and socializing ($50-90).',
+          'Community Restaurant Dining - Large group social dining and conversation ($80-120).',
+          'Community Concert Experience - Large group live entertainment and social experience ($120-200).',
+          'Community Social Club - Large group organized social activities and events ($150-300).',
+          'Community VIP Event - Large group premium social experiences and exclusive gatherings ($300-600).'
         ]
       }
     };
