@@ -93,7 +93,7 @@ body, html {
   padding: 16px 20px;
   font-size: 16px;
   font-family: 'Itim', cursive;
-  border: 2px solid #ff9eb5;
+  border: 2px solid #e8b4b8;
   border-radius: 8px;
   background-color: #fce7f3;
   cursor: pointer;
@@ -113,15 +113,15 @@ body, html {
 }
 
 .dropdown-button:hover {
-  border-color: #ff8a9b;
+  border-color: #e8b4b8;
   background-color: #f9a8d4;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .dropdown-button:focus {
   outline: none;
-  border-color: #ff8a9b;
-  box-shadow: 0 0 0 3px rgba(255, 138, 155, 0.1);
+  border-color: #e8b4b8;
+  box-shadow: 0 0 0 3px rgba(232, 180, 184, 0.1);
 }
 
 .dropdown-text {
@@ -149,7 +149,7 @@ body, html {
   left: 0;
   right: 0;
   background-color: #fce7f3;
-  border: 2px solid #ff9eb5;
+  border: 2px solid #e8b4b8;
   border-top: none;
   border-radius: 0 0 8px 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -200,7 +200,7 @@ body, html {
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border: 2px solid #8b5a6b;
+  border: 2px solid #e8b4b8;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -282,7 +282,7 @@ body, html {
 
 .compact-suggestion {
   padding: 15px 18px;
-  background-color: #f8f9fa;
+  background-color: #fdf6e3;
   border-radius: 6px;
   border-left: 3px solid #c4a3bf;
   font-family: 'Itim', cursive;
@@ -383,7 +383,7 @@ body, html {
 
 .suggestion-item {
   padding: 15px 20px;
-  background-color: #f8f9fa;
+  background-color: #fdf6e3;
   border-radius: 8px;
   border-left: 4px solid #c4a3bf;
   font-family: 'Itim', cursive;
