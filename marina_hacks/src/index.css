@@ -66,3 +66,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Text selection highlight - light pink */
+::selection {
+  background-color: #ffb6c1;
+  color: #333;
+}
+
+::-moz-selection {
+  background-color: #ffb6c1;
+  color: #333;
+}

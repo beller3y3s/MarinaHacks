@@ -110,3 +110,14 @@ html, body {
   animation: heart-float 2s ease-out forwards;
   filter: drop-shadow(0 2px 4px rgba(255, 105, 180, 0.3));
 }
+
+/* Text selection highlight - light pink */
+::selection {
+  background-color: #ffb6c1;
+  color: #333;
+}
+
+::-moz-selection {
+  background-color: #ffb6c1;
+  color: #333;
+}
