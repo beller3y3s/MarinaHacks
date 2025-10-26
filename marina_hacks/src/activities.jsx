@@ -4,13 +4,25 @@ import './activities.css';
 
 function Activities() {
   const navigate = useNavigate();
+  const [selectedAge, setSelectedAge] = useState('');
   const [selectedPeople, setSelectedPeople] = useState('');
+  const [isAgeOpen, setIsAgeOpen] = useState(false);
   const [isPeopleOpen, setIsPeopleOpen] = useState(false);
   const [selectedActivity, setSelectedActivity] = useState('');
   const [isActivityOpen, setIsActivityOpen] = useState(false);
   const [isGenerated, setIsGenerated] = useState(false);
   const [reloadCount, setReloadCount] = useState(0);
   const [hearts, setHearts] = useState([]);
+
+  const ageOptions = [
+    'Age',
+    'Under 18',
+    '18-25',
+    '26-35',
+    '36-50',
+    '51-65',
+    '65+'
+  ];
 
   const peopleOptions = [
     'How many people?',
@@ -29,6 +41,16 @@ function Activities() {
     'Social'
   ];
 
+
+  const handleAgeSelect = (age) => {
+    if (age === 'Age') {
+      setSelectedAge('');
+    } else {
+      setSelectedAge(age);
+    }
+    setIsAgeOpen(false);
+    setIsGenerated(false);
+  };
 
   const handlePeopleSelect = (people) => {
     if (people === 'How many people?') {
@@ -79,11 +101,193 @@ function Activities() {
     navigate('/');
   };
 
+  // Get age-specific activities
+  const getAgeSpecificActivities = (age, activityType, peopleCount) => {
+    const ageSpecificActivities = {
+      'Under 18': {
+        'Creative': {
+          '1 person': [
+            'School Art Project - Create artwork for school assignments using free materials.',
+            'YouTube Art Tutorial - Follow online art tutorials for beginners.',
+            'DIY Room Decor - Make decorations for your bedroom using recycled materials.',
+            'Sketchbook Journaling - Keep a daily art journal with drawings and ideas.',
+            'Craft Kit Building - Assemble and customize craft kits from local stores ($5-15).'
+          ],
+          '2 people': [
+            'Art Study Buddy - Practice drawing together and give each other feedback.',
+            'Craft Competition - Challenge each other to create the best art project.',
+            'School Mural - Collaborate on a mural for your school or community.',
+            'Art Supply Sharing - Share art materials and try new techniques together.',
+            'Craft Kit Duo - Work on craft kits together ($10-25).'
+          ],
+          '3 people': [
+            'Art Club Meeting - Start a small art club with friends.',
+            'Group Mural Project - Create a large artwork together for school.',
+            'Craft Exchange - Make crafts and trade them with each other.',
+            'Art Challenge Group - Weekly art challenges with friends.',
+            'Craft Kit Party - Group craft kit assembly ($15-35).'
+          ],
+          '4+ people': [
+            'School Art Exhibition - Organize an art show at school.',
+            'Community Art Project - Create art for local community center.',
+            'Art Workshop Group - Take group art classes together.',
+            'Craft Fair Preparation - Prepare crafts for school fair.',
+            'Art Club Field Trip - Visit local art museums and galleries ($20-40).'
+          ]
+        },
+        'Active': {
+          '1 person': [
+            'Bike Riding - Explore neighborhood on your bike.',
+            'Jump Rope - Practice jump rope tricks and routines.',
+            'Hula Hooping - Learn hula hoop tricks and dance moves.',
+            'Scooter Riding - Practice scooter tricks at local skate park.',
+            'Swimming Lessons - Improve swimming skills at local pool ($10-20).'
+          ],
+          '2 people': [
+            'Bike Race - Friendly bike racing with friends.',
+            'Jump Rope Duo - Learn partner jump rope routines.',
+            'Hula Hoop Battle - Compete in hula hoop tricks.',
+            'Scooter Tag - Play tag on scooters at skate park.',
+            'Swimming Buddy - Practice swimming together ($15-30).'
+          ],
+          '3 people': [
+            'Bike Group Ride - Explore new bike trails together.',
+            'Jump Rope Team - Learn group jump rope routines.',
+            'Hula Hoop Circle - Create group hula hoop performances.',
+            'Scooter Gang - Practice scooter tricks as a group.',
+            'Swimming Team - Join local swimming team ($25-50).'
+          ],
+          '4+ people': [
+            'Bike Club - Start a bike club with friends.',
+            'Jump Rope Squad - Perform jump rope routines together.',
+            'Hula Hoop Troupe - Create group hula hoop shows.',
+            'Scooter Crew - Organize scooter competitions.',
+            'Swimming Club - Join competitive swimming team ($40-80).'
+          ]
+        }
+      },
+      '65+': {
+        'Creative': {
+          '1 person': [
+            'Gentle Watercolor - Relaxing watercolor painting with soft brushes.',
+            'Adult Coloring Books - Detailed coloring for stress relief.',
+            'Knitting Circle - Learn or continue knitting projects.',
+            'Garden Art - Create art using natural materials from garden.',
+            'Art Therapy Session - Guided art therapy for relaxation ($20-40).'
+          ],
+          '2 people': [
+            'Couple Painting - Paint together in a relaxed setting.',
+            'Knitting Partners - Work on knitting projects together.',
+            'Garden Art Duo - Create garden art installations together.',
+            'Art Appreciation - Visit art galleries and discuss artwork.',
+            'Art Therapy Couple - Joint art therapy sessions ($30-60).'
+          ],
+          '3 people': [
+            'Senior Art Group - Join senior art classes.',
+            'Knitting Circle - Regular knitting group meetings.',
+            'Garden Art Club - Create art for community gardens.',
+            'Art Discussion Group - Discuss art history and techniques.',
+            'Art Therapy Group - Group art therapy sessions ($40-80).'
+          ],
+          '4+ people': [
+            'Senior Art Society - Join senior art organization.',
+            'Knitting Guild - Participate in knitting guild activities.',
+            'Community Garden Art - Create art for community spaces.',
+            'Art Lecture Series - Attend art history lectures.',
+            'Art Therapy Workshop - Group art therapy workshops ($60-120).'
+          ]
+        },
+        'Active': {
+          '1 person': [
+            'Gentle Walking - Daily walks in neighborhood or park.',
+            'Tai Chi - Practice gentle tai chi movements.',
+            'Swimming - Low-impact swimming at local pool.',
+            'Gardening - Light gardening and plant care.',
+            'Senior Fitness Class - Gentle exercise class ($15-25).'
+          ],
+          '2 people': [
+            'Walking Partners - Regular walking with friends.',
+            'Tai Chi Duo - Practice tai chi together.',
+            'Swimming Buddies - Gentle swimming together.',
+            'Garden Partners - Share gardening activities.',
+            'Senior Fitness Couple - Joint fitness classes ($25-45).'
+          ],
+          '3 people': [
+            'Walking Group - Group walks in local parks.',
+            'Tai Chi Circle - Group tai chi practice.',
+            'Swimming Group - Senior swimming group.',
+            'Garden Club - Community gardening group.',
+            'Senior Fitness Group - Group exercise classes ($35-65).'
+          ],
+          '4+ people': [
+            'Senior Walking Club - Organized walking group.',
+            'Tai Chi Society - Community tai chi organization.',
+            'Senior Swimming Club - Competitive senior swimming.',
+            'Community Garden - Large community gardening project.',
+            'Senior Fitness Center - Comprehensive senior fitness program ($50-100).'
+          ]
+        }
+      }
+    };
+
+    return ageSpecificActivities[age]?.[activityType]?.[peopleCount] || [];
+  };
+
   // AI-generated activity suggestions based on selections
   const generateActivitySuggestions = () => {
-    if (!selectedPeople || !selectedActivity) {
+    if (!selectedAge || !selectedPeople || !selectedActivity) {
       return [];
     }
+
+    // Age-appropriate activity filtering
+    const isAgeAppropriate = (activity) => {
+      const activityText = activity.toLowerCase();
+      
+      switch (selectedAge) {
+        case 'Under 18':
+          // Avoid activities with alcohol, expensive equipment, or adult themes
+          return !activityText.includes('wine') && 
+                 !activityText.includes('bar') && 
+                 !activityText.includes('club') &&
+                 !activityText.includes('$100+') &&
+                 !activityText.includes('$200+') &&
+                 !activityText.includes('$300+') &&
+                 !activityText.includes('$400+') &&
+                 !activityText.includes('$500+');
+        
+        case '18-25':
+          // Include social activities, nightlife, and budget-friendly options
+          return true; // Most activities are appropriate for this age group
+        
+        case '26-35':
+          // Include professional development, networking, and moderate-cost activities
+          return true; // Most activities are appropriate for this age group
+        
+        case '36-50':
+          // Include family-friendly and professional activities
+          return true; // Most activities are appropriate for this age group
+        
+        case '51-65':
+          // Avoid high-intensity activities, prefer cultural and educational
+          return !activityText.includes('extreme') && 
+                 !activityText.includes('intense') &&
+                 !activityText.includes('high-energy') &&
+                 !activityText.includes('adrenaline');
+        
+        case '65+':
+          // Focus on gentle, accessible, and cultural activities
+          return !activityText.includes('extreme') && 
+                 !activityText.includes('intense') &&
+                 !activityText.includes('high-energy') &&
+                 !activityText.includes('adrenaline') &&
+                 !activityText.includes('rock climbing') &&
+                 !activityText.includes('skateboarding') &&
+                 !activityText.includes('martial arts');
+        
+        default:
+          return true;
+      }
+    };
 
     const suggestions = {
       'Creative': {
@@ -551,8 +755,15 @@ function Activities() {
 
     const baseSuggestions = suggestions[selectedActivity]?.[selectedPeople] || [];
     
+    // Filter suggestions based on age appropriateness
+    const ageFilteredSuggestions = baseSuggestions.filter(isAgeAppropriate);
+    
+    // Add age-specific activities
+    const ageSpecificActivities = getAgeSpecificActivities(selectedAge, selectedActivity, selectedPeople);
+    const allSuggestions = [...ageFilteredSuggestions, ...ageSpecificActivities];
+    
     // AI-like suggestion generation with variety based on reload count
-    const shuffledSuggestions = [...baseSuggestions];
+    const shuffledSuggestions = [...allSuggestions];
     
     // Shuffle the array based on reloadCount for more variety
     for (let i = shuffledSuggestions.length - 1; i > 0; i--) {
@@ -605,6 +816,33 @@ function Activities() {
       <h1 className="activities-title">Activities</h1>
       </div>
       <div className="dropdowns-wrapper">
+        <div className="dropdown-wrapper">
+          <div className="dropdown">
+            <button 
+              className="dropdown-button"
+              onClick={() => setIsAgeOpen(!isAgeOpen)}
+              onBlur={() => setTimeout(() => setIsAgeOpen(false), 200)}
+            >
+              <span className="dropdown-text">{selectedAge || 'Age'}</span>
+              <span className={`dropdown-arrow ${isAgeOpen ? 'open' : ''}`}>▼</span>
+            </button>
+            
+            {isAgeOpen && (
+              <div className="dropdown-menu">
+                {ageOptions.map((option, index) => (
+                  <div
+                    key={index}
+                    className="dropdown-item"
+                    onClick={() => handleAgeSelect(option)}
+                  >
+                    {option}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+
         <div className="dropdown-wrapper">
           <div className="dropdown">
             <button 
@@ -666,7 +904,7 @@ function Activities() {
         <button 
           className="generate-button"
           onClick={handleGenerate}
-          disabled={!selectedPeople || !selectedActivity}
+          disabled={!selectedAge || !selectedPeople || !selectedActivity}
         >
           Generate
         </button>
@@ -675,7 +913,7 @@ function Activities() {
       {/* Fixed Size Output Box */}
       <div className="fixed-output-box">
         <div className="output-content">
-          {isGenerated && selectedPeople && selectedActivity ? (
+          {isGenerated && selectedAge && selectedPeople && selectedActivity ? (
             <div className="suggestions-content">
               <div className="suggestions-header-container">
               <h3 className="suggestions-header">Activity Suggestions</h3>
