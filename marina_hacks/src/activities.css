@@ -93,9 +93,9 @@ body, html {
   padding: 16px 20px;
   font-size: 16px;
   font-family: 'Itim', cursive;
-  border: 2px solid #e1e5e9;
+  border: 2px solid #ff9eb5;
   border-radius: 8px;
-  background-color: white;
+  background-color: #fce7f3;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -113,14 +113,15 @@ body, html {
 }
 
 .dropdown-button:hover {
-  border-color: #646cff;
+  border-color: #ff8a9b;
+  background-color: #f9a8d4;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .dropdown-button:focus {
   outline: none;
-  border-color: #646cff;
-  box-shadow: 0 0 0 3px rgba(100, 108, 255, 0.1);
+  border-color: #ff8a9b;
+  box-shadow: 0 0 0 3px rgba(255, 138, 155, 0.1);
 }
 
 .dropdown-text {
@@ -147,8 +148,8 @@ body, html {
   top: 100%;
   left: 0;
   right: 0;
-  background-color: white;
-  border: 2px solid #e1e5e9;
+  background-color: #fce7f3;
+  border: 2px solid #ff9eb5;
   border-top: none;
   border-radius: 0 0 8px 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -184,11 +185,11 @@ body, html {
 }
 
 .dropdown-item:hover {
-  background-color: #f8f9fa;
+  background-color: #f9a8d4;
 }
 
 .dropdown-item:active {
-  background-color: #e9ecef;
+  background-color: #f472b6;
 }
 
 /* Fixed Size Output Box */
@@ -199,7 +200,7 @@ body, html {
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border: 2px solid #e1e5e9;
+  border: 2px solid #8b5a6b;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -264,6 +265,11 @@ body, html {
   transform: rotate(180deg) scale(0.95);
 }
 
+.reload-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(196, 163, 191, 0.1);
+}
+
 .suggestions-text {
   flex: 1;
   overflow-y: auto;
@@ -278,7 +284,7 @@ body, html {
   padding: 15px 18px;
   background-color: #f8f9fa;
   border-radius: 6px;
-  border-left: 3px solid #646cff;
+  border-left: 3px solid #c4a3bf;
   font-family: 'Itim', cursive;
   font-size: 17px;
   line-height: 1.4;
@@ -308,7 +314,7 @@ body, html {
 .generate-button {
   background-color: #8b5a6b;
   color: white;
-  border: none;
+  border: 2px solid #c4a3bf;
   border-radius: 50px;
   padding: 15px 40px;
   font-size: 18px;
@@ -322,18 +328,27 @@ body, html {
 
 .generate-button:hover:not(:disabled) {
   background-color: #7a4d5a;
+  border: 2px solid #c4a3bf;
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(139, 90, 107, 0.4);
 }
 
 .generate-button:active:not(:disabled) {
+  border: 2px solid #c4a3bf;
   transform: translateY(0);
   box-shadow: 0 2px 4px rgba(139, 90, 107, 0.3);
+}
+
+.generate-button:focus {
+  outline: none;
+  border: 2px solid #c4a3bf;
+  box-shadow: 0 0 0 3px rgba(196, 163, 191, 0.1);
 }
 
 .generate-button:disabled {
   background-color: #ccc;
   color: #666;
+  border: 2px solid #c4a3bf;
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
@@ -370,7 +385,7 @@ body, html {
   padding: 15px 20px;
   background-color: #f8f9fa;
   border-radius: 8px;
-  border-left: 4px solid #646cff;
+  border-left: 4px solid #c4a3bf;
   font-family: 'Itim', cursive;
   font-size: 14px;
   line-height: 1.5;
