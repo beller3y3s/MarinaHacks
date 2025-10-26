@@ -48,9 +48,7 @@ function AboutPage() {
       <h1 className="about-title">About</h1>
       <h2 className="about-subtitle">Origin / Introduction</h2>
       <p className="about-text">
-        A website that was made for California State University, Long Beach's annual hackathon, MarinaHacks. For MarinaHacks 5.0, we created this site to provide convenience to our users who are looking for options to do by themselves or with their friends, whether it be creative, active, or even productive. This website was made to help individuals and friend groups discover fun, spontaneous "side quests", activities, and hobbies to do when they're bored or just looking for something new.
-
-        Searching for recommendations separately on our search engines may be tedious. In this convenient web page, users can find activities and nearby events within their interests and needs. With our website's flexibility, we hope to be a suited website for users.
+        Hi users! Thank you for visiting our website ^-^ This was made for California State University, Long Beach's annual hackathon, MarinaHacks 5.0. We created this site to provide convenience to our users who are looking for activities to do by themselves or with their friends, whether it is creative, active, or productive. We hope to help you discover fun side quests and new hobbies to do when bored or just looking for something new! Thank you again for visiting our site &lt;3
         <br />
         <br />🥕
       </p>
