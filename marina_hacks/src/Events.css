@@ -1,42 +1,22 @@
-/* Import Hachi Maru Pop font */
-@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
-
-/* Ensure entire page has the same gradient background as other pages */
-html, body {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(135deg, #f8f4ff 0%, #fff0f5 50%, #f0f8ff 100%);
-  min-height: 100vh;
-  display: block; /* Override flex from index.css */
-}
-
-#root {
-  max-width: none; /* Override max-width from App.css */
-  margin: 0;
-  padding: 0;
-  text-align: left; /* Override text-align from App.css */
-}
+/* Events Page Styles */
 
 .events-page {
   min-height: 100vh;
+  padding: 60px 20px 20px 20px;
   background: linear-gradient(135deg, #f8f4ff 0%, #fff0f5 50%, #f0f8ff 100%);
   display: flex;
-  flex-direction: column; /* stacks elements vertically */
-  align-items: center; /* centers horizontally */
-  justify-content: center; /* centers vertically */
-  margin: 0;
-  padding: 0;
-  position: relative;
+  flex-direction: column;
+  align-items: center;
 }
 
 .back-button {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 20px;
   background: linear-gradient(135deg, #e9d5ff 0%, #d8b4fe 100%);
-  color: #000000;
+  color: #6b21a8;
   border: none;
-  border-radius: 0 0 15px 0;
+  border-radius: 15px;
   padding: 12px 20px;
   font-size: 1rem;
   font-weight: 600;
@@ -54,547 +34,176 @@ html, body {
 }
 
 .events-title {
-  font-family: 'Hachi Maru Pop', cursive;
+  font-family: 'Short Stack', cursive;
   font-size: 3rem;
-  font-weight: 700; /* Explicit bold weight */
-  color: #000;
-  text-align: center;
-  margin: 0;
-  margin-top: -5rem; /* Move title down from previous position */
-}
-
-.location-section {
-  max-width: 600px;
-  margin: 2rem auto 0;
-  padding: 0 2rem;
-  text-align: center;
-}
-
-.location-text {
-  font-size: 1.2rem;
-  color: #000;
-  margin-bottom: 1rem;
-  line-height: 1.5;
-  font-family: 'Itim', cursive;
-}
-
-.location-button {
-  background-color: #ff6b9d;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: 'Hachi Maru Pop', cursive;
-}
-
-.location-button:hover {
-  background-color: #ff4d7a;
-}
-
-.location-options {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.location-button.secondary {
-  background-color: white;
-  color: #ff6b9d;
-  border: 2px solid #ff6b9d;
-}
-
-.location-button.secondary:hover {
-  background-color: #fff0f5;
-  color: #ff4d7a;
-}
-
-.manual-location-section {
-  margin-top: 1.5rem;
-  padding: 1rem;
-  background-color: white;
-  border-radius: 12px;
-  border: 2px solid #ffd1dc;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.location-input-group {
-  display: flex;
-  gap: 0.75rem;
-  margin: 0.75rem 0;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.input-with-suggestions {
-  flex: 1;
-  position: relative;
-}
-
-.location-input {
-  flex: 1;
-  padding: 6px 10px;
-  border: 2px solid #ffd1dc;
-  border-radius: 15px;
-  font-size: 0.85rem;
-  outline: none;
-  transition: border-color 0.3s ease;
-  background-color: white;
-  color: #000;
-}
-
-.location-input:focus {
-  border-color: #ff6b9d;
-  background-color: white;
-  color: #000;
-}
-
-.back-button {
-  background-color: transparent;
-  color: #666;
-  border: none;
-  padding: 8px 16px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.back-button:hover {
-  color: #ff6b9d;
-}
-
-.suggestions-dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background-color: white;
-  border: 2px solid #ffd1dc;
-  border-top: none;
-  border-radius: 0 0 15px 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  max-height: 200px;
-  overflow-y: auto;
-}
-
-.suggestion-item {
-  padding: 12px 16px;
-  cursor: pointer;
-  border-bottom: 1px solid #f0f0f0;
-  transition: background-color 0.2s ease;
   color: #333;
-  font-size: 0.9rem;
+  text-align: center;
+  margin: 0 0 30px 0;
 }
 
-.suggestion-item:hover {
-  background-color: #fff0f5;
-  color: #ff6b9d;
-}
-
-.suggestion-item:last-child {
-  border-bottom: none;
-}
-
-.location-loading {
+.events-subtitle {
+  font-family: 'Short Stack', cursive;
+  font-size: 1.2rem;
   color: #666;
+  text-align: center;
+  margin: 20px 0;
 }
 
-.location-success {
-  color: #2d5a2d;
-}
-
-.coordinates-text {
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 0.5rem;
-}
-
-.location-error {
-  color: #d32f2f;
-}
-
-.error-text {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-}
-
-.categories-section {
-  margin-top: 2rem;
-}
-
-.categories-title {
-  font-family: 'Hachi Maru Pop', cursive;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #000;
-  margin-bottom: 1.5rem;
-}
-
-.categories-grid {
+/* Categories */
+.categories-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin-bottom: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 600px;
+  width: 100%;
+  margin: 30px 0;
 }
 
 .category-button {
-  background-color: white;
-  border: 2px solid #ff6b9d;
-  border-radius: 15px;
-  padding: 1rem;
+  background: white;
+  border: 2px solid #e8b4b8;
+  border-radius: 12px;
+  padding: 20px;
   cursor: pointer;
-  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  min-height: 100px;
+  gap: 10px;
+  transition: all 0.3s ease;
+  font-family: 'Short Stack', cursive;
 }
 
 .category-button:hover {
-  background-color: #fff0f5;
-  transform: translateY(-2px);
+  border-color: #f9a8d4;
+  background: #fce7f3;
+  transform: scale(1.05);
 }
 
 .category-button.selected {
-  background-color: #ff6b9d;
-  color: white;
-  border-color: #ff4d7a;
+  background: linear-gradient(135deg, #fff0f5 0%, #ffe0e6 100%);
+  border-color: #f9a8d4;
+  box-shadow: 0 4px 12px rgba(249, 168, 212, 0.3);
 }
 
 .category-icon {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .category-name {
-  font-size: 0.9rem;
-  font-weight: bold;
-  text-align: center;
-  line-height: 1.2;
-  color: #000;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
 }
 
-.search-section {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.selected-text {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 1rem;
-}
-
-.search-button {
-  background-color: #ff6b9d;
+/* Show Events Button */
+.show-events-button {
+  background: #8b5a6b;
   color: white;
   border: none;
-  padding: 15px 30px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border-radius: 25px;
+  border-radius: 50px;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-family: 'Short Stack', cursive;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: 'Hachi Maru Pop', cursive;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(139, 90, 107, 0.3);
 }
 
-.search-button:hover {
-  background-color: #ff4d7a;
+.show-events-button:hover {
+  background: #7a4d5a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(139, 90, 107, 0.4);
 }
 
-.searching-section {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.loading-spinner {
-  width: 40px;
-  height: 40px;
-  border: 4px solid #ffd1dc;
-  border-top: 4px solid #ff6b9d;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-  margin: 1rem auto;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.results-section {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.results-title {
-  font-family: 'Hachi Maru Pop', cursive;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #000;
-  margin-bottom: 1rem;
-}
-
-.results-text {
-  font-size: 1.1rem;
-  color: #000;
-  margin-bottom: 2rem;
-}
-
+/* Events Results */
 .events-results {
+  max-width: 800px;
+  width: 100%;
+}
+
+.category-title {
+  font-family: 'Short Stack', cursive;
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Events List */
+.events-list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.category-results {
-  background-color: white;
-  border-radius: 15px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.category-header {
-  font-family: 'Hachi Maru Pop', cursive;
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #ff6b9d;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.events-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
+  gap: 20px;
+  margin: 30px 0;
 }
 
 .event-card {
-  background-color: #fff0f5;
-  border: 1px solid #ffd1dc;
-  border-radius: 10px;
-  padding: 1rem;
-  transition: transform 0.3s ease;
+  background: white;
+  border: 2px solid #e8b4b8;
+  border-radius: 12px;
+  padding: 25px;
+  font-family: 'Short Stack', cursive;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
 .event-card:hover {
+  border-color: #f9a8d4;
+  box-shadow: 0 4px 12px rgba(249, 168, 212, 0.3);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 107, 157, 0.2);
-  border-color: #ff6b9d;
 }
 
 .event-title {
-  font-family: 'Hachi Maru Pop', cursive;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #000;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #8b5a6b;
+  margin: 0 0 10px 0;
 }
 
 .event-date {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #666;
-  margin-bottom: 0.3rem;
-}
-
-.event-location {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 0.5rem;
+  margin: 5px 0;
 }
 
 .event-description {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: #333;
-  line-height: 1.4;
-  margin-bottom: 0.8rem;
+  margin: 10px 0;
+  line-height: 1.6;
 }
 
 .event-link {
-  display: inline-block;
-  background-color: #ff6b9d;
-  color: white;
-  text-decoration: none;
-  padding: 6px 12px;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  font-family: 'Hachi Maru Pop', cursive;
-}
-
-.event-link:hover {
-  background-color: #ff4d7a;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(255, 107, 157, 0.3);
-}
-
-.action-buttons {
-  margin-top: 2rem;
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.new-search-button {
-  background-color: #ff6b9d;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: 'Hachi Maru Pop', cursive;
-}
-
-.new-search-button:hover {
-  background-color: #ff4d7a;
-}
-
-.refresh-button {
-  background-color: #e9d5ff;
-  color: #6b21a8;
-  border: none;
-  padding: 12px 24px;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: 'Short Stack', cursive;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.refresh-button:hover {
-  background-color: #d8b4fe;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.refresh-button:disabled {
-  background-color: #ccc;
-  color: #666;
-  cursor: not-allowed;
-  transform: none;
-  box-shadow: none;
-}
-
-.location-options {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-.location-button.secondary {
-  background-color: #f0f0f0;
-  color: #333;
-}
-
-.location-button.secondary:hover {
-  background-color: #e0e0e0;
-}
-
-.manual-location-section {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  border: 2px solid #ffb6c1;
-}
-
-.location-input-group {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-}
-
-.input-with-suggestions {
-  position: relative;
-  width: 100%;
-  max-width: 400px;
-}
-
-.location-input {
-  width: 100%;
-  padding: 4px 8px;
-  border: 2px solid #ddd;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  background-color: white;
-  color: #000;
-  transition: border-color 0.3s ease;
-}
-
-.location-input:focus {
-  outline: none;
-  border-color: #ff6b9d;
-  background-color: white;
-  color: #000;
-}
-
-.suggestions-dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background-color: white;
-  border: 1px solid #ddd;
-  border-top: none;
-  border-radius: 0 0 8px 8px;
-  max-height: 200px;
-  overflow-y: auto;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.suggestion-item {
-  padding: 0.75rem;
-  cursor: pointer;
-  border-bottom: 1px solid #eee;
-  color: #333;
-  transition: background-color 0.2s ease;
-}
-
-.suggestion-item:hover {
-  background-color: #f5f5f5;
-}
-
-.suggestion-item:last-child {
-  border-bottom: none;
-}
-
-.back-button {
-  background-color: #6c757d;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
+  margin-top: 15px;
+  color: #8b5a6b;
+  font-weight: 600;
   font-size: 0.9rem;
-  margin-top: 1rem;
-  transition: background-color 0.3s ease;
 }
 
-.back-button:hover {
-  background-color: #5a6268;
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .events-title {
+    font-size: 2rem;
+  }
+
+  .categories-container {
+    grid-template-columns: 1fr;
+  }
+
+  .category-button {
+    padding: 15px;
+  }
+
+  .category-icon {
+    font-size: 2.5rem;
+  }
+
+  .event-card {
+    padding: 20px;
+  }
+
+  .event-title {
+    font-size: 1.3rem;
+  }
 }
