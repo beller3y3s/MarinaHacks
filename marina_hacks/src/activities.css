@@ -95,7 +95,7 @@ body, html {
   font-family: 'Itim', cursive;
   border: 2px solid #e8b4b8;
   border-radius: 8px;
-  background-color: #fce7f3;
+  background-color: white;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -185,11 +185,11 @@ body, html {
 }
 
 .dropdown-item:hover {
-  background-color: #f9a8d4;
+  background-color: #f8f9fa;
 }
 
 .dropdown-item:active {
-  background-color: #f472b6;
+  background-color: #e9ecef;
 }
 
 /* Fixed Size Output Box */
@@ -265,11 +265,6 @@ body, html {
   transform: rotate(180deg) scale(0.95);
 }
 
-.reload-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(196, 163, 191, 0.1);
-}
-
 .suggestions-text {
   flex: 1;
   overflow-y: auto;
@@ -284,7 +279,7 @@ body, html {
   padding: 15px 18px;
   background-color: #fdf6e3;
   border-radius: 6px;
-  border-left: 3px solid #c4a3bf;
+  border-left: 3px solid #646cff;
   font-family: 'Itim', cursive;
   font-size: 17px;
   line-height: 1.4;
@@ -314,7 +309,7 @@ body, html {
 .generate-button {
   background-color: #8b5a6b;
   color: white;
-  border: 2px solid #c4a3bf;
+  border: none;
   border-radius: 50px;
   padding: 15px 40px;
   font-size: 18px;
@@ -328,27 +323,18 @@ body, html {
 
 .generate-button:hover:not(:disabled) {
   background-color: #7a4d5a;
-  border: 2px solid #c4a3bf;
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(139, 90, 107, 0.4);
 }
 
 .generate-button:active:not(:disabled) {
-  border: 2px solid #c4a3bf;
   transform: translateY(0);
   box-shadow: 0 2px 4px rgba(139, 90, 107, 0.3);
-}
-
-.generate-button:focus {
-  outline: none;
-  border: 2px solid #c4a3bf;
-  box-shadow: 0 0 0 3px rgba(196, 163, 191, 0.1);
 }
 
 .generate-button:disabled {
   background-color: #ccc;
   color: #666;
-  border: 2px solid #c4a3bf;
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
@@ -385,7 +371,7 @@ body, html {
   padding: 15px 20px;
   background-color: #fdf6e3;
   border-radius: 8px;
-  border-left: 4px solid #c4a3bf;
+  border-left: 4px solid #646cff;
   font-family: 'Itim', cursive;
   font-size: 14px;
   line-height: 1.5;
