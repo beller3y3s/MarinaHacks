@@ -166,6 +166,614 @@ function Activities() {
           ]
         }
       },
+      '18-25': {
+        'Creative': {
+          '1 person': [
+            'Digital Art Creation - Create digital artwork using free design software.',
+            'Song Writing - Write original music and lyrics.',
+            'Photography - Explore urban photography and street art.',
+            'DIY Fashion Design - Upcycle thrift store finds into unique pieces ($10-20).',
+            'Indie Film Making - Create short films on smartphone ($15-30).'
+          ],
+          '2 people': [
+            'Open Mic Night - Perform music or poetry at local cafes.',
+            'Art Walk - Explore street art and murals together.',
+            'Thrift Store Challenge - Competitive vintage clothing hunt ($20-40).',
+            'Podcast Creation - Start a podcast with friends.',
+            'Concert Going - Attend local indie music shows ($30-60).'
+          ],
+          '3 people': [
+            'College Art Exhibition - Showcase group artwork on campus.',
+            'Music Jam Session - Collaborate on original music.',
+            'Film Festival - Create and submit short films ($40-80).',
+            'Art Collective - Join local artists for collaborative projects.',
+            'Creative Workshop - Learn new artistic skills together ($50-100).'
+          ],
+          '4+ people': [
+            'Art Gallery Opening - Attend and network at exhibitions.',
+            'Music Festival - Large group concert attendance ($60-120).',
+            'Creative Retreat - Weekend art and music immersion ($100-200).',
+            'Film Competition - Enter group film contests.',
+            'Artisan Market - Sell handmade goods at local markets ($150-300).'
+          ]
+        },
+        'Active': {
+          '1 person': [
+            'Gym Workout - Solo strength and cardio training.',
+            'Running - Solo outdoor running and jogging.',
+            'Beach Volleyball - Individual court practice.',
+            'Rock Climbing - Indoor climbing wall sessions ($15-25).',
+            'Dance Class - Individual dance lessons ($20-35).'
+          ],
+          '2 people': [
+            'Gym Buddy Sessions - Partner workout routines.',
+            'Running Partners - Joint outdoor running.',
+            'Beach Volleyball Match - Friendly doubles games.',
+            'Rock Climbing Partners - Indoor climbing together ($30-50).',
+            'Partner Dance Lessons - Learn together ($35-65).'
+          ],
+          '3 people': [
+            'Gym Squad - Group workout sessions.',
+            'Running Group - Group outdoor running.',
+            'Beach Volleyball Tournament - Trio competitive play.',
+            'Rock Climbing Trio - Group climbing sessions ($50-75).',
+            'Group Dance Class - Trio dance lessons ($60-100).'
+          ],
+          '4+ people': [
+            'Fitness Club - Organized group fitness activities.',
+            'Running Club - Regular group runs.',
+            'Beach Volleyball League - Competitive team play.',
+            'Rock Climbing Gym - Group climbing memberships ($80-150).',
+            'Dance Studio Membership - Group dance classes ($120-200).'
+          ]
+        },
+        'Social': {
+          '1 person': [
+            'Coffee Shop Studying - Work and study at cafes.',
+            'Local Concert - Attend indie music shows alone.',
+            'Student Events - Participate in campus activities.',
+            'Bar Hopping - Solo night out exploring venues ($25-50).',
+            'Comedy Club - Attend stand-up shows ($15-30).'
+          ],
+          '2 people': [
+            'Coffee Date - Catch up with friends at cafes.',
+            'Concert Date - Attend live music together ($40-80).',
+            'Campus Events - Join student activities as a pair.',
+            'Night Out - Explore nightlife together ($50-100).',
+            'Comedy Night - Attend stand-up shows ($30-60).'
+          ],
+          '3 people': [
+            'Study Group - Collaborative learning sessions.',
+            'Concert Trio - Attend live music together ($60-120).',
+            'Party Planning - Organize social gatherings.',
+            'Group Night Out - Socialize at bars and clubs ($80-150).',
+            'Comedy Night - Attend shows together ($50-100).'
+          ],
+          '4+ people': [
+            'College Parties - Attend large social gatherings.',
+            'Music Festival - Group concert experience ($100-200).',
+            'Group Trips - Organized travel to events.',
+            'Night Out Group - Large group socializing ($120-250).',
+            'Comedy Festival - Group stand-up experience ($80-150).'
+          ]
+        },
+        'Educational': {
+          '1 person': [
+            'Online Courses - Free college-level courses.',
+            'Language Learning - Duolingo and similar apps.',
+            'Podcast Series - Educational podcasts on interests.',
+            'Skill Building - YouTube tutorials for hobbies.',
+            'Webinars - Free online educational seminars.'
+          ],
+          '2 people': [
+            'Study Partners - Joint learning sessions.',
+            'Language Exchange - Practice together.',
+            'Podcast Discussion - Listen and discuss episodes.',
+            'Skill Teaching - Learn from each other.',
+            'Webinar Duo - Attend together.'
+          ],
+          '3 people': [
+            'Study Group - Regular sessions.',
+            'Language Club - Practice together.',
+            'Podcast Circle - Listen and discuss.',
+            'Skill Exchange - Group learning.',
+            'Webinar Group - Attend together.'
+          ],
+          '4+ people': [
+            'Learning Community - Organized group ($100-200).',
+            'Language Society - Large group ($120-250).',
+            'Podcast Convention - Educational events ($150-300).',
+            'Skill Network - Large group learning ($200-400).',
+            'Educational Conference - Professional events ($250-500).'
+          ]
+        },
+        'Relaxation': {
+          '1 person': [
+            'Meditation - Free apps and YouTube.',
+            'Yoga - Home practice with videos.',
+            'Reading - Library books.',
+            'Nature Walks - Local parks.',
+            'Music Therapy - Calming playlists.'
+          ],
+          '2 people': [
+            'Meditation Together - Joint practice.',
+            'Partner Yoga - Couple sessions.',
+            'Reading Date - Shared books.',
+            'Nature Walk - Together.',
+            'Music Therapy - Shared playlists.'
+          ],
+          '3 people': [
+            'Group Meditation - Regular sessions.',
+            'Yoga Class - Group practice.',
+            'Reading Circle - Shared books.',
+            'Group Nature Walk - Together.',
+            'Music Therapy - Group sessions.'
+          ],
+          '4+ people': [
+            'Meditation Retreat - Weekend ($150-300).',
+            'Yoga Retreat - Wellness ($200-400).',
+            'Book Club - Literary group.',
+            'Nature Retreat - Group ($250-500).',
+            'Wellness Retreat - Comprehensive ($300-600).'
+          ]
+        }
+      },
+      '26-35': {
+        'Creative': {
+          '1 person': [
+            'Professional Photography - Build portfolio with outdoor sessions.',
+            'Writing Workshop - Develop writing skills and projects.',
+            'Home Decor DIY - Transform living space with budget projects ($20-40).',
+            'Wine and Paint Night - Solo artistic evening ($25-45).',
+            'Craft Market Visit - Explore local artisan markets ($15-30).'
+          ],
+          '2 people': [
+            'Couple Cooking Class - Learn gourmet cooking together ($40-80).',
+            'Art Gallery Date - Visit exhibitions together.',
+            'Wine Tasting - Sample wines and discuss flavors ($50-100).',
+            'Dance Lessons - Learn ballroom or salsa together ($60-120).',
+            'Pottery Date Night - Create ceramics together ($50-90).'
+          ],
+          '3 people': [
+            'Group Photography - Outdoor portrait sessions.',
+            'Book Club - Discuss literature over wine.',
+            'Cooking Party - Host themed dinner parties.',
+            'Art Workshop - Professional skill-building class ($80-150).',
+            'Wine and Paint Group - Artistic social evenings ($100-180).'
+          ],
+          '4+ people': [
+            'Professional Networking - Industry art and creative events.',
+            'Cooking Club - Monthly culinary adventures.',
+            'Group Art Exhibition - Collaborate on larger projects.',
+            'Wine Festival - Regional wine tasting events ($150-300).',
+            'Creative Conference - Professional development summit ($200-400).'
+          ]
+        },
+        'Active': {
+          '1 person': [
+            'Cycling Commuting - Bike to work for fitness.',
+            'Yoga Practice - Individual yoga and meditation.',
+            'Personal Training - Professional fitness coaching ($60-100).',
+            'Marathon Training - Solo long-distance running.',
+            'CrossFit Classes - High-intensity workouts ($80-150).'
+          ],
+          '2 people': [
+            'Running Partners - Morning or evening runs together.',
+            'Couple Yoga - Partner yoga sessions.',
+            'Tennis Match - Friendly doubles games.',
+            'Hiking Duo - Explore local trails together.',
+            'Personal Training Couple - Joint fitness coaching ($100-180).'
+          ],
+          '3 people': [
+            'Running Group - Regular group runs.',
+            'Yoga Class - Group yoga sessions.',
+            'Tennis Trio - Court play sessions.',
+            'Hiking Group - Weekend trail adventures.',
+            'Group Fitness Classes - CrossFit or HIIT together ($150-250).'
+          ],
+          '4+ people': [
+            'Running Club - Organized weekly runs.',
+            'Yoga Retreat - Weekend wellness getaway ($200-400).',
+            'Tennis League - Competitive team play.',
+            'Hiking Club - Regular outdoor adventures.',
+            'Group Training Program - Professional fitness coaching ($250-500).'
+          ]
+        },
+        'Social': {
+          '1 person': [
+            'Networking Events - Professional industry gatherings.',
+            'Brewery Tours - Explore local craft breweries ($20-40).',
+            'Comedy Shows - Attend stand-up performances.',
+            'Theater Productions - Watch local theater ($25-50).',
+            'Mixer Events - Professional networking mixers.'
+          ],
+          '2 people': [
+            'Date Nights - Romantic dinners and activities.',
+            'Brewery Tasting - Sample craft beers together ($40-80).',
+            'Comedy Night - Attend shows as a couple.',
+            'Theater Date - Watch plays together ($50-100).',
+            'Double Date Events - Socialize with other couples.'
+          ],
+          '3 people': [
+            'Friends Dinner - Regular restaurant gatherings.',
+            'Brewery Hop - Visit multiple craft breweries ($60-120).',
+            'Comedy Night - Attend shows together.',
+            'Theater Group - Regular show attendance ($75-150).',
+            'Social Dining Club - Monthly restaurant exploration.'
+          ],
+          '4+ people': [
+            'Professional Events - Industry conferences and mixers.',
+            'Brewery Festival - Large craft beer celebrations ($100-200).',
+            'Comedy Festival - Group stand-up experiences ($150-300).',
+            'Theater Season Ticket - Group subscription ($200-400).',
+            'Social Club - Regular organized group activities ($150-300).'
+          ]
+        },
+        'Educational': {
+          '1 person': [
+            'Professional Development - Industry certifications ($50-100).',
+            'Skill Training - Specialized courses ($40-80).',
+            'Business Networking - Professional mixers.',
+            'Workshop Attendance - Industry workshops ($60-120).',
+            'Continuing Education - University courses.'
+          ],
+          '2 people': [
+            'Joint Certification - Professional together ($80-150).',
+            'Couple Skill Training - Learn together ($60-120).',
+            'Business Networking - Joint events.',
+            'Workshop Duo - Attend together ($100-180).',
+            'Educational Classes - Shared enrollment.'
+          ],
+          '3 people': [
+            'Group Certification - Team training ($120-200).',
+            'Skill Circle - Group learning.',
+            'Business Network - Professional group.',
+            'Workshop Group - Attend together ($150-250).',
+            'Educational Circle - Group classes.'
+          ],
+          '4+ people': [
+            'Professional Conference - Industry events ($300-600).',
+            'Skill Summit - Large training ($250-500).',
+            'Business Association - Professional group.',
+            'Workshop Series - Group training ($400-800).',
+            'Educational Summit - Large programs ($500-1000).'
+          ]
+        },
+        'Relaxation': {
+          '1 person': [
+            'Spa Day - Individual treatment ($60-100).',
+            'Yoga Class - Regular sessions ($50-80).',
+            'Meditation Retreat - Weekend getaway ($150-250).',
+            'Massage Therapy - Individual sessions ($80-120).',
+            'Wellness Program - Health focused ($100-180).'
+          ],
+          '2 people': [
+            'Couple Spa Day - Joint treatments ($100-180).',
+            'Partner Yoga - Couple sessions ($80-150).',
+            'Retreat Together - Weekend getaway ($250-400).',
+            'Couple Massage - Joint therapy ($120-200).',
+            'Wellness Couple - Health focused ($180-300).'
+          ],
+          '3 people': [
+            'Group Spa Day - Team treatments ($150-250).',
+            'Yoga Trio - Group sessions ($120-200).',
+            'Group Retreat - Weekend getaway ($300-500).',
+            'Group Massage - Team therapy ($180-300).',
+            'Wellness Group - Health focused ($250-450).'
+          ],
+          '4+ people': [
+            'Wellness Retreat - Comprehensive ($400-700).',
+            'Yoga Retreat - Group weekend ($350-600).',
+            'Group Retreat - Wellness program ($500-900).',
+            'Spa Weekend - Team treatments ($600-1000).',
+            'Comprehensive Wellness - Professional program ($800-1500).'
+          ]
+        }
+      },
+      '36-50': {
+        'Creative': {
+          '1 person': [
+            'Gourmet Cooking - Try new recipes at home.',
+            'Gardening - Design and maintain personal garden.',
+            'Woodworking - Create furniture and home decor.',
+            'Watercolor Painting - Relaxing artistic hobby.',
+            'Art Museum Membership - Regular gallery visits ($30-60).'
+          ],
+          '2 people': [
+            'Couple Cooking Classes - Learn gourmet techniques together ($60-120).',
+            'Garden Design Project - Create landscape together.',
+            'Home Renovation - DIY home improvement projects.',
+            'Paint and Sip - Artistic social activity ($50-100).',
+            'Wine and Art Evening - Combine activities.'
+          ],
+          '3 people': [
+            'Cooking Club - Share recipes and techniques.',
+            'Garden Club - Group gardening activities.',
+            'Home Improvement Group - Collaborative projects.',
+            'Art Workshop - Professional skill classes ($120-200).',
+            'Pottery Class - Ceramic creation together ($150-250).'
+          ],
+          '4+ people': [
+            'Cooking Club - Monthly themed dinners.',
+            'Garden Tour - Visit exemplary gardens.',
+            'Home Renovation Circle - Help each other with projects.',
+            'Art Studio Membership - Group creative space ($200-400).',
+            'Cultural Arts Festival - Attend multi-day events ($250-500).'
+          ]
+        },
+        'Active': {
+          '1 person': [
+            'Golfing - Solo rounds at local courses ($30-50).',
+            'Swimming - Lap swimming at community pools.',
+            'Walking - Daily walks for fitness.',
+            'Tennis - Practice sessions ($20-40).',
+            'Personal Training - Professional coaching ($80-120).'
+          ],
+          '2 people': [
+            'Tennis Partners - Regular court sessions.',
+            'Golfing Together - Play rounds as a couple ($50-100).',
+            'Walking Partners - Daily exercise walks.',
+            'Swimming Buddies - Lap swimming together.',
+            'Couple Fitness Classes - Joint workouts.'
+          ],
+          '3 people': [
+            'Golf Outing - Group rounds ($80-120).',
+            'Tennis Doubles - Court play sessions.',
+            'Walking Group - Regular group walks.',
+            'Swimming Group - Lap sessions together.',
+            'Group Fitness Classes - HIIT or Pilates ($150-250).'
+          ],
+          '4+ people': [
+            'Golf League - Organized competitive play ($200-400).',
+            'Tennis League - Team competition.',
+            'Walking Club - Organized group walks.',
+            'Swimming Club - Regular group sessions.',
+            'Group Training Program - Professional coaching ($300-600).'
+          ]
+        },
+        'Social': {
+          '1 person': [
+            'Professional Networking - Industry events.',
+            'Wine Tastings - Educational tastings ($30-60).',
+            'Cultural Events - Theater and performances.',
+            'Museum Visits - Cultural enrichment ($20-40).',
+            'Dining Out - Explore fine restaurants ($40-80).'
+          ],
+          '2 people': [
+            'Date Nights - Regular romantic evenings.',
+            'Wine Tasting Couples - Educational tastings ($60-120).',
+            'Theater Dates - Watch plays together ($100-150).',
+            'Museum Tours - Cultural visits together ($50-100).',
+            'Fine Dining - Explore restaurants together ($80-150).'
+          ],
+          '3 people': [
+            'Dinner Group - Regular restaurant gatherings.',
+            'Wine Tasting Group - Educational tastings ($100-200).',
+            'Theater Group - Season ticket holders ($150-300).',
+            'Museum Tours - Group cultural visits.',
+            'Social Dining Club - Monthly explorations ($150-300).'
+          ],
+          '4+ people': [
+            'Dinner Club - Organized restaurant group ($200-400).',
+            'Wine Festival - Attend tastings together ($300-600).',
+            'Theater Season - Group subscriptions ($400-800).',
+            'Cultural Group - Regular museum visits.',
+            'Social Events - Organized group activities ($400-800).'
+          ]
+        },
+        'Educational': {
+          '1 person': [
+            'Lifelong Learning - Continuing education courses ($40-80).',
+            'Professional Workshops - Industry skills ($60-100).',
+            'Book Club - Literary enrichment.',
+            'Cultural Lectures - Educational talks ($20-50).',
+            'Museum Memberships - Regular visits ($40-80).'
+          ],
+          '2 people': [
+            'Couple Learning - Joint courses ($60-120).',
+            'Professional Development - Together ($80-150).',
+            'Book Club Couple - Joint reading.',
+            'Lecture Series - Attend together ($50-100).',
+            'Museum Membership - Couple ($60-140).'
+          ],
+          '3 people': [
+            'Learning Circle - Group courses ($100-180).',
+            'Professional Group - Training together.',
+            'Book Club - Regular discussions.',
+            'Lecture Group - Educational talks ($80-150).',
+            'Museum Group - Group visits.'
+          ],
+          '4+ people': [
+            'Learning Community - Programs ($250-500).',
+            'Professional Summit - Group training ($300-600).',
+            'Literary Society - Regular group.',
+            'Lecture Series - Educational ($200-400).',
+            'Cultural Society - Group activities ($300-600).'
+          ]
+        },
+        'Relaxation': {
+          '1 person': [
+            'Spa Membership - Regular treatments ($80-120).',
+            'Gentle Yoga - Individual practice.',
+            'Meditation - Regular sessions.',
+            'Massage Therapy - Regular appointments ($80-120).',
+            'Weekend Getaway - Solo retreat ($150-300).'
+          ],
+          '2 people': [
+            'Couple Spa Day - Joint treatments ($120-200).',
+            'Gentle Yoga - Partner practice.',
+            'Meditation Together - Joint sessions.',
+            'Couple Massage - Regular appointments ($120-200).',
+            'Weekend Retreat - Together ($250-500).'
+          ],
+          '3 people': [
+            'Group Spa - Treatments together ($150-250).',
+            'Gentle Yoga Group - Group practice.',
+            'Meditation Circle - Regular group.',
+            'Group Massage - Team appointments ($150-250).',
+            'Wellness Weekend - Group retreat ($350-700).'
+          ],
+          '4+ people': [
+            'Spa Retreat - Comprehensive ($500-900).',
+            'Yoga Retreat - Weekend group ($400-800).',
+            'Meditation Retreat - Group intensive ($450-850).',
+            'Wellness Weekend - Team program ($600-1200).',
+            'Comprehensive Retreat - All activities ($800-1500).'
+          ]
+        }
+      },
+      '51-65': {
+        'Creative': {
+          '1 person': [
+            'Mature Art Hobbies - Knitting, quilting, or painting.',
+            'Reading - Join book clubs and literary activities.',
+            'Photography - Landscape and nature photography.',
+            'Gardening - Detailed garden design.',
+            'Art Classes - Senior-friendly instruction ($35-60).'
+          ],
+          '2 people': [
+            'Couple Art Projects - Collaborative creative work.',
+            'Book Club Couple - Joint reading activities.',
+            'Photography Duo - Capture moments together.',
+            'Garden Planning - Design projects together.',
+            'Art Studio Classes - Joint instruction ($60-120).'
+          ],
+          '3 people': [
+            'Art Circle - Group creative sessions.',
+            'Book Club - Regular literary discussions.',
+            'Photography Group - Nature and landscape shoots.',
+            'Garden Club - Group gardening activities.',
+            'Art Workshop Series - Professional instruction ($120-200).'
+          ],
+          '4+ people': [
+            'Art Society - Organized creative group ($200-400).',
+            'Literary Society - Book discussion group.',
+            'Photography Club - Regular group shoots.',
+            'Garden Tour Group - Visit exemplary gardens.',
+            'Cultural Arts Festival - Multi-day events ($300-600).'
+          ]
+        },
+        'Active': {
+          '1 person': [
+            'Gentle Yoga - Individual practice sessions.',
+            'Walking - Individual daily walks.',
+            'Swimming - Lap swimming ($25-40).',
+            'Golfing - Solo rounds at local courses ($30-50).',
+            'Tai Chi - Gentle movement practice.'
+          ],
+          '2 people': [
+            'Walking Partners - Daily exercise together.',
+            'Yoga Couple - Joint gentle practice.',
+            'Swimming Buddies - Lap sessions together.',
+            'Golf Partners - Play rounds together ($50-100).',
+            'Tai Chi Duo - Practice together.'
+          ],
+          '3 people': [
+            'Walking Group - Group daily walks.',
+            'Yoga Class - Group gentle sessions.',
+            'Swimming Group - Lap sessions together.',
+            'Golf Outing - Trio rounds ($80-120).',
+            'Tai Chi Circle - Group practice.'
+          ],
+          '4+ people': [
+            'Walking Club - Organized group walks.',
+            'Yoga Retreat - Weekend wellness ($200-400).',
+            'Swimming Club - Regular group sessions.',
+            'Golf League - Organized competitive play ($250-500).',
+            'Tai Chi Society - Community organization.'
+          ]
+        },
+        'Social': {
+          '1 person': [
+            'Cultural Events - Theater and concerts.',
+            'Museum Memberships - Regular gallery visits ($40-80).',
+            'Lecture Series - Educational talks.',
+            'Historical Tours - Explore local history ($30-60).',
+            'Fine Dining - Enjoy quality restaurants ($50-100).'
+          ],
+          '2 people': [
+            'Cultural Date Nights - Theater and concerts.',
+            'Museum Tours - Visit exhibitions together ($60-120).',
+            'Lecture Series - Attend educational talks.',
+            'Historical Tours - Explore together ($50-100).',
+            'Fine Dining Couple - Quality restaurants ($100-180).'
+          ],
+          '3 people': [
+            'Cultural Group Events - Regular activities.',
+            'Museum Group - Visit exhibitions together ($80-160).',
+            'Lecture Group - Educational discussions.',
+            'Historical Tour Group - Explore together.',
+            'Dining Group - Organized restaurant visits ($150-300).'
+          ],
+          '4+ people': [
+            'Cultural Society - Organized events ($250-500).',
+            'Museum Circle - Regular group visits.',
+            'Lecture Series - Educational organization.',
+            'Historical Society - Organized tours.',
+            'Dining Club - Sophisticated group dinners ($300-600).'
+          ]
+        },
+        'Educational': {
+          '1 person': [
+            'Mature Learning - Senior education courses ($30-60).',
+            'Historical Research - Local history study.',
+            'Genealogy - Family tree research.',
+            'Cultural Appreciation - Literature and arts.',
+            'Lifelong Learning - University programs ($40-80).'
+          ],
+          '2 people': [
+            'Couple Learning - Joint courses ($50-100).',
+            'Historical Research - Together.',
+            'Genealogy Pair - Family research.',
+            'Cultural Appreciation - Couple activities.',
+            'Lifelong Learning - Shared programs ($60-140).'
+          ],
+          '3 people': [
+            'Learning Circle - Group courses ($80-150).',
+            'Historical Research - Group study.',
+            'Genealogy Circle - Regular meetings.',
+            'Cultural Appreciation - Group activities.',
+            'Educational Circle - Regular programs ($100-200).'
+          ],
+          '4+ people': [
+            'Learning Society - Programs ($250-500).',
+            'Historical Society - Group research ($300-600).',
+            'Genealogy Society - Regular meetings.',
+            'Cultural Society - Organized activities ($350-700).',
+            'Educational Summit - Comprehensive programs ($400-800).'
+          ]
+        },
+        'Relaxation': {
+          '1 person': [
+            'Gentle Yoga - Individual practice.',
+            'Senior Spa - Regular treatments ($60-100).',
+            'Meditation - Regular sessions.',
+            'Gentle Massage - Regular appointments ($60-100).',
+            'Relaxing Retreat - Solo getaway ($120-250).'
+          ],
+          '2 people': [
+            'Gentle Yoga - Partner practice.',
+            'Couple Spa - Joint treatments ($100-180).',
+            'Meditation Together - Joint sessions.',
+            'Couple Massage - Regular appointments ($100-180).',
+            'Retreat Together - Weekend getaway ($200-400).'
+          ],
+          '3 people': [
+            'Gentle Yoga Group - Group practice.',
+            'Group Spa - Treatments together ($120-220).',
+            'Meditation Circle - Regular group.',
+            'Group Massage - Team appointments ($120-220).',
+            'Wellness Weekend - Group retreat ($250-500).'
+          ],
+          '4+ people': [
+            'Yoga Retreat - Weekend group ($300-600).',
+            'Spa Retreat - Comprehensive ($400-800).',
+            'Meditation Retreat - Group intensive ($350-700).',
+            'Wellness Weekend - Team program ($500-1000).',
+            'Comprehensive Retreat - All activities ($600-1200).'
+          ]
+        }
+      },
       '65+': {
         'Creative': {
           '1 person': [
@@ -226,6 +834,96 @@ function Activities() {
             'Community Garden - Large community gardening project.',
             'Senior Fitness Center - Comprehensive senior fitness program ($50-100).'
           ]
+        },
+        'Social': {
+          '1 person': [
+            'Senior Center Activities - Community programs.',
+            'Cultural Events - Theater and musical performances.',
+            'Historical Society - Join local history group.',
+            'Book Club - Literary discussion groups ($15-30).',
+            'Garden Tours - Visit beautiful gardens ($20-40).'
+          ],
+          '2 people': [
+            'Senior Couples Events - Joint activities.',
+            'Cultural Date Night - Theater and concerts.',
+            'Historical Tours - Explore together ($40-80).',
+            'Book Club Couple - Joint literary discussions.',
+            'Garden Tour - Visit gardens together ($40-80).'
+          ],
+          '3 people': [
+            'Senior Group Events - Regular activities.',
+            'Cultural Group - Attend performances together.',
+            'Historical Society - Organized tours.',
+            'Book Club - Literary discussion group.',
+            'Garden Club - Group garden visits ($60-120).'
+          ],
+          '4+ people': [
+            'Senior Social Club - Organized events ($100-200).',
+            'Cultural Society - Regular performances ($150-300).',
+            'Historical Society - Organized activities ($120-250).',
+            'Literary Circle - Book discussion group.',
+            'Garden Tour Group - Visit exemplary gardens ($150-300).'
+          ]
+        },
+        'Educational': {
+          '1 person': [
+            'Senior Education - Age-appropriate courses ($20-40).',
+            'Genealogy Research - Family history projects.',
+            'Cultural Appreciation - Arts and literature.',
+            'Memory Activities - Brain fitness exercises.',
+            'Gentle Learning - Low-impact courses ($25-50).'
+          ],
+          '2 people': [
+            'Couple Learning - Joint courses ($30-60).',
+            'Genealogy Together - Family research.',
+            'Cultural Appreciation - Couple activities.',
+            'Memory Activities - Joint exercises.',
+            'Gentle Learning - Together ($40-80).'
+          ],
+          '3 people': [
+            'Learning Circle - Group courses ($50-100).',
+            'Genealogy Circle - Regular meetings.',
+            'Cultural Appreciation - Group activities.',
+            'Memory Circle - Group exercises.',
+            'Educational Circle - Regular programs ($60-120).'
+          ],
+          '4+ people': [
+            'Learning Society - Programs ($150-300).',
+            'Genealogy Society - Regular meetings ($200-400).',
+            'Cultural Society - Organized activities ($250-500).',
+            'Memory Society - Group programs.',
+            'Educational Summit - Comprehensive programs ($300-600).'
+          ]
+        },
+        'Relaxation': {
+          '1 person': [
+            'Gentle Yoga - Individual practice.',
+            'Senior Spa - Regular treatments ($50-90).',
+            'Meditation - Regular calm sessions.',
+            'Gentle Massage - Regular appointments ($50-90).',
+            'Peaceful Retreat - Solo getaway ($100-200).'
+          ],
+          '2 people': [
+            'Gentle Yoga - Partner practice.',
+            'Couple Spa - Joint treatments ($80-160).',
+            'Meditation Together - Joint calm sessions.',
+            'Couple Massage - Regular appointments ($80-160).',
+            'Retreat Together - Weekend getaway ($150-300).'
+          ],
+          '3 people': [
+            'Gentle Yoga Group - Group practice.',
+            'Group Spa - Treatments together ($100-200).',
+            'Meditation Circle - Regular group.',
+            'Group Massage - Team appointments ($100-200).',
+            'Wellness Weekend - Group retreat ($200-400).'
+          ],
+          '4+ people': [
+            'Yoga Retreat - Weekend group ($250-500).',
+            'Spa Retreat - Comprehensive ($300-600).',
+            'Meditation Retreat - Group intensive ($280-550).',
+            'Wellness Weekend - Team program ($400-800).',
+            'Comprehensive Retreat - All activities ($500-1000).'
+          ]
         }
       }
     };
@@ -245,44 +943,81 @@ function Activities() {
       
       switch (selectedAge) {
         case 'Under 18':
-          // Avoid activities with alcohol, expensive equipment, or adult themes
+          // Avoid activities with alcohol, bars, clubs, high costs, or inappropriate themes
           return !activityText.includes('wine') && 
                  !activityText.includes('bar') && 
                  !activityText.includes('club') &&
+                 !activityText.includes('martial arts') &&
+                 !activityText.includes('boxing') &&
+                 !activityText.includes('parkour') &&
+                 !activityText.includes('skateboarding') &&
+                 !activityText.includes('surfing') &&
+                 !activityText.includes('rock climbing') &&
+                 !activityText.includes('night out') &&
+                 !activityText.includes('dating') &&
                  !activityText.includes('$100+') &&
                  !activityText.includes('$200+') &&
                  !activityText.includes('$300+') &&
                  !activityText.includes('$400+') &&
-                 !activityText.includes('$500+');
+                 !activityText.includes('adult');
         
         case '18-25':
           // Include social activities, nightlife, and budget-friendly options
-          return true; // Most activities are appropriate for this age group
+          // Avoid activities specifically for older audiences
+          return !activityText.includes('golf') &&
+                 !activityText.includes('retirement') &&
+                 !activityText.includes('senior');
         
         case '26-35':
-          // Include professional development, networking, and moderate-cost activities
-          return true; // Most activities are appropriate for this age group
+          // Professional development, networking, moderate-cost activities
+          // Avoid extremely high-cost or young-adult specific activities
+          return !activityText.includes('college') &&
+                 !activityText.includes('student') &&
+                 !activityText.includes('senior') &&
+                 !activityText.includes('retirement');
         
         case '36-50':
-          // Include family-friendly and professional activities
-          return true; // Most activities are appropriate for this age group
+          // Family-friendly, professional activities
+          // Avoid college-specific or extremely strenuous activities
+          return !activityText.includes('college party') &&
+                 !activityText.includes('student') &&
+                 !activityText.includes('extreme') &&
+                 !activityText.includes('martial arts') &&
+                 !activityText.includes('parkour');
         
         case '51-65':
-          // Avoid high-intensity activities, prefer cultural and educational
+          // Avoid high-intensity, extreme, or very strenuous activities
           return !activityText.includes('extreme') && 
                  !activityText.includes('intense') &&
                  !activityText.includes('high-energy') &&
-                 !activityText.includes('adrenaline');
+                 !activityText.includes('adrenaline') &&
+                 !activityText.includes('parkour') &&
+                 !activityText.includes('skateboarding') &&
+                 !activityText.includes('martial arts') &&
+                 !activityText.includes('surfing') &&
+                 !activityText.includes('rock climbing') &&
+                 !activityText.includes('boxing') &&
+                 !activityText.includes('college party') &&
+                 !activityText.includes('student') &&
+                 !activityText.includes('nightlife');
         
         case '65+':
-          // Focus on gentle, accessible, and cultural activities
+          // Focus on gentle, accessible, low-impact activities
           return !activityText.includes('extreme') && 
                  !activityText.includes('intense') &&
                  !activityText.includes('high-energy') &&
                  !activityText.includes('adrenaline') &&
                  !activityText.includes('rock climbing') &&
                  !activityText.includes('skateboarding') &&
-                 !activityText.includes('martial arts');
+                 !activityText.includes('martial arts') &&
+                 !activityText.includes('surfing') &&
+                 !activityText.includes('boxing') &&
+                 !activityText.includes('parkour') &&
+                 !activityText.includes('fighting') &&
+                 !activityText.includes('college') &&
+                 !activityText.includes('student') &&
+                 !activityText.includes('nightlife') &&
+                 !activityText.includes('night out');
         
         default:
           return true;
@@ -758,9 +1493,13 @@ function Activities() {
     // Filter suggestions based on age appropriateness
     const ageFilteredSuggestions = baseSuggestions.filter(isAgeAppropriate);
     
-    // Add age-specific activities
+    // Get age-specific activities
     const ageSpecificActivities = getAgeSpecificActivities(selectedAge, selectedActivity, selectedPeople);
-    const allSuggestions = [...ageFilteredSuggestions, ...ageSpecificActivities];
+    
+    // Prioritize age-specific activities and limit general suggestions
+    // Put age-specific first, then add limited general suggestions
+    const limitedGeneralSuggestions = ageFilteredSuggestions.slice(0, 10); // Limit to 10 general activities
+    const allSuggestions = [...ageSpecificActivities, ...limitedGeneralSuggestions];
     
     // AI-like suggestion generation with variety based on reload count
     const shuffledSuggestions = [...allSuggestions];
@@ -779,11 +1518,13 @@ function Activities() {
     ];
     
     // Remove duplicates and return unique suggestions
+    // Use full activity name as key to ensure no duplicates
     const uniqueSuggestions = [];
     const seen = new Set();
     
     for (const suggestion of rotatedSuggestions) {
-      const key = suggestion.split(' - ')[0]; // Use the activity name as key
+      // Create a normalized key from the activity name (first part before any dash or description)
+      const key = suggestion.split(' - ')[0].toLowerCase().trim();
       if (!seen.has(key)) {
         seen.add(key);
         uniqueSuggestions.push(suggestion);
