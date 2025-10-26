@@ -104,7 +104,7 @@ html, body {
 
 .floating-heart {
   position: fixed;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   pointer-events: none;
   z-index: 1001;
   animation: heart-float 2s ease-out forwards;
@@ -120,4 +120,34 @@ html, body {
 ::-moz-selection {
   background-color: #ffb6c1;
   color: #333;
+}
+
+/* Cute bunny images in bottom corners */
+.about-bunny-image {
+  position: fixed;
+  bottom: 20px;
+  width: 250px;
+  height: auto;
+  z-index: 1;
+  cursor: pointer;
+  animation: bounce 3s ease-in-out infinite;
+  transition: transform 0.2s ease;
+}
+
+
+.about-bunny-right {
+  right: 20px;
+}
+
+.about-bunny-left {
+  left: 20px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
