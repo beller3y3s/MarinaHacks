@@ -111,28 +111,48 @@ function Activities() {
             'YouTube Art Tutorial - Follow online art tutorials for beginners.',
             'DIY Room Decor - Make decorations for your bedroom using recycled materials.',
             'Sketchbook Journaling - Keep a daily art journal with drawings and ideas.',
-            'Craft Kit Building - Assemble and customize craft kits from local stores ($5-15).'
+            'Craft Kit Building - Assemble and customize craft kits from local stores ($5-15).',
+            'Origami Folding - Create paper animals and shapes using tutorials.',
+            'Collage Making - Use magazines and photos to create artistic collages.',
+            'Hand Lettering - Practice beautiful handwriting and calligraphy.',
+            'Clay Sculpting - Create small sculptures from air-dry clay ($5-10).',
+            'Photography - Take artistic photos with your smartphone.'
           ],
           '2 people': [
             'Art Study Buddy - Practice drawing together and give each other feedback.',
             'Craft Competition - Challenge each other to create the best art project.',
             'School Mural - Collaborate on a mural for your school or community.',
             'Art Supply Sharing - Share art materials and try new techniques together.',
-            'Craft Kit Duo - Work on craft kits together ($10-25).'
+            'Craft Kit Duo - Work on craft kits together ($10-25).',
+            'Pottery Together - Try clay wheel or hand-building together ($20-35).',
+            'Origami Challenge - See who can fold the most creative designs.',
+            'Photo Shoot - Take artistic portraits of each other.',
+            'Vision Board Creation - Make inspiring collages together.',
+            'Friendship Bracelets - Make and exchange bracelets.'
           ],
           '3 people': [
             'Art Club Meeting - Start a small art club with friends.',
             'Group Mural Project - Create a large artwork together for school.',
             'Craft Exchange - Make crafts and trade them with each other.',
             'Art Challenge Group - Weekly art challenges with friends.',
-            'Craft Kit Party - Group craft kit assembly ($15-35).'
+            'Craft Kit Party - Group craft kit assembly ($15-35).',
+            'Comic Strip Creation - Write and illustrate group comic strips.',
+            'Stop Motion Animation - Create short films together.',
+            'Tie Dye Party - Make colorful tie-dye shirts and accessories ($20-40).',
+            'Paint Night - Follow painting tutorials together ($25-50).',
+            'Art Gallery Tour - Visit local galleries and discuss art ($15-30).'
           ],
           '4+ people': [
             'School Art Exhibition - Organize an art show at school.',
             'Community Art Project - Create art for local community center.',
             'Art Workshop Group - Take group art classes together.',
             'Craft Fair Preparation - Prepare crafts for school fair.',
-            'Art Club Field Trip - Visit local art museums and galleries ($20-40).'
+            'Art Club Field Trip - Visit local art museums and galleries ($20-40).',
+            'Giant Group Mural - Collaborate on large-scale wall art.',
+            'Art Battle Competition - Timed drawing challenges.',
+            'Craft Fair Booth - Design and run a craft fair booth ($30-60).',
+            'Yearbook Design - Create creative yearbook pages.',
+            'Art Walk - Visit local artist studios together ($20-50).'
           ]
         },
         'Active': {
@@ -141,28 +161,198 @@ function Activities() {
             'Jump Rope - Practice jump rope tricks and routines.',
             'Hula Hooping - Learn hula hoop tricks and dance moves.',
             'Scooter Riding - Practice scooter tricks at local skate park.',
-            'Swimming Lessons - Improve swimming skills at local pool ($10-20).'
+            'Swimming Lessons - Improve swimming skills at local pool ($10-20).',
+            'Yoga Practice - Follow beginner yoga videos online.',
+            'Dance Party - Learn new dance moves and routines.',
+            'Kickball - Practice kicking and catching skills.',
+            'Frisbee Throwing - Improve aim and distance throwing.',
+            'Mini Golf - Practice putting and chipping ($8-15).'
           ],
           '2 people': [
             'Bike Race - Friendly bike racing with friends.',
             'Jump Rope Duo - Learn partner jump rope routines.',
             'Hula Hoop Battle - Compete in hula hoop tricks.',
             'Scooter Tag - Play tag on scooters at skate park.',
-            'Swimming Buddy - Practice swimming together ($15-30).'
+            'Swimming Buddy - Practice swimming together ($15-30).',
+            'Yoga Together - Partner yoga practice sessions.',
+            'Dance Practice - Learn choreography together.',
+            'Frisbee Competition - See who can throw furthest.',
+            'Basketball One-on-One - Practice shooting and dribbling.',
+            'Tennis Match - Play a friendly game ($10-20).'
           ],
           '3 people': [
             'Bike Group Ride - Explore new bike trails together.',
             'Jump Rope Team - Learn group jump rope routines.',
             'Hula Hoop Circle - Create group hula hoop performances.',
             'Scooter Gang - Practice scooter tricks as a group.',
-            'Swimming Team - Join local swimming team ($25-50).'
+            'Swimming Team - Join local swimming team ($25-50).',
+            'Yoga Circle - Group yoga practice together.',
+            'Ultimate Frisbee - Play three-way frisbee games.',
+            'Basketball 3v3 - Play mini basketball games.',
+            'Kickball Game - Organize kickball matches.',
+            'Obstacle Course - Create backyard obstacle courses.'
           ],
           '4+ people': [
             'Bike Club - Start a bike club with friends.',
             'Jump Rope Squad - Perform jump rope routines together.',
             'Hula Hoop Troupe - Create group hula hoop shows.',
             'Scooter Crew - Organize scooter competitions.',
-            'Swimming Club - Join competitive swimming team ($40-80).'
+            'Swimming Club - Join competitive swimming team ($40-80).',
+            'Yoga Class - Group yoga sessions ($30-60).',
+            'Ultimate Frisbee Team - Join or start a frisbee club.',
+            'Basketball League - Join youth basketball league ($50-100).',
+            'Field Day - Organize fun outdoor games.',
+            'Swimming Competition - Join swim meets ($40-80).'
+          ]
+        },
+        'Educational': {
+          '1 person': [
+            'Online Tutoring - Get help with school subjects for free.',
+            'Educational YouTube Channels - Watch educational videos on topics you enjoy.',
+            'Library Study Session - Study at the local library.',
+            'Science Experiments - Try fun science experiments at home.',
+            'Language Learning - Use free apps to learn new languages.',
+            'Documentary Watching - Watch educational documentaries online.',
+            'Educational Podcasts - Listen to podcasts about history and science.',
+            'Practice Tests - Take practice tests for upcoming exams.',
+            'Virtual Museum Tours - Explore museums online for free.',
+            'Science Kit - Try science experiments from kits ($10-25).'
+          ],
+          '2 people': [
+            'Study Group - Study for tests together.',
+            'Language Practice - Practice speaking a new language together.',
+            'Quiz Bowl - Quiz each other on school subjects.',
+            'Book Club - Read and discuss books together.',
+            'Science Fair Project - Work on science projects together.',
+            'Mock Exam - Take practice tests as study partners.',
+            'History Research - Research and discuss historical topics.',
+            'Debate Practice - Practice argument and presentation skills.',
+            'Geography Challenge - Learn about different countries together.',
+            'Math Study Buddy - Help each other with math homework.'
+          ],
+          '3 people': [
+            'Study Circle - Regular group study sessions.',
+            'Language Club - Practice speaking new languages together.',
+            'Quiz Team - Start a school quiz bowl team.',
+            'Science Club - Conduct experiments and discuss findings.',
+            'Debate Club - Practice debating and public speaking.',
+            'Math Competition - Prepare for math competitions.',
+            'History Circle - Discuss historical events and eras.',
+            'Book Review Group - Share book recommendations and reviews.',
+            'Science Field Trip - Visit science centers ($15-30).',
+            'Academic Tournament - Compete in school academic contests.'
+          ],
+          '4+ people': [
+            'Study Session - Large group homework and study time.',
+            'Educational Trip - Visit museums and science centers ($20-40).',
+            'Tutoring Group - Group tutoring sessions ($30-60).',
+            'Science Competition - Enter science fairs together.',
+            'Debate Team - Join school debate team.',
+            'Academic Bowl - Participate in academic competitions.',
+            'Book Club - Large group literary discussions.',
+            'Educational Retreat - Weekend learning camp ($50-100).',
+            'Science Symposium - Attend or present at science events.',
+            'Museum Membership - Group museum access ($40-80).'
+          ]
+        },
+        'Social': {
+          '1 person': [
+            'School Clubs - Join clubs at school.',
+            'Online Gaming - Play multiplayer games with friends online.',
+            'Study Cafe - Study with friends at cafes ($5-10).',
+            'Volunteer Work - Volunteer for local organizations.',
+            'Youth Group - Join a local youth group.',
+            'Community Center - Participate in community activities.',
+            'Library Events - Attend library programs and activities.',
+            'Park Hangout - Meet friends at local parks.',
+            'Mall Meetup - Socialize at shopping centers.',
+            'Cafe Study - Study and chat at coffee shops ($5-10).'
+          ],
+          '2 people': [
+            'Study Buddy - Study together regularly.',
+            'Movie Night - Watch movies together at home.',
+            'Shopping Together - Browse stores together ($10-25).',
+            'Cooking Together - Learn to cook simple meals.',
+            'Board Game Night - Play board games together.',
+            'Park Picnic - Have a picnic at local parks.',
+            'Mall Shopping - Shop and browse together ($20-40).',
+            'Bike Ride - Go for bike rides together.',
+            'Cafe Chat - Spend time at coffee shops ($5-15).',
+            'Volunteer Together - Do community service together.'
+          ],
+          '3 people': [
+            'Group Study - Study together for school.',
+            'Game Night - Play video or board games together.',
+            'Mall Trip - Shopping and hanging out ($15-35).',
+            'Movie Marathon - Watch multiple movies together.',
+            'Park Day - Spend time at local parks.',
+            'Food Adventure - Try different restaurants together ($15-30).',
+            'Photo Walk - Take photos while exploring together.',
+            'Play Date - Fun activities at each other\'s houses.',
+            'Cafe Meetup - Hang out at coffee shops ($10-25).',
+            'Community Event - Attend local events together.'
+          ],
+          '4+ people': [
+            'Group Project - Work on school projects together.',
+            'Party Planning - Organize birthday or themed parties.',
+            'Mall Hangout - Shopping and socializing ($20-50).',
+            'Field Trip - Visit fun places together ($15-40).',
+            'Sports Event - Attend school games together.',
+            'Celebration Party - Celebrate birthdays or achievements.',
+            'Community Service - Volunteer as a group.',
+            'School Dance - Attend school dances together.',
+            'Field Day - Organize outdoor activities together.',
+            'Laser Tag - Play laser tag together ($25-40).'
+          ]
+        },
+        'Relaxation': {
+          '1 person': [
+            'Reading - Read books for pleasure.',
+            'Meditation - Try calming meditation apps.',
+            'Yoga - Practice gentle yoga at home.',
+            'Music Listening - Listen to calming music.',
+            'Coloring - Use coloring books to relax.',
+            'Journaling - Write thoughts and feelings.',
+            'Nature Walk - Take peaceful walks outside.',
+            'Bubble Bath - Relax with a bubble bath.',
+            'Music Making - Play an instrument or sing.',
+            'Mindfulness - Practice breathing exercises.'
+          ],
+          '2 people': [
+            'Reading Together - Read and discuss books together.',
+            'Meditation - Practice calming meditation together.',
+            'Yoga Session - Do gentle yoga together.',
+            'Music Listening - Share favorite music together.',
+            'Coloring Together - Use coloring books together.',
+            'Journaling - Write and share thoughts.',
+            'Nature Walk - Take peaceful walks together.',
+            'Relaxation Video - Watch calming videos together.',
+            'Music Session - Play music or sing together.',
+            'Mindfulness - Practice breathing exercises together.'
+          ],
+          '3 people': [
+            'Book Club - Read and discuss relaxing books.',
+            'Group Meditation - Practice meditation together.',
+            'Yoga Circle - Do yoga as a group.',
+            'Music Share - Share calming music with each other.',
+            'Coloring Party - Color together and chat.',
+            'Nature Excursion - Go on peaceful nature walks.',
+            'Relaxation Day - Spend a relaxing day together.',
+            'Music Circle - Play or listen to music together.',
+            'Mindfulness Group - Practice relaxation techniques together.',
+            'Peaceful Activity - Do calming activities together.'
+          ],
+          '4+ people': [
+            'Reading Club - Group book discussions.',
+            'Group Meditation - Large group meditation sessions.',
+            'Yoga Class - Group yoga for relaxation ($20-40).',
+            'Music Event - Attend calming music performances ($15-35).',
+            'Coloring Social - Large group coloring activity.',
+            'Nature Retreat - Visit peaceful nature areas ($25-50).',
+            'Relaxation Workshop - Learn relaxation techniques ($30-60).',
+            'Wellness Day - Organize a group wellness activity.',
+            'Mindfulness Retreat - Group relaxation sessions ($40-80).',
+            'Peaceful Gathering - Group relaxing activities.'
           ]
         }
       },
@@ -173,14 +363,24 @@ function Activities() {
             'Song Writing - Write original music and lyrics.',
             'Photography - Explore urban photography and street art.',
             'DIY Fashion Design - Upcycle thrift store finds into unique pieces ($10-20).',
-            'Indie Film Making - Create short films on smartphone ($15-30).'
+            'Indie Film Making - Create short films on smartphone ($15-30).',
+            'Street Art - Create mural concepts and sketches.',
+            'Music Production - Make beats and tracks on your laptop.',
+            'Web Design - Build creative websites for fun.',
+            'Graphic Design - Design logos and posters ($15-30).',
+            'Poetry Writing - Write and recite original poetry.'
           ],
           '2 people': [
             'Open Mic Night - Perform music or poetry at local cafes.',
             'Art Walk - Explore street art and murals together.',
             'Thrift Store Challenge - Competitive vintage clothing hunt ($20-40).',
             'Podcast Creation - Start a podcast with friends.',
-            'Concert Going - Attend local indie music shows ($30-60).'
+            'Concert Going - Attend local indie music shows ($30-60).',
+            'Photo Shoot - Creative portrait sessions together.',
+            'Music Collab - Record songs together.',
+            'Design Project - Work on graphic design together.',
+            'Comedy Show - Perform stand-up or sketches ($20-35).',
+            'Art Installation - Create temporary art installations.'
           ],
           '3 people': [
             'College Art Exhibition - Showcase group artwork on campus.',
@@ -203,7 +403,12 @@ function Activities() {
             'Running - Solo outdoor running and jogging.',
             'Beach Volleyball - Individual court practice.',
             'Rock Climbing - Indoor climbing wall sessions ($15-25).',
-            'Dance Class - Individual dance lessons ($20-35).'
+            'Dance Class - Individual dance lessons ($20-35).',
+            'Hiking - Explore local trails solo.',
+            'Basketball Practice - Shoot hoops at the gym.',
+            'Tennis - Play on local courts ($10-20).',
+            'Cycling - Long bike rides through the city.',
+            'Yoga - Personal yoga practice.'
           ],
           '2 people': [
             'Gym Buddy Sessions - Partner workout routines.',
